@@ -1,0 +1,129 @@
+testing ABLATE with 2S_CH4_CM2
+ The Intel 20.2 compilers are in your path. This is adequate for compiling and running most codes. Source compilervars.sh for more features
+including the debugger. 
+ The Intel MPI 2020.2 is in your path. This is adequate for compiling and running most codes. Run "source
+/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpivars.sh" for more features including the debugger. 
+ablate: error: _get_addr: No error
+Abort(3712655) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init_thread: Other MPI error, error stack:
+MPIR_Init_thread(136)........: 
+MPID_Init(1138)..............: 
+MPIDI_OFI_mpi_init_hook(1491): 
+MPIDU_bc_table_create(313)...: 
+
+testing ABLATE with pentane
+ The Intel 20.2 compilers are in your path. This is adequate for compiling and running most codes. Source compilervars.sh for more features
+including the debugger. 
+ The Intel MPI 2020.2 is in your path. This is adequate for compiling and running most codes. Run "source
+/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpivars.sh" for more features including the debugger. 
+ablate: error: _get_addr: No error
+Abort(3712655) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init_thread: Other MPI error, error stack:
+MPIR_Init_thread(136)........: 
+MPID_Init(1138)..............: 
+MPIDI_OFI_mpi_init_hook(1491): 
+MPIDU_bc_table_create(313)...: 
+
+testing a block of code from ABLATE-DAKOTA driver with 2S_CH4_CM2
+ The Intel 20.2 compilers are in your path. This is adequate for compiling and running most codes. Source compilervars.sh for more features
+including the debugger. 
+ The Intel MPI 2020.2 is in your path. This is adequate for compiling and running most codes. Run "source
+/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpivars.sh" for more features including the debugger. 
+ablate: error: _get_addr: No error
+Abort(3712655) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init_thread: Other MPI error, error stack:
+MPIR_Init_thread(136)........: 
+MPID_Init(1138)..............: 
+MPIDI_OFI_mpi_init_hook(1491): 
+MPIDU_bc_table_create(313)...: 
+
+testing full ABLATE-DAKOTA driver with 2S_CH4_CM2
+ The Intel 20.2 compilers are in your path. This is adequate for compiling and running most codes. Source compilervars.sh for more features
+including the debugger. 
+ The Intel MPI 2020.2 is in your path. This is adequate for compiling and running most codes. Run "source
+/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpivars.sh" for more features including the debugger. 
+slurmstepd: error: execve(): dakota: No such file or directory
+srun: error: cpn-u22-33: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=8395904.0
+
+testing TCHEM with 32 samples of pentane
+ The Intel 20.2 compilers are in your path. This is adequate for compiling and running most codes. Source compilervars.sh for more features
+including the debugger. 
+ The Intel MPI 2020.2 is in your path. This is adequate for compiling and running most codes. Run "source
+/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpivars.sh" for more features including the debugger. 
+Kokkos::OpenMP::initialize WARNING: OMP_PROC_BIND environment variable not set
+  In general, for best performance with OpenMP 4.0 or better set OMP_PROC_BIND=spread and OMP_PLACES=threads
+  For best performance with OpenMP 3.1 set OMP_PROC_BIND=true
+  For unit testing set OMP_PROC_BIND=false
+----------------------------------------------------- 
+---------------------WARNING------------------------- 
+   TChem is running Ignition Zero D Reactor with TrBDF2 
+----------------------------------------------------- 
+----------------------------------------------------- 
+Kokkos::OpenMP thread_pool_topology[ 1 x 1 x 1 ]
+Kokkos::OpenMP thread_pool_topology[ 1 x 1 x 1 ]
+Number of Species 93 
+Number of Reactions 886 
+readSample: Reading gas samples from ../tchemExample/inputs/sample2.dat
+species PENTANE(1) index 2 
+species O2(2) index 3 
+readSample : Species name is not part of kinetic model N2 -> Abort !
+
+testing TCHEM with 1 sample of pentane
+ The Intel 20.2 compilers are in your path. This is adequate for compiling and running most codes. Source compilervars.sh for more features
+including the debugger. 
+ The Intel MPI 2020.2 is in your path. This is adequate for compiling and running most codes. Run "source
+/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpivars.sh" for more features including the debugger. 
+Kokkos::OpenMP::initialize WARNING: OMP_PROC_BIND environment variable not set
+  In general, for best performance with OpenMP 4.0 or better set OMP_PROC_BIND=spread and OMP_PLACES=threads
+  For best performance with OpenMP 3.1 set OMP_PROC_BIND=true
+  For unit testing set OMP_PROC_BIND=false
+----------------------------------------------------- 
+---------------------WARNING------------------------- 
+   TChem is running Ignition Zero D Reactor with TrBDF2 
+----------------------------------------------------- 
+----------------------------------------------------- 
+Kokkos::OpenMP thread_pool_topology[ 1 x 1 x 1 ]
+Kokkos::OpenMP thread_pool_topology[ 1 x 1 x 1 ]
+Number of Species 93 
+Number of Reactions 886 
+readSample: Reading gas samples from ../tchemExample/inputs/sample1.dat
+species PENTANE(1) index 2 
+species O2(2) index 3 
+species N2 index 0 
+Number of samples 1
+saving at iteration 0 
+saving at iteration 1 
+saving at iteration 2 
+saving at iteration 3 
+saving at iteration 4 
+saving at iteration 5 
+saving at iteration 6 
+saving at iteration 7 
+saving at iteration 8 
+saving at iteration 9 
+saving at iteration 10 
+saving at iteration 11 
+saving at iteration 12 
+saving at iteration 13 
+saving at iteration 14 
+saving at iteration 15 
+saving at iteration 16 
+saving at iteration 17 
+saving at iteration 18 
+saving at iteration 19 
+saving at iteration 20 
+saving at iteration 21 
+Time ignition  1.115204e+01 [sec] 1.115204e+01 [sec/sample]
+\n
+# On branch main
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    testing/ABLATEtest/2S_CH4_CM2/_ignitionDelay2S_CH4_CM2/ignitionDelayTemperature.txt
+#	deleted:    testing/DAKOTAtest/driver_success/_ignitionDelay2S_CH4_CM2/ignitionDelayTemperature.txt
+#	modified:   testing/TCHEMtest/tchemExampleBuild/IgnSolution.dat
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	testing/all_tests_Academic_Cluster_Interactive_Session.out
+no changes added to commit (use "git add" and/or "git commit -a")
