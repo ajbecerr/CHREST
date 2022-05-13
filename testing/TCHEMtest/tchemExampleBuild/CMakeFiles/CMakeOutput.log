@@ -1,0 +1,466 @@
+The system is: Linux - 3.10.0-1160.53.1.el7.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpicc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/user/ajbecerr/TCHEMtest/tchemExampleBuild/CMakeFiles/3.22.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpicxx 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/user/ajbecerr/TCHEMtest/tchemExampleBuild/CMakeFiles/3.22.3/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /user/ajbecerr/TCHEMtest/tchemExampleBuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_3e0bd/fast && /bin/gmake  -f CMakeFiles/cmTC_3e0bd.dir/build.make CMakeFiles/cmTC_3e0bd.dir/build
+gmake[1]: Entering directory `/user/ajbecerr/TCHEMtest/tchemExampleBuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o
+/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpicc   -v -o CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o -c /util/common/cmake/3.22.3/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+mpigcc for the Intel(R) MPI Library 2019 Update 8 for Linux*
+Copyright 2003-2020, Intel Corporation.
+Using built-in specs.
+COLLECT_GCC=gcc
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-11.2.0/configure --prefix=/util/common/gcc/11.2.0/gcc --with-mpc=/util/common/gcc/11.2.0/mpc-1.2.0 --with-gmp=/util/common/gcc/11.2.0/gmp-6.2.1 --with-isl=/util/common/gcc/11.2.0/isl-0.24 --with-mpfr=/util/common/gcc/11.2.0/mpfr-4.1.0 --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3e0bd.dir/'
+ /util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1 -quiet -v -I /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include /util/common/cmake/3.22.3/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3e0bd.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /scratch/8394199/ccTCykMJ.s
+GNU C17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include
+ /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include
+ /usr/local/include
+ /util/common/gcc/11.2.0/gcc/include
+ /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed
+ /usr/include
+End of search list.
+GNU C17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 25ccb45d717644e1a98d903e754f728d
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3e0bd.dir/'
+ as -v -I /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include --64 -o CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o /scratch/8394199/ccTCykMJ.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1
+COMPILER_PATH=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_3e0bd
+/util/common/cmake/3.22.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e0bd.dir/link.txt --verbose=1
+/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpicc  -v CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o -o cmTC_3e0bd 
+mpigcc for the Intel(R) MPI Library 2019 Update 8 for Linux*
+Copyright 2003-2020, Intel Corporation.
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-11.2.0/configure --prefix=/util/common/gcc/11.2.0/gcc --with-mpc=/util/common/gcc/11.2.0/mpc-1.2.0 --with-gmp=/util/common/gcc/11.2.0/gmp-6.2.1 --with-isl=/util/common/gcc/11.2.0/isl-0.24 --with-mpfr=/util/common/gcc/11.2.0/mpfr-4.1.0 --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.2.0 (GCC) 
+COMPILER_PATH=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3e0bd' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release' '-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3e0bd.'
+ /util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2 -plugin /util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/8394199/ccgo7MrO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3e0bd /lib/../lib64/crt1.o /lib/../lib64/crti.o /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o -L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release -L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib -L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0 -L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../.. CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o --enable-new-dtags -rpath /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release -rpath /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib -lmpifort -lmpi -lrt -lpthread -z now -z relro -z noexecstack --enable-new-dtags -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3e0bd' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release' '-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3e0bd.'
+gmake[1]: Leaving directory `/user/ajbecerr/TCHEMtest/tchemExampleBuild/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include]
+    add: [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+    add: [/usr/local/include]
+    add: [/util/common/gcc/11.2.0/gcc/include]
+    add: [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include] ==> [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include]
+  collapse include dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include] ==> [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/util/common/gcc/11.2.0/gcc/include] ==> [/util/common/gcc/11.2.0/gcc/include]
+  collapse include dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed] ==> [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include;/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include;/usr/local/include;/util/common/gcc/11.2.0/gcc/include;/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /user/ajbecerr/TCHEMtest/tchemExampleBuild/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/bin/gmake -f Makefile cmTC_3e0bd/fast && /bin/gmake  -f CMakeFiles/cmTC_3e0bd.dir/build.make CMakeFiles/cmTC_3e0bd.dir/build]
+  ignore line: [gmake[1]: Entering directory `/user/ajbecerr/TCHEMtest/tchemExampleBuild/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpicc   -v -o CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o -c /util/common/cmake/3.22.3/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [mpigcc for the Intel(R) MPI Library 2019 Update 8 for Linux*]
+  ignore line: [Copyright 2003-2020  Intel Corporation.]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=gcc]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../gcc-11.2.0/configure --prefix=/util/common/gcc/11.2.0/gcc --with-mpc=/util/common/gcc/11.2.0/mpc-1.2.0 --with-gmp=/util/common/gcc/11.2.0/gmp-6.2.1 --with-isl=/util/common/gcc/11.2.0/isl-0.24 --with-mpfr=/util/common/gcc/11.2.0/mpfr-4.1.0 --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3e0bd.dir/']
+  ignore line: [ /util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1 -quiet -v -I /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include /util/common/cmake/3.22.3/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3e0bd.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /scratch/8394199/ccTCykMJ.s]
+  ignore line: [GNU C17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.0  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include]
+  ignore line: [ /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /util/common/gcc/11.2.0/gcc/include]
+  ignore line: [ /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.0  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 25ccb45d717644e1a98d903e754f728d]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3e0bd.dir/']
+  ignore line: [ as -v -I /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include --64 -o CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o /scratch/8394199/ccTCykMJ.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1]
+  ignore line: [COMPILER_PATH=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_3e0bd]
+  ignore line: [/util/common/cmake/3.22.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e0bd.dir/link.txt --verbose=1]
+  ignore line: [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpicc  -v CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o -o cmTC_3e0bd ]
+  ignore line: [mpigcc for the Intel(R) MPI Library 2019 Update 8 for Linux*]
+  ignore line: [Copyright 2003-2020  Intel Corporation.]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../gcc-11.2.0/configure --prefix=/util/common/gcc/11.2.0/gcc --with-mpc=/util/common/gcc/11.2.0/mpc-1.2.0 --with-gmp=/util/common/gcc/11.2.0/gmp-6.2.1 --with-isl=/util/common/gcc/11.2.0/isl-0.24 --with-mpfr=/util/common/gcc/11.2.0/mpfr-4.1.0 --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3e0bd' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release' '-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3e0bd.']
+  link line: [ /util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2 -plugin /util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/8394199/ccgo7MrO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3e0bd /lib/../lib64/crt1.o /lib/../lib64/crti.o /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o -L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release -L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib -L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0 -L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../.. CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o --enable-new-dtags -rpath /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release -rpath /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib -lmpifort -lmpi -lrt -lpthread -z now -z relro -z noexecstack --enable-new-dtags -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/scratch/8394199/ccgo7MrO.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_3e0bd] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o] ==> obj [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o]
+    arg [-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release] ==> dir [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release]
+    arg [-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib] ==> dir [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib]
+    arg [-L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0] ==> dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0]
+    arg [-L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64] ==> dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..] ==> dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..]
+    arg [CMakeFiles/cmTC_3e0bd.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib] ==> ignore
+    arg [-lmpifort] ==> lib [mpifort]
+    arg [-lmpi] ==> lib [mpi]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znoexecstack] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [-ldl] ==> lib [dl]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o] ==> obj [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release] ==> [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release]
+  collapse library dir [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib] ==> [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib]
+  collapse library dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0] ==> [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0]
+  collapse library dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64] ==> [/util/common/gcc/11.2.0/gcc/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..] ==> [/util/common/gcc/11.2.0/gcc/lib]
+  implicit libs: [mpifort;mpi;rt;pthread;dl;gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o;/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release;/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib;/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0;/util/common/gcc/11.2.0/gcc/lib64;/lib64;/usr/lib64;/util/common/gcc/11.2.0/gcc/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /user/ajbecerr/TCHEMtest/tchemExampleBuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_11b47/fast && /bin/gmake  -f CMakeFiles/cmTC_11b47.dir/build.make CMakeFiles/cmTC_11b47.dir/build
+gmake[1]: Entering directory `/user/ajbecerr/TCHEMtest/tchemExampleBuild/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o
+/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpicxx   -v -o CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o -c /util/common/cmake/3.22.3/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+mpigxx for the Intel(R) MPI Library 2019 Update 8 for Linux*
+Copyright 2003-2020, Intel Corporation.
+Using built-in specs.
+COLLECT_GCC=g++
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-11.2.0/configure --prefix=/util/common/gcc/11.2.0/gcc --with-mpc=/util/common/gcc/11.2.0/mpc-1.2.0 --with-gmp=/util/common/gcc/11.2.0/gmp-6.2.1 --with-isl=/util/common/gcc/11.2.0/isl-0.24 --with-mpfr=/util/common/gcc/11.2.0/mpfr-4.1.0 --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_11b47.dir/'
+ /util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1plus -quiet -v -I /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include -D_GNU_SOURCE /util/common/cmake/3.22.3/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_11b47.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /scratch/8394199/ccuSnCh7.s
+GNU C++17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include
+ /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0
+ /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu
+ /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward
+ /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include
+ /usr/local/include
+ /util/common/gcc/11.2.0/gcc/include
+ /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed
+ /usr/include
+End of search list.
+GNU C++17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.0, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 3d8f617d35d0ffaa49f572aba7932535
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_11b47.dir/'
+ as -v -I /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include --64 -o CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o /scratch/8394199/ccuSnCh7.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1
+COMPILER_PATH=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_11b47
+/util/common/cmake/3.22.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11b47.dir/link.txt --verbose=1
+/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpicxx  -v CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_11b47 
+mpigxx for the Intel(R) MPI Library 2019 Update 8 for Linux*
+Copyright 2003-2020, Intel Corporation.
+Using built-in specs.
+COLLECT_GCC=g++
+COLLECT_LTO_WRAPPER=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-11.2.0/configure --prefix=/util/common/gcc/11.2.0/gcc --with-mpc=/util/common/gcc/11.2.0/mpc-1.2.0 --with-gmp=/util/common/gcc/11.2.0/gmp-6.2.1 --with-isl=/util/common/gcc/11.2.0/isl-0.24 --with-mpfr=/util/common/gcc/11.2.0/mpfr-4.1.0 --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.2.0 (GCC) 
+COMPILER_PATH=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_11b47' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release' '-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_11b47.'
+ /util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2 -plugin /util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/8394199/ccdB72ya.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_11b47 /lib/../lib64/crt1.o /lib/../lib64/crti.o /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o -L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release -L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib -L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0 -L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../.. CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o --enable-new-dtags -rpath /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release -rpath /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib -lmpicxx -lmpifort -lmpi -lrt -lpthread -z now -z relro -z noexecstack --enable-new-dtags -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_11b47' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release' '-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_11b47.'
+gmake[1]: Leaving directory `/user/ajbecerr/TCHEMtest/tchemExampleBuild/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include]
+    add: [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0]
+    add: [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu]
+    add: [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward]
+    add: [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+    add: [/usr/local/include]
+    add: [/util/common/gcc/11.2.0/gcc/include]
+    add: [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include] ==> [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include]
+  collapse include dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0] ==> [/util/common/gcc/11.2.0/gcc/include/c++/11.2.0]
+  collapse include dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu] ==> [/util/common/gcc/11.2.0/gcc/include/c++/11.2.0/x86_64-pc-linux-gnu]
+  collapse include dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward] ==> [/util/common/gcc/11.2.0/gcc/include/c++/11.2.0/backward]
+  collapse include dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include] ==> [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/util/common/gcc/11.2.0/gcc/include] ==> [/util/common/gcc/11.2.0/gcc/include]
+  collapse include dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed] ==> [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include;/util/common/gcc/11.2.0/gcc/include/c++/11.2.0;/util/common/gcc/11.2.0/gcc/include/c++/11.2.0/x86_64-pc-linux-gnu;/util/common/gcc/11.2.0/gcc/include/c++/11.2.0/backward;/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include;/usr/local/include;/util/common/gcc/11.2.0/gcc/include;/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /user/ajbecerr/TCHEMtest/tchemExampleBuild/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/bin/gmake -f Makefile cmTC_11b47/fast && /bin/gmake  -f CMakeFiles/cmTC_11b47.dir/build.make CMakeFiles/cmTC_11b47.dir/build]
+  ignore line: [gmake[1]: Entering directory `/user/ajbecerr/TCHEMtest/tchemExampleBuild/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpicxx   -v -o CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o -c /util/common/cmake/3.22.3/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [mpigxx for the Intel(R) MPI Library 2019 Update 8 for Linux*]
+  ignore line: [Copyright 2003-2020  Intel Corporation.]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=g++]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../gcc-11.2.0/configure --prefix=/util/common/gcc/11.2.0/gcc --with-mpc=/util/common/gcc/11.2.0/mpc-1.2.0 --with-gmp=/util/common/gcc/11.2.0/gmp-6.2.1 --with-isl=/util/common/gcc/11.2.0/isl-0.24 --with-mpfr=/util/common/gcc/11.2.0/mpfr-4.1.0 --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_11b47.dir/']
+  ignore line: [ /util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1plus -quiet -v -I /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include -D_GNU_SOURCE /util/common/cmake/3.22.3/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_11b47.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /scratch/8394199/ccuSnCh7.s]
+  ignore line: [GNU C++17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.0  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include]
+  ignore line: [ /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0]
+  ignore line: [ /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu]
+  ignore line: [ /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward]
+  ignore line: [ /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /util/common/gcc/11.2.0/gcc/include]
+  ignore line: [ /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.0  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 3d8f617d35d0ffaa49f572aba7932535]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_11b47.dir/']
+  ignore line: [ as -v -I /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include --64 -o CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o /scratch/8394199/ccuSnCh7.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1]
+  ignore line: [COMPILER_PATH=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_11b47]
+  ignore line: [/util/common/cmake/3.22.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11b47.dir/link.txt --verbose=1]
+  ignore line: [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpicxx  -v CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_11b47 ]
+  ignore line: [mpigxx for the Intel(R) MPI Library 2019 Update 8 for Linux*]
+  ignore line: [Copyright 2003-2020  Intel Corporation.]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../gcc-11.2.0/configure --prefix=/util/common/gcc/11.2.0/gcc --with-mpc=/util/common/gcc/11.2.0/mpc-1.2.0 --with-gmp=/util/common/gcc/11.2.0/gmp-6.2.1 --with-isl=/util/common/gcc/11.2.0/isl-0.24 --with-mpfr=/util/common/gcc/11.2.0/mpfr-4.1.0 --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_11b47' '-I' '/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/include' '-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release' '-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_11b47.']
+  link line: [ /util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2 -plugin /util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/scratch/8394199/ccdB72ya.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_11b47 /lib/../lib64/crt1.o /lib/../lib64/crti.o /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o -L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release -L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib -L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0 -L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../.. CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o --enable-new-dtags -rpath /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release -rpath /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib -lmpicxx -lmpifort -lmpi -lrt -lpthread -z now -z relro -z noexecstack --enable-new-dtags -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/util/common/gcc/11.2.0/gcc/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/scratch/8394199/ccdB72ya.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_11b47] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o] ==> obj [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o]
+    arg [-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release] ==> dir [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release]
+    arg [-L/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib] ==> dir [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib]
+    arg [-L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0] ==> dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0]
+    arg [-L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64] ==> dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..] ==> dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..]
+    arg [CMakeFiles/cmTC_11b47.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib] ==> ignore
+    arg [-lmpicxx] ==> lib [mpicxx]
+    arg [-lmpifort] ==> lib [mpifort]
+    arg [-lmpi] ==> lib [mpi]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znoexecstack] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [-ldl] ==> lib [dl]
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o] ==> obj [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release] ==> [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release]
+  collapse library dir [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib] ==> [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib]
+  collapse library dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0] ==> [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0]
+  collapse library dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64] ==> [/util/common/gcc/11.2.0/gcc/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..] ==> [/util/common/gcc/11.2.0/gcc/lib]
+  implicit libs: [mpicxx;mpifort;mpi;rt;pthread;dl;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o;/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release;/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib;/util/common/gcc/11.2.0/gcc/lib/gcc/x86_64-pc-linux-gnu/11.2.0;/util/common/gcc/11.2.0/gcc/lib64;/lib64;/usr/lib64;/util/common/gcc/11.2.0/gcc/lib]
+  implicit fwks: []
+
+

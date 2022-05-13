@@ -1,0 +1,3 @@
+/user/ajbecerr/TCHEMtest/tchemExampleBuild/CMakeFiles/exe.dir
+/user/ajbecerr/TCHEMtest/tchemExampleBuild/CMakeFiles/edit_cache.dir
+/user/ajbecerr/TCHEMtest/tchemExampleBuild/CMakeFiles/rebuild_cache.dir
