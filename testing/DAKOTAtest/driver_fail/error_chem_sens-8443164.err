@@ -9,4 +9,4 @@ for more features including the debugger.
 running most codes. Source $MKL/bin/mklvars.sh" for more features. 
 /util/academic/dakota/dakota-6.15.0-release-public-rhel7.x86_64-gui_cli/bin/dakota: symbol lookup error: /util/academic/dakota/dakota-6.15.0-release-public-rhel7.x86_64-gui_cli/bin/libmpi_cxx.so.1: undefined symbol: ompi_mpi_char
 srun: error: cpn-k08-34-01: task 0: Exited with exit code 127
-srun: launch/slurm: _step_signal: Terminating StepId=8443125.0
+srun: launch/slurm: _step_signal: Terminating StepId=8443164.0
