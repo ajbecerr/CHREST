@@ -2,8 +2,33 @@
 features including the debugger. 
  The Intel MPI 2020.2 is in your path. This is adequate for compiling and running most codes. Run "source
 /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpivars.sh" for more features including the debugger. 
-srun: job 8442726 queued and waiting for resources
-srun: job 8442726 has been allocated resources
+ The MKL Libraries are in your library path. This is adequate for compiling and running most codes. Source $MKL/bin/mklvars.sh" for more
+features. 
+
+ERROR: architecture is not defined. Accepted values: ia32, intel64
+
+Syntax:
+  source mklvars.sh <arch> [MKL_interface] [mod]
+
+   <arch> must be one of the following
+       ia32         : Setup for IA-32 architecture
+       intel64      : Setup for Intel(R) 64 architecture
+
+   mod (optional) - set path to Intel(R) MKL F95 modules
+
+   MKL_interface (optional) - Intel(R) MKL programming interface for intel64
+                              Not applicable without mod
+       lp64         : 4 bytes integer (default)
+       ilp64        : 8 bytes integer
+
+If the arguments to the sourced script are ignored (consult docs for
+your shell) the alternative way to specify target is environment
+variables COMPILERVARS_ARCHITECTURE or MKLVARS_ARCHITECTURE to pass
+<arch> to the script, MKLVARS_INTERFACE to pass <MKL_interface> and
+MKLVARS_MOD to pass <mod>
+
+srun: job 8443122 queued and waiting for resources
+srun: job 8443122 has been allocated resources
 /util/academic/dakota/dakota-6.15.0-release-public-rhel7.x86_64-gui_cli/bin/dakota: symbol lookup error: /util/academic/dakota/dakota-6.15.0-release-public-rhel7.x86_64-gui_cli/bin/libmpi_cxx.so.1: undefined symbol: ompi_mpi_char
-srun: error: cpn-d07-20-02: task 0: Exited with exit code 127
-srun: launch/slurm: _step_signal: Terminating StepId=8442726.0
+srun: error: cpn-d09-13-02: task 0: Exited with exit code 127
+srun: launch/slurm: _step_signal: Terminating StepId=8443122.0
