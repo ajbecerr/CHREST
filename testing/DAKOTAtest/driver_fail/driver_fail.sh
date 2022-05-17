@@ -7,6 +7,5 @@ export I_MPI_PMI_LIBRARY=/usr/lib64/libpmi.so
 export DAK_INSTALL=/util/academic/dakota/dakota-6.15.0-release-public-rhel7.x86_64-gui_cli
 export PATH=$DAK_INSTALL/bin:$DAK_INSTALL/share/dakota/test:$PATH
 export PYTHONPATH=$DAK_INSTALL/share/dakota/Python:$PYTHONPATH
-# source /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/bin/mpivars.sh
 source $MKL/bin/mklvars.sh
 srun dakota -i sensitivity.in
