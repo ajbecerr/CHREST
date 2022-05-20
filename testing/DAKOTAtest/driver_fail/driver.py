@@ -3,6 +3,7 @@ import numpy as np
 import os
 import subprocess
 
+
 #-----------------------------------------------------------------
 params, results = di.read_parameters_file()
 x1=params['x1']*1E+15
@@ -20,13 +21,14 @@ with open ('ORIGINAL_2S_CH4_CM2.mech.dat', "r") as myfile:
     np.savetxt('2S_CH4_CM2.mech.dat', inputfile, fmt='%s',delimiter='')
 
 #-----------------------------------------------------------------
-command = '$ABLATE_DIR/ablate --input ignitionDelay2S_CH4_CM2.yaml  '
+command = 'module use /projects/academic/chrest/modules; module load chrest/release ; $ABLATE_DIR/ablate --input ignitionDelay2S_CH4_CM2.yaml  '
 
 p = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
 
 (stdout, err) = p.communicate()
 
 output = stdout.splitlines()
+
 
 #-----------------------------------------------------------------
 with open ('_ignitionDelay2S_CH4_CM2/ignitionDelayTemperature.txt', "r") as myoutfile:
@@ -37,6 +39,7 @@ with open ('_ignitionDelay2S_CH4_CM2/ignitionDelayTemperature.txt', "r") as myou
 
 os.remove('2S_CH4_CM2.mech.dat')
 os.remove('_ignitionDelay2S_CH4_CM2/ignitionDelayTemperature.txt')
+
 
 #-----------------------------------------------------------------
 for i, r in enumerate(results.responses()):
