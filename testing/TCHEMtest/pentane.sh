@@ -2,9 +2,9 @@
 #SBATCH --constraint=CPU-Gold-6130
 #SBATCH --partition=debug
 #SBATCH --qos=debug
-#SBATCH --job-name='chem_sens'
-#SBATCH --output=out_chem_sens-%j.out
-#SBATCH --error=error_chem_sens-%j.err
+#SBATCH --job-name='pentane'
+#SBATCH --output=pentane-%j.out
+#SBATCH --error=pentane-%j.err
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=01:00:00
@@ -12,7 +12,7 @@
 #SBATCH --mail-type=ALL
 module use /projects/academic/chrest/modules
 module load chrest/release
-export TCHEM_INSTALL_PATH=${HOME}/Documents/CODE/GitHubCode/install/tchemSSH
+export TCHEM_INSTALL_PATH=/projects/academic/chrest/lib/tchem/v2.0.0_25-04-2022_6ae59e8
 exec=$TCHEM_INSTALL_PATH/example/TChem_IgnitionZeroD.x
 this="$exec --chemfile=inputs/pentane.yaml \
             --use-cvode=false \

@@ -1,0 +1,99 @@
+/projects/academic/chrest/lib/tchem/v2.0.0_25-04-2022_6ae59e8/example/TChem_IgnitionZeroD.x --chemfile=inputs/pentane.yaml --use-cvode=false --samplefile=inputs/pentane.dat --outputfile=outputs/IgnSolution.dat --atol-newton=1e-18 --rtol-newton=1e-8 --run-constant-pressure=false --max-newton-iterations=20 --tol-time=1e-6 --useYaml=true --dtmax=1e-3 --dtmin=1e-20 --tend=0.1 --time-iterations-per-interval=10 --jacobian-interval=5 --max-time-iterations=5000 --ignition-delay-time-file=outputs/IgnitionDelayTime.dat --ignition-delay-time-w-threshold-temperature-file=outputs/IgnitionDelayTimeTthreshold.dat --threshold-temperature=1500
+Kokkos::OpenMP::initialize WARNING: OMP_PROC_BIND environment variable not set
+  In general, for best performance with OpenMP 4.0 or better set OMP_PROC_BIND=spread and OMP_PLACES=threads
+  For best performance with OpenMP 3.1 set OMP_PROC_BIND=true
+  For unit testing set OMP_PROC_BIND=false
+----------------------------------------------------- 
+---------------------WARNING------------------------- 
+   TChem is running Constant Volume Ignition Reactor 
+----------------------------------------------------- 
+----------------------------------------------------- 
+Kokkos::OpenMP thread_pool_topology[ 1 x 1 x 1 ]
+Kokkos::OpenMP thread_pool_topology[ 1 x 1 x 1 ]
+Number of Species 93 
+Number of Reactions 886 
+readSample: Reading gas samples from inputs/pentane.dat
+species PENTANE(1) index 2 
+species O2(2) index 3 
+species N2 index 0 
+Number of samples 1
+saving at iteration 0 
+saving at iteration 1 
+saving at iteration 2 
+saving at iteration 3 
+saving at iteration 4 
+saving at iteration 5 
+saving at iteration 6 
+saving at iteration 7 
+saving at iteration 8 
+saving at iteration 9 
+saving at iteration 10 
+saving at iteration 11 
+saving at iteration 12 
+saving at iteration 13 
+saving at iteration 14 
+saving at iteration 15 
+saving at iteration 16 
+saving at iteration 17 
+saving at iteration 18 
+saving at iteration 19 
+saving at iteration 20 
+saving at iteration 21 
+saving at iteration 22 
+saving at iteration 23 
+saving at iteration 24 
+saving at iteration 25 
+saving at iteration 26 
+saving at iteration 27 
+saving at iteration 28 
+saving at iteration 29 
+saving at iteration 30 
+saving at iteration 31 
+saving at iteration 32 
+saving at iteration 33 
+saving at iteration 34 
+saving at iteration 35 
+saving at iteration 36 
+saving at iteration 37 
+saving at iteration 38 
+saving at iteration 39 
+saving at iteration 40 
+saving at iteration 41 
+saving at iteration 42 
+saving at iteration 43 
+saving at iteration 44 
+saving at iteration 45 
+saving at iteration 46 
+saving at iteration 47 
+saving at iteration 48 
+saving at iteration 49 
+saving at iteration 50 
+saving at iteration 51 
+saving at iteration 52 
+saving at iteration 53 
+saving at iteration 54 
+saving at iteration 55 
+saving at iteration 56 
+saving at iteration 57 
+saving at iteration 58 
+saving at iteration 59 
+saving at iteration 60 
+saving at iteration 61 
+saving at iteration 62 
+saving at iteration 63 
+saving at iteration 64 
+saving at iteration 65 
+saving at iteration 66 
+saving at iteration 67 
+saving at iteration 68 
+saving at iteration 69 
+saving at iteration 70 
+saving at iteration 71 
+saving at iteration 72 
+saving at iteration 73 
+saving at iteration 74 
+saving at iteration 75 
+saving at iteration 76 
+saving at iteration 77 
+saving at iteration 78 
+Time ignition  9.481207e+01 [sec] 9.481207e+01 [sec/sample]
