@@ -31,8 +31,7 @@ this="$exec --chemfile=inputs/pentane.yaml \
             --jacobian-interval=5 \
             --max-time-iterations=5000 \
             --ignition-delay-time-file=outputs/IgnitionDelayTime.dat \
-            --ignition-delay-time-w-threshold-temperature-file=outputs/IgnitionDelayTimeTthreshold.dat
+            --ignition-delay-time-w-threshold-temperature-file=outputs/IgnitionDelayTimeTthreshold.dat \
             --threshold-temperature=1500"
-
 echo $this
 eval $this
