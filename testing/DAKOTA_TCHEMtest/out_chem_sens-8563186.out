@@ -1,0 +1,706 @@
+Dakota version 6.15 released Nov. 15 2021.
+Repository revision fbfa1db (2021-11-04) built Nov  5 2021 11:37:10.
+Running MPI Dakota executable in serial mode.
+Start time: Fri Jun  3 11:43:27 2022
+
+-----------------------
+Begin DAKOTA input file
+sensitivity.in
+-----------------------
+environment,
+    tabular_data
+method,
+  sampling
+    sample_type lhs
+    samples = 100
+    variance_based_decomp
+variables,
+  uniform_uncertain 4
+    upper_bounds      5.5     9.1     5.6     4.3
+    lower_bounds      4.7     8.3     4.8     3.5
+    descriptors 'x2' 'x3' 'x4' 'x5'
+interface,
+        fork
+        analysis_drivers = 'python driver.py params.in results.out'
+        parameters_file = 'params.in'
+        results_file    = 'results.out'
+        verbatim
+responses,
+	response_functions = 1
+	no_gradients
+	no_hessians
+---------------------
+End DAKOTA input file
+---------------------
+
+Using Dakota input file 'sensitivity.in'
+Writing new restart file 'dakota.rst'.
+
+>>>>> Executing environment.
+
+>>>>> Running random_sampling iterator.
+
+NonD lhs Samples = 100 Seed (system-generated) = 469068
+
+NonD lhs Samples = 100 Seed not reset from previous LHS execution
+
+---------------------
+Begin Evaluation    1
+---------------------
+Parameters for evaluation 1:
+                      5.0329992773e+00 x2
+                      9.0640055843e+00 x3
+                      5.0078148067e+00 x4
+                      3.7440020164e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.006495739
+
+Active response data for evaluation 1:
+Active set vector = { 1 }
+                      6.4957390000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation    2
+---------------------
+Parameters for evaluation 2:
+                      4.7317096803e+00 x2
+                      8.6524308420e+00 x3
+                      5.0458627168e+00 x4
+                      3.6157160461e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.006214967
+
+Active response data for evaluation 2:
+Active set vector = { 1 }
+                      6.2149670000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation    3
+---------------------
+Parameters for evaluation 3:
+                      5.4513545045e+00 x2
+                      8.6681469339e+00 x3
+                      5.4184861934e+00 x4
+                      3.8201644830e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005099271
+
+Active response data for evaluation 3:
+Active set vector = { 1 }
+                      5.0992710000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation    4
+---------------------
+Parameters for evaluation 4:
+                      5.1477529485e+00 x2
+                      8.8762957142e+00 x3
+                      5.5817526932e+00 x4
+                      3.8113812282e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.00497208
+
+Active response data for evaluation 4:
+Active set vector = { 1 }
+                      4.9720800000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation    5
+---------------------
+Parameters for evaluation 5:
+                      5.0172510183e+00 x2
+                      8.8450710419e+00 x3
+                      5.1313541903e+00 x4
+                      4.0436687736e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005768126
+
+Active response data for evaluation 5:
+Active set vector = { 1 }
+                      5.7681260000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation    6
+---------------------
+Parameters for evaluation 6:
+                      5.2059105336e+00 x2
+                      8.5917816561e+00 x3
+                      4.9508823464e+00 x4
+                      3.5692713467e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.007010134
+
+Active response data for evaluation 6:
+Active set vector = { 1 }
+                      7.0101340000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation    7
+---------------------
+Parameters for evaluation 7:
+                      5.3978418926e+00 x2
+                      8.6166625245e+00 x3
+                      5.1869238756e+00 x4
+                      3.6096957633e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005566168
+
+Active response data for evaluation 7:
+Active set vector = { 1 }
+                      5.5661680000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation    8
+---------------------
+Parameters for evaluation 8:
+                      5.1710192668e+00 x2
+                      8.4013328959e+00 x3
+                      5.0870753460e+00 x4
+                      4.1324726622e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005987676
+
+Active response data for evaluation 8:
+Active set vector = { 1 }
+                      5.9876760000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation    9
+---------------------
+Parameters for evaluation 9:
+                      5.2680317570e+00 x2
+                      8.3522927233e+00 x3
+                      5.4758754220e+00 x4
+                      3.8029392603e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005042096
+
+Active response data for evaluation 9:
+Active set vector = { 1 }
+                      5.0420960000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   10
+---------------------
+Parameters for evaluation 10:
+                      4.9975831817e+00 x2
+                      8.8266422615e+00 x3
+                      4.9672776479e+00 x4
+                      3.6862038156e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.006837027
+
+Active response data for evaluation 10:
+Active set vector = { 1 }
+                      6.8370270000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   11
+---------------------
+Parameters for evaluation 11:
+                      4.9327545020e+00 x2
+                      8.5506920915e+00 x3
+                      4.9136708919e+00 x4
+                      3.8146298852e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.007399625
+
+Active response data for evaluation 11:
+Active set vector = { 1 }
+                      7.3996250000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   12
+---------------------
+Parameters for evaluation 12:
+                      5.4067575510e+00 x2
+                      8.5321417997e+00 x3
+                      5.0187678298e+00 x4
+                      4.2906639507e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.006429944
+
+Active response data for evaluation 12:
+Active set vector = { 1 }
+                      6.4299440000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   13
+---------------------
+Parameters for evaluation 13:
+                      5.0635715673e+00 x2
+                      8.5716324257e+00 x3
+                      4.8093665607e+00 x4
+                      4.2114323978e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.008974478
+
+Active response data for evaluation 13:
+Active set vector = { 1 }
+                      8.9744780000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   14
+---------------------
+Parameters for evaluation 14:
+                      5.0237926940e+00 x2
+                      8.8037977415e+00 x3
+                      5.2053741061e+00 x4
+                      3.6474075062e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005499317
+
+Active response data for evaluation 14:
+Active set vector = { 1 }
+                      5.4993170000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   15
+---------------------
+Parameters for evaluation 15:
+                      5.2831082523e+00 x2
+                      8.6878371685e+00 x3
+                      4.8198940530e+00 x4
+                      4.0109520962e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.008805241
+
+Active response data for evaluation 15:
+Active set vector = { 1 }
+                      8.8052410000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   16
+---------------------
+Parameters for evaluation 16:
+                      4.7124555288e+00 x2
+                      8.4348871874e+00 x3
+                      5.2153472078e+00 x4
+                      4.0566872120e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005463781
+
+Active response data for evaluation 16:
+Active set vector = { 1 }
+                      5.4637810000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   17
+---------------------
+Parameters for evaluation 17:
+                      5.2902821151e+00 x2
+                      8.5056847428e+00 x3
+                      5.1763459713e+00 x4
+                      3.9093734116e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005601352
+
+Active response data for evaluation 17:
+Active set vector = { 1 }
+                      5.6013520000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   18
+---------------------
+Parameters for evaluation 18:
+                      5.4531212684e+00 x2
+                      8.4149306882e+00 x3
+                      5.3150352123e+00 x4
+                      4.0889516809e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005246342
+
+Active response data for evaluation 18:
+Active set vector = { 1 }
+                      5.2463420000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   19
+---------------------
+Parameters for evaluation 19:
+                      5.0889933431e+00 x2
+                      8.3110712825e+00 x3
+                      5.2843910124e+00 x4
+                      3.9074222534e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005299118
+
+Active response data for evaluation 19:
+Active set vector = { 1 }
+                      5.2991180000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   20
+---------------------
+Parameters for evaluation 20:
+                      4.9278686299e+00 x2
+                      8.5130044203e+00 x3
+                      4.8866445572e+00 x4
+                      3.9371882407e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.007740914
+
+Active response data for evaluation 20:
+Active set vector = { 1 }
+                      7.7409140000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   21
+---------------------
+Parameters for evaluation 21:
+                      5.0478344293e+00 x2
+                      8.6340936908e+00 x3
+                      4.9883947153e+00 x4
+                      3.8500908981e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.006653717
+
+Active response data for evaluation 21:
+Active set vector = { 1 }
+                      6.6537170000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   22
+---------------------
+Parameters for evaluation 22:
+                      5.3951166651e+00 x2
+                      9.0307436377e+00 x3
+                      4.9292671587e+00 x4
+                      4.0198642014e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.007250444
+
+Active response data for evaluation 22:
+Active set vector = { 1 }
+                      7.2504440000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   23
+---------------------
+Parameters for evaluation 23:
+                      4.8650147410e+00 x2
+                      8.9871041649e+00 x3
+                      4.9786888750e+00 x4
+                      3.8422857687e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.006728659
+
+Active response data for evaluation 23:
+Active set vector = { 1 }
+                      6.7286590000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   24
+---------------------
+Parameters for evaluation 24:
+                      5.0986757243e+00 x2
+                      8.6937054914e+00 x3
+                      5.4133115193e+00 x4
+                      3.7735219306e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005100327
+
+Active response data for evaluation 24:
+Active set vector = { 1 }
+                      5.1003270000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   25
+---------------------
+Parameters for evaluation 25:
+                      4.7435002927e+00 x2
+                      8.7478381362e+00 x3
+                      5.5149975952e+00 x4
+                      3.7339743722e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005005681
+
+Active response data for evaluation 25:
+Active set vector = { 1 }
+                      5.0056810000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   26
+---------------------
+Parameters for evaluation 26:
+                      4.7644762894e+00 x2
+                      8.5634230388e+00 x3
+                      5.1146520113e+00 x4
+                      4.2697445685e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005837087
+
+Active response data for evaluation 26:
+Active set vector = { 1 }
+                      5.8370870000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   27
+---------------------
+Parameters for evaluation 27:
+                      5.1359743842e+00 x2
+                      8.3593991282e+00 x3
+                      4.8721669929e+00 x4
+                      3.9713987474e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.007955538
+
+Active response data for evaluation 27:
+Active set vector = { 1 }
+                      7.9555380000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   28
+---------------------
+Parameters for evaluation 28:
+                      4.7549376219e+00 x2
+                      9.0532933520e+00 x3
+                      5.0262774882e+00 x4
+                      3.6232764147e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.006348668
+
+Active response data for evaluation 28:
+Active set vector = { 1 }
+                      6.3486680000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   29
+---------------------
+Parameters for evaluation 29:
+                      4.9020163810e+00 x2
+                      8.6677011696e+00 x3
+                      5.4300985615e+00 x4
+                      3.8685166413e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005079568
+
+Active response data for evaluation 29:
+Active set vector = { 1 }
+                      5.0795680000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   30
+---------------------
+Parameters for evaluation 30:
+                      4.9508918231e+00 x2
+                      8.8641402643e+00 x3
+                      4.9753026922e+00 x4
+                      3.7915276522e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.00676314
+
+Active response data for evaluation 30:
+Active set vector = { 1 }
+                      6.7631400000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   31
+---------------------
+Parameters for evaluation 31:
+                      5.3442783061e+00 x2
+                      8.3394042377e+00 x3
+                      5.1027270599e+00 x4
+                      4.2788851898e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005914493
+
+Active response data for evaluation 31:
+Active set vector = { 1 }
+                      5.9144930000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   32
+---------------------
+Parameters for evaluation 32:
+                      4.7611211094e+00 x2
+                      8.9709989512e+00 x3
+                      5.5243416488e+00 x4
+                      3.6399603915e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.004999523
+
+Active response data for evaluation 32:
+Active set vector = { 1 }
+                      4.9995230000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   33
+---------------------
+Parameters for evaluation 33:
+                      4.8045329194e+00 x2
+                      8.6243586178e+00 x3
+                      5.0083694323e+00 x4
+                      4.1647685662e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.006483424
+
+Active response data for evaluation 33:
+Active set vector = { 1 }
+                      6.4834240000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   34
+---------------------
+Parameters for evaluation 34:
+                      5.3372099011e+00 x2
+                      8.9113481074e+00 x3
+                      5.3795676300e+00 x4
+                      3.8630061896e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005145011
+
+Active response data for evaluation 34:
+Active set vector = { 1 }
+                      5.1450110000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   35
+---------------------
+Parameters for evaluation 35:
+                      5.4998325129e+00 x2
+                      8.7643525736e+00 x3
+                      4.9931756938e+00 x4
+                      4.0016837276e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.006634365
+
+Active response data for evaluation 35:
+Active set vector = { 1 }
+                      6.6343650000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   36
+---------------------
+Parameters for evaluation 36:
+                      5.1835099827e+00 x2
+                      8.7895042069e+00 x3
+                      5.1068630648e+00 x4
+                      4.1310204615e+00 x5
+
+blocking fork: python driver.py params.in results.out
+0.005885994
+
+Active response data for evaluation 36:
+Active set vector = { 1 }
+                      5.8859940000e-03 response_fn_1
+
+
+
+---------------------
+Begin Evaluation   37
+---------------------
+Parameters for evaluation 37:
+                      4.8871101467e+00 x2
+                      8.5169376965e+00 x3
+                      4.8669125777e+00 x4
+                      3.6531976269e+00 x5
+
+blocking fork: python driver.py params.in results.out
+
+Dakota caught signal 15

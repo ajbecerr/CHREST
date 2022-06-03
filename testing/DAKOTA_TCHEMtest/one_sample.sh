@@ -4,7 +4,7 @@ module use /projects/academic/chrest/modules
 module load chrest/release
 export TCHEM_INSTALL_PATH=/projects/academic/chrest/lib/tchem/v2.0.0_25-04-2022_6ae59e8
 exec=$TCHEM_INSTALL_PATH/example/TChem_IgnitionZeroD.x
-this="$exec --chemfile=pentane.yaml \
+this="$exec --chemfile=FULL_pentane.yaml \
             --use-cvode=false \
             --samplefile=pentane.dat \
             --outputfile=outputs/IgnSolution.dat \
