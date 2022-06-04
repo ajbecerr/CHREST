@@ -1,13 +1,13 @@
 #!/bin/sh
 #SBATCH --constraint=CPU-Gold-6130
-#SBATCH --partition=debug
-#SBATCH --qos=debug
+#SBATCH --partition=general-compute
+#SBATCH --qos=general-compute
 #SBATCH --job-name='chem_sens'
 #SBATCH --output=out_chem_sens-%j.out
 #SBATCH --error=error_chem_sens-%j.err
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=01:00:00
+#SBATCH --time=72:00:00
 #SBATCH --mail-user=ajbecerr@buffalo.edu
 #SBATCH --mail-type=ALL
 module purge
