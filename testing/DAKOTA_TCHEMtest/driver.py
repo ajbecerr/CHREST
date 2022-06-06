@@ -20,7 +20,7 @@ with open ('ORIGINAL_FULL_pentane.yaml', "r") as myfile:
     inputfile[1900] = '  rate-constant: {A: 1.411e+10, b: 0.935, Ea: '+str(x2)+'}\n'
     inputfile[1923] = '  rate-constant: {A: 2.732e+07, b: 1.813, Ea: '+str(x3)+'}\n'
     inputfile[1975] = '  rate-constant: {A: 2.03e+05, b: 2.745, Ea: '+str(x4)+'}\n'
-    inputfile[2629] = '  - {P: 10.0 atm, A: 1.07e+09, b: 1.33, Ea: '+str(x5)+'}\n'
+    inputfile[2629] = '  - {P: 10.0 atm, A: 1.07e+09, b: 1.33, Ea: -'+str(x5)+'}\n'
     np.savetxt('FULL_pentane.yaml', inputfile, fmt='%s', newline='')
 
 #-----------------------------------------------------------------

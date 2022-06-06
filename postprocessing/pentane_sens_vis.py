@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-with open ('../testing/DAKOTA_TCHEMtest/out_chem_sens-8567604.out', 'r') as myfile:
+with open ('../testing/DAKOTA_TCHEMtest/out_chem_sens-8577968.out', 'r') as myfile:
     outputfile = myfile.readlines()
     x2 = outputfile[10850].split(' x2')[0][-16:]
     x3 = outputfile[10851].split(' x3')[0][-16:]
