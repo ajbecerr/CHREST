@@ -1,0 +1,20 @@
+environment,
+    tabular_data
+method,
+  sampling
+    sample_type lhs
+    samples = 100
+    variance_based_decomp
+variables,
+  uniform_uncertain 2
+    upper_bounds      3.     9.
+    lower_bounds      2.     1.
+    descriptors 'x1' 'x2' 
+interface,
+        fork
+        analysis_drivers = 'python driver_parallel.py '
+        file_tag
+responses,
+	response_functions = 1
+	no_gradients
+	no_hessians
