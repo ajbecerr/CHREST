@@ -28,9 +28,9 @@ Pout = Pmap(Pin, Pmin, Pmax)
 def log_k(cheb_coeffs, Tout, Pout):
     S = 0
     for i in range(6):
-        TCHEB = np.polynomial.chebyshev.Chebyshev([1 if i == k else 0 for k in range(i+1)])
+        TCHEB = np.polynomial.chebyshev.Chebyshev([1 if i == k else 0 for k in range(i)])
         for j in range(4):
-            PCHEB = np.polynomial.chebyshev.Chebyshev([1 if j == l else 0 for l in range(j+1)])
+            PCHEB = np.polynomial.chebyshev.Chebyshev([1 if j == l else 0 for l in range(j)])
             S = S + float(cheb_coeffs[i][j])*TCHEB(Tout)*PCHEB(Pout)
     return(S)
     

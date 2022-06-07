@@ -23,7 +23,7 @@ Number of reactions in the mechanism : 2
 Pre-exponential factor and activation energy units : moles & cal/mole
 ---------------------------------------------------------------------
    1-> 1.000000CH4 + 1.500000O2 => 1.000000CO + 2.000000H2O
-    --> Arrhenius coefficients (forward) :  2.1678e+15   0.00   3.5000e+04
+    --> Arrhenius coefficients (forward) :  2.0203e+15   0.00   3.5000e+04
     --> Change in reaction order    : Forward
                                        CH4        :  0.90
                                        O2         :  1.10
@@ -31,5 +31,5 @@ Pre-exponential factor and activation energy units : moles & cal/mole
                                       
 
    2-> 1.000000CO + 0.500000O2 <=> 1.000000CO2
-    --> Arrhenius coefficients (forward) :  1.8123e+09   0.00   1.2000e+04
+    --> Arrhenius coefficients (forward) :  2.2520e+09   0.00   1.2000e+04
 
