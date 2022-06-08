@@ -6,9 +6,9 @@ method,
     samples = 100
     variance_based_decomp
 variables,
-  uniform_uncertain 2
-    upper_bounds      3.     9.
-    lower_bounds      2.     1.
+  normal_uncertain 2
+    means      2.0     2.0
+    std_deviations      0.125     0.123
     descriptors 'x1' 'x2' 
 interface,
         fork

@@ -1,0 +1,566 @@
+<!doctype html>
+
+
+<html lang="en">
+
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 0.6"><!-- For responsive mobile view -->
+
+    <title>
+
+RMG Kinetics Libraries
+
+</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+    <link href="/static/css/default.css?v=2.0" rel="stylesheet" type="text/css"/>
+    <link id="css-theme" href="/static/css/light-theme.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Google Analytics Tracker -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-24556433-1']);
+      _gaq.push(['_setDomainName', 'rmg.mit.edu']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML" integrity="sha256-fCth3p2B4cZMzlr7OFizmo5RkdJAHJ4vOHpE7FaNcR8=" crossorigin="anonymous"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script>
+        // Check for cookie
+        if (document.cookie.indexOf("rmg-theme=light") < 0) {
+            document.getElementById('css-theme').disabled = true;
+        };
+
+        toggleCSS = function() {
+            var themeElement = document.getElementById('css-theme');
+            if (themeElement.disabled) {
+                themeElement.disabled = false;
+                var expiry = new Date();
+                // Create cookie expiring in one year
+                expiry.setTime(expiry.getTime() + (365*24*60*60*1000));
+                document.cookie = "rmg-theme=light;path='/';expires=" + expiry.toUTCString();
+            } else {
+                themeElement.disabled = true;
+                // Remove cookie
+                document.cookie = "rmg-theme=;path='/';expires=Thu, 01 Jan 1970 00:00:00 GMT";
+            }
+        };
+    </script>
+
+    
+<style>
+table.reaction {
+   margin: auto;
+}
+table.reaction td {
+   padding: 10px;
+}
+
+table.kineticsEntryData {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+table.kineticsEntryData td.key {
+    font-weight: bold;
+    text-align: right;
+}
+
+table.kineticsEntryData td.equals {
+    text-align: center;
+}
+
+table.kineticsEntryData td.value {
+    text-align: left;
+}
+
+table.kineticsEntryData td.reference p {
+    margin: 0px;
+}
+</style>
+
+<script src="https://code.highcharts.com/6/highcharts.js"></script>
+<script src="/static/js/highcharts.theme.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+plotKinetics = function (id, kseries, average = true) {
+    var series = [];
+    var identicalkUnits = true;
+
+    for (var i = 0; i < kseries.length; i++) {
+        series.push({
+            name: kseries[i][0],
+            data: kseries[i][1],
+            index: i,
+            events: {
+                click: function () {
+                    if (legendEnabled) this.hide();
+                },
+            },
+            animation: false
+        });
+
+        if (kseries[i][2] !== kunits) {
+            identicalkUnits = false;
+        }
+    }
+
+    if (identicalkUnits) {
+        kunits = '(' + kunits + ')';
+    } else {
+        kunits = '';
+    }
+
+    var legendEnabled = (kseries.length > 1);
+
+    if (legendEnabled && average) {
+        series.push({
+            name: "Average of selected rates",
+            data: [],
+            type: 'scatter',
+            id: 'average'
+        })
+    }
+
+    if (average) {
+        var redrawFunc = function () {
+            if (average_stale) {
+                calculateAverage();
+            } else {
+                average_stale = true;
+            }
+        }
+    }
+
+    options = {
+        chart: {
+            renderTo: id,
+            defaultSeriesType: 'line',
+            events: {
+                redraw: redrawFunc
+            },
+        },
+        title: {text: 'Rate coefficient'},
+        xAxis: {
+            title: {text: '1000 / Temperature (1000/' + Tunits + ')'},
+            min: 0,
+            max: 4
+        },
+        yAxis: {
+            title: {text: 'Rate coefficient ' + kunits},
+            labels: {
+                formatter: function () {
+                    var exponent = Math.floor(this.value);
+                    var mantissa = Math.pow(10, this.value) / Math.pow(10, exponent);
+                    return '' + Highcharts.numberFormat(mantissa, 2, '.', '') + '*10^' + Highcharts.numberFormat(exponent, 0, '.', '');
+                }
+            },
+        },
+        legend: {
+            enabled: legendEnabled,
+            layout: 'vertical',
+            labelFormatter: function () {
+                return this.name;
+            },
+        },
+        series: series,
+        tooltip: {
+            formatter: function () {
+                var T = 1000.0 / this.x;
+                var exponent = Math.floor(this.y);
+                var mantissa = Math.pow(10, this.y) / Math.pow(10, exponent);
+                if (!legendEnabled) {
+                    return 'k(' + Highcharts.numberFormat(T, 0, '.', '') + ' ' + Tunits + ') = ' +
+                        Highcharts.numberFormat(mantissa, 2, '.', '') + '*10^' + Highcharts.numberFormat(exponent, 0, '.', '') + ' ' + kseries[this.series.index][2];
+                } else {
+                    return this.series.name + ': k(' + Highcharts.numberFormat(T, 0, '.', '') + ' ' + Tunits + ') = ' +
+                        Highcharts.numberFormat(mantissa, 2, '.', '') + '*10^' + Highcharts.numberFormat(exponent, 0, '.', '') + ' ' + kseries[this.series.index][2];
+                }
+            },
+        },
+        plotOptions: {
+            series: {
+                animation: false
+            },
+        },
+    }
+    return new Highcharts.Chart(options);
+};
+
+jQuery(document).ready(
+    function() {
+        
+            var kseries = [];
+
+            Tlist = [2000.0, 1792.6829268292681, 1624.3093922651933, 1484.848484848485, 1367.4418604651162, 1267.2413793103447, 1180.722891566265, 1105.2631578947369, 1038.86925795053, 979.9999999999999, 927.4447949526813, 880.2395209580839, 837.6068376068375, 798.9130434782608, 763.6363636363636, 731.3432835820895, 701.6706443914081, 674.3119266055045, 649.0066225165563, 625.531914893617, 603.6960985626283, 583.3333333333333, 564.299424184261, 546.4684014869888, 529.7297297297297, 513.986013986014, 499.15110356536496, 485.14851485148506, 471.9101123595505, 459.37499999999994, 447.48858447488584, 436.2017804154303, 425.4703328509406, 415.2542372881356, 405.5172413793103, 396.2264150943396, 387.35177865612644, 378.8659793814433, 370.7440100882724, 362.96296296296293, 355.5018137847642, 348.34123222748815, 341.4634146341463, 334.85193621867876, 328.49162011173183, 322.36842105263156, 316.4693218514532, 310.7822410147991, 305.29595015576325, 300.0];Plist = [1000.0, 10000.0, 100000.0, 1000000.0, 10000000.0];klist = [[16488.73172986126, 5708.449727321702, 1907.2292339032335, 618.8966610264222, 195.9985598481288, 60.80204650482593, 18.530313136601936, 5.561135128794945, 1.6465990637833459, 0.4817686681978064, 0.13947135769966643, 0.039995158878536295, 0.01137140857729901, 0.003208159910926186, 0.0008987430917184688, 0.000250159219818946, 6.9219685171802e-05, 1.9049257878492062e-05, 5.216048865683945e-06, 1.4216093905757936e-06, 3.857773830495414e-07, 1.0426514497913891e-07, 2.8073898599072126e-08, 7.532369616582034e-09, 2.0142817423045654e-09, 5.36975294218336e-10, 1.427289632176036e-10, 3.783250916743578e-11, 1.0001818045475765e-11, 2.6376291535886543e-12, 6.939448290491633e-13, 1.8216449714764744e-13, 4.7717471800291454e-14, 1.2474117375773546e-14, 3.2546299277591903e-15, 8.475993212881547e-16, 2.20349463689822e-16, 5.718717551294522e-17, 1.4817714532029544e-17, 3.833437796885108e-18, 9.902551580814406e-19, 2.554362366170151e-19, 6.579884498803875e-20, 1.6926869807939014e-20, 4.348891779006049e-21, 1.1159477022057066e-21, 2.8601643579712695e-22, 7.322133046889538e-23, 1.8724072947114715e-23, 4.78293878671497e-24], [161581.01433946256, 55833.65643454483, 18618.314288557835, 6029.728508738841, 1905.703423750041, 589.9597008346581, 179.41794237062274, 53.72806354616156, 15.872829327373246, 4.63347008095042, 1.3382129475781623, 0.38281552174563227, 0.10856910662266825, 0.03055092031782522, 0.008535814086591284, 0.0023693551407499873, 0.0006537460005572953, 0.00017938374253598195, 4.897002799935072e-05, 1.3304819562908663e-05, 3.5988189387020082e-06, 9.694147138568997e-07, 2.6011849402230727e-07, 6.954198869836339e-08, 1.8528048716971062e-08, 4.920427186620293e-09, 1.302694945317251e-09, 3.4388952772507306e-10, 9.05305167918478e-11, 2.376999299320857e-11, 6.225503929304422e-12, 1.6265989279705283e-12, 4.2402573322677943e-13, 1.1029389590770292e-13, 2.8628388231451544e-14, 7.415906624965575e-15, 1.9172852731847203e-15, 4.947607009388973e-16, 1.2744369185635508e-16, 3.277049081141003e-17, 8.412285326295264e-18, 2.155931025588942e-18, 5.516548530697661e-19, 1.409393548337256e-19, 3.5954121173865893e-20, 9.158720757750999e-21, 2.3297420987071247e-21, 5.9181228085291015e-22, 1.501338225933031e-22, 3.803698809993628e-23], [1563432.9050595767, 538169.3506497685, 178737.20158479922, 57641.3130097705, 18136.55016960723, 5588.2838328675925, 1691.0780978019698, 503.7519815704189, 147.99759805035166, 42.948591551505814, 12.327011243360351, 3.5030783936806658, 0.986556245872621, 0.2755575057690983, 0.07638565252354734, 0.02102673360276753, 0.005750568421437195, 0.0015632182068903093, 0.0004225382072631419, 0.00011360511904218935, 3.0391110539762606e-05, 8.091497460166136e-06, 2.14461615254929e-06, 5.65982222820735e-07, 1.487557680433021e-07, 3.8943973947029127e-08, 1.0157182821229852e-08, 2.639602027293646e-09, 6.835917738267372e-10, 1.7644345835973238e-10, 4.5396112584119746e-11, 1.1643608464483899e-11, 2.9775686441054304e-12, 7.592575335983738e-13, 1.930706679405892e-13, 4.896539515598125e-14, 1.2386636561625375e-14, 3.1257468084283344e-15, 7.869288436006699e-16, 1.976712088558052e-16, 4.9547618621424735e-17, 1.239420961563073e-17, 3.0944037143078165e-18, 7.711567860332309e-19, 1.9184984626429304e-19, 4.765172751633199e-20, 1.1817874100830748e-20, 2.926767544500843e-21, 7.238844955528189e-22, 1.7882394147929888e-22], [14712080.505625645, 5016596.907191768, 1648817.560889119, 525629.7284467075, 163289.0380202509, 49607.85660606919, 14779.63391893161, 4327.616588609794, 1247.585585029329, 354.6102381670353, 99.49620816241608, 27.584735962979625, 7.5632497692727485, 2.052337946225925, 0.5515430706544778, 0.14688089871008317, 0.03878428087058157, 0.010159919342721938, 0.002641822205956614, 0.0006822270406973483, 0.00017506525508000277, 4.466337270802674e-05, 1.1334937284593057e-05, 2.863106692153644e-06, 7.201756539097607e-07, 1.8048769165256955e-07, 4.5090145688356854e-08, 1.1234270337146627e-08, 2.792712355327344e-09, 6.929415813322158e-10, 1.716750592140897e-10, 4.248033702680102e-11, 1.0501404215340409e-11, 2.5940173173677595e-12, 6.403712314201526e-13, 1.5800586598386743e-13, 3.8969945879387056e-14, 9.607721886551582e-15, 2.367840677471872e-15, 5.833435425107727e-16, 1.4365738176398405e-16, 3.536310105336815e-17, 8.701137851157583e-18, 2.1398745962710832e-18, 5.259814492391708e-19, 1.2921310763461736e-19, 3.1723608843535707e-20, 7.783705080475981e-21, 1.9085702936931086e-21, 4.676711861643708e-22], [127910531.1119048, 42251615.303942636, 13378866.822890796, 4084537.272111252, 1207572.1113204295, 346945.85584819084, 97166.66474822455, 26602.0773708707, 7139.4825002171265, 1883.5866480637749, 489.87891666016054, 125.94071070172154, 32.087563540351184, 8.120822615588517, 2.0454788676780566, 0.5135415230049226, 0.12864895399663084, 0.03217935065094164, 0.00803958734542729, 0.002006376301426243, 0.0005001250385106889, 0.0001244971349756506, 3.094345793987432e-05, 7.677613266948135e-06, 1.9013686596831596e-06, 4.699423048013979e-07, 1.1591450090359925e-07, 2.853269465780983e-08, 7.009277726742519e-09, 1.7185266721962341e-09, 4.2056083445202696e-10, 1.0273886057577292e-10, 2.5056594163891618e-11, 6.1015581124732736e-12, 1.4836836720664824e-12, 3.6030752427120313e-13, 8.739461722858243e-14, 2.1174880888590353e-14, 5.125369208077141e-15, 1.239473745286944e-15, 2.9949853997238997e-16, 7.231553652001084e-17, 1.7449362810247854e-17, 4.20791982839634e-18, 1.0141953641028604e-18, 2.4432397009310293e-19, 5.883322590867089e-20, 1.416156376240696e-20, 3.407608749385925e-21, 8.196992116846553e-22]];
+                        Tlist2 = [2000.0, 827.5862068965516, 521.7391304347826, 380.9523809523809, 300.0];Plist2 = [1000.0, 1258.9254117941675, 1584.893192461114, 1995.262314968881, 2511.886431509582, 3162.2776601683827, 3981.0717055349774, 5011.87233627273, 6309.573444801943, 7943.28234724283, 10000.00000000002, 12589.254117941713, 15848.931924611174, 19952.62314968883, 25118.864315095874, 31622.776601683923, 39810.71705534986, 50118.72336272735, 63095.73444801956, 79432.82347242854, 100000.00000000041, 125892.54117941714, 158489.31924611205, 199526.23149688912, 251188.64315095925, 316227.76601683925, 398107.17055349937, 501187.23362727556, 630957.3444801968, 794328.2347242854, 1000000.0000000062, 1258925.4117941766, 1584893.192461124, 1995262.314968891, 2511886.4315095977, 3162277.660168405, 3981071.7055350016, 5011872.336272756, 6309573.444801982, 7943282.347242886, 10000000.000000082]; klist2 = [[16488.73172986126, 0.008293304333256712, 1.0404028131893753e-09, 8.013443047756177e-17, 4.78293878671497e-24], [20723.698436685794, 0.010403826221025375, 1.3020628775064532e-09, 9.996956694142913e-17, 5.9411529496753785e-24], [26044.57586162612, 0.013048801653738666, 1.6288361634932255e-09, 1.2461523371000844e-16, 7.369657350362932e-24], [32729.21125968305, 0.016362622699394907, 2.0366584264682445e-09, 1.5519756063540863e-16, 9.127197273706148e-24], [41126.34234514743, 0.020513124877985144, 2.545258410772409e-09, 1.9308901964548308e-16, 1.1283376973678309e-23], [51673.61554444824, 0.025709775997288485, 3.179015858557224e-09, 2.3995461429414693e-16, 1.3919790382575198e-23], [64920.15992945773, 0.032213817206331916, 3.967993944013341e-09, 2.9780309987233466e-16, 1.7130826614459918e-23], [81554.8601143625, 0.04035079980465756, 4.949172418420004e-09, 3.690418560882855e-16, 2.1023874026852795e-23], [102441.75518759231, 0.050526052580937696, 6.167906982004574e-09, 4.565327261887599e-16, 2.5718546922575203e-23], [128664.34380498971, 0.06324372000739446, 7.679636431462058e-09, 5.636442390710232e-16, 3.134445809640631e-23], [161581.01433946288, 0.07913013141870387, 9.551850039107705e-09, 6.942930071637319e-16, 3.803698809993636e-23], [202894.36363328042, 0.09896239371290565, 1.1866310663557517e-08, 8.529636617002528e-16, 4.593051275893964e-23], [254737.8430799363, 0.12370324086665009, 1.4721500519792408e-08, 1.044692524387094e-15, 5.514872992747393e-23], [319784.0064815154, 0.15454331422203996, 1.8235211429023526e-08, 1.2749957265718314e-15, 6.579218898083003e-23], [401379.6667513967, 0.1929521731871989, 2.254713367436312e-08, 1.5497186764406743e-15, 7.792398814306439e-23], [503714.5418880136, 0.24073942208537924, 2.7821200594451963e-08, 1.8747825901180724e-15, 9.15559132308739e-23], [632031.5371905258, 0.3001273464784979, 3.4247313726439834e-08, 2.255808481216686e-15, 1.066389009197259e-22], [792888.7326745737, 0.3738363219553941, 4.204190323840574e-08, 2.697614151060669e-15, 1.2306312332238208e-22], [994485.4951559529, 0.46518390205538834, 5.1446577229276074e-08, 3.2036106079457674e-15, 1.4067327330252285e-22], [1247067.998090117, 0.5781977830293056, 6.272390614386352e-08, 3.775174620157284e-15, 1.5930258606811225e-22], [1563432.9050595828, 0.7177416051856351, 7.614923183610874e-08, 4.411141199099972e-15, 1.7882394147929925e-22], [1959552.1610707638, 0.8896505477545459, 9.199739025059954e-08, 5.1076282503352565e-15, 1.9920861644670298e-22], [2455346.852655937, 1.100870607656082, 1.1052356093271931e-07, 5.858441374492227e-15, 2.2057558439576164e-22], [3075644.0562955537, 1.3595909737001297, 1.3193833439119795e-07, 6.656259705329356e-15, 2.432109397058903e-22], [3851357.5958734294, 1.6753526670341288, 1.5637876025873508e-07, 7.494627551158775e-15, 2.675416000683144e-22], [4820941.742246354, 2.05910838084913, 1.8387972488472727e-07, 8.370469226396527e-15, 2.9406001720066913e-22], [6032176.114762815, 2.5231983247077987, 2.143532597993114e-07, 9.28648887155202e-15, 3.232130543974057e-22], [7544350.272424147, 3.0811957115457793, 2.4758636906560145e-07, 1.0252582187616977e-14, 3.552820540739126e-22], [9430927.403431745, 3.7475655378673793, 2.8326885803583834e-07, 1.128545314962988e-14, 3.9028681658183135e-22], [11782777.516724633, 4.53707593505982, 3.210590225155715e-07, 1.240606466320391e-14, 4.27940979728668e-22], [14712080.505625732, 5.463910147131234, 3.6068508978662643e-07, 1.363523888183248e-14, 4.676711861643718e-22], [18357006.56082338, 6.540460114506782, 4.0206478673021036e-07, 1.4988400398946282e-14, 5.086927526753479e-22], [22887282.752198666, 7.775852828800128, 4.454094079875963e-07, 1.6470853028245587e-14, 5.501183536777957e-22], [28510745.72566291, 9.174378355370846, 4.912707832897659e-07, 1.8074927157448652e-14, 5.910700879992248e-22], [35480954.75840241, 10.73415061888817, 5.404972076357175e-07, 1.9779812522004632e-14, 6.307703172693937e-22], [44105887.34264886, 12.44650618908167, 5.940887422116912e-07, 2.1554067066302298e-14, 6.685983800262219e-22], [54757647.697105594, 14.296754997889227, 6.529755748289805e-07, 2.3359990369324654e-14, 7.041123568337286e-22], [67882969.2333026, 16.266819484895784, 7.177724320358895e-07, 2.5158604893016557e-14, 7.370431368526645e-22], [84014062.20874079, 18.339913225826702, 7.885755611079911e-07, 2.6914045289917076e-14, 7.672710751112932e-22], [103779020.69788523, 20.506686981638847, 8.648602696201225e-07, 2.859659462881123e-14, 7.947948035699118e-22], [127910531.11190583, 22.7713799473171, 9.455077877950082e-07, 3.0184156491018506e-14, 8.196992116846561e-22]];
+                        Tunits = "K";Punits = "Pa";kunits = "s^-1";
+            
+
+var reftitle = '';
+
+
+var kdata;
+if (Plist.length > 0) {
+    for (var j = 0; j < Plist.length; j++) {
+        kdata = new Array();
+        for (var i = 0; i < Tlist.length; i++) {
+            kdata.push([1000./Tlist[i], Math.log(klist[j][i]) / Math.LN10]);
+        }
+        kseries.push(['13.  (' + Plist[j].toFixed(1) + ' ' + Punits + ') *' + reftitle, kdata, kunits]);
+    }
+}
+else {
+    kdata = new Array();
+    for (var i = 0; i < Tlist.length; i++) {
+        kdata.push([1000./Tlist[i], Math.log(klist[i]) / Math.LN10]);
+    }
+    kseries.push(['13. ' + reftitle + ' *', kdata, kunits]);
+}
+
+var kseries2 = new Array();
+if (Plist2.length > 0) {
+    for (var i = 0; i < Tlist2.length; i++) {
+        kdata = new Array();
+        for (var j = 0; j < Plist2.length; j++) {
+            kdata.push([Math.log(Plist2[j]) / Math.LN10, Math.log(klist2[j][i]) / Math.LN10]);
+        }
+        kseries2.push([Tlist2[i] + ' ' + Tunits, kdata, kunits]);
+    }
+}
+
+
+            MathJax.Hub.Queue(
+                function() {
+                    plotKinetics('plotk', kseries, false);
+                }
+            );
+        
+    }
+);
+</script>
+
+</head>
+
+<body>
+<div id="document">
+
+    <div id="sidebar">
+        <div id="logo">
+            
+            <a href="/">
+                <img src="/static/img/rmg-logo.png" alt="RMG" height="100%"/>
+            </a>
+            
+        </div>
+
+        <div id="sidebar-content">
+        <a href="http://reactionmechanismgenerator.github.io/RMG-Py">
+            <div class="menuitem">
+                <img src="/static/img/documentation-icon.png" class="icon" width="100%"/>
+                <div class="menutext menutitle">Documentation</div>
+                <div class="menutext menudesc">Learn more about the RMG software</div>
+            </div>
+        </a>
+
+        <a href="/resources">
+            <div class="menuitem">
+                <img src="/static/img/resources-icon.png" class="icon" width="100%"/>
+                <div class="menutext menutitle">Resources</div>
+                <div class="menutext menudesc">RMG related publications and presentations</div>
+            </div>
+        </a>
+
+        <a href="/database/">
+            <div class="menuitem">
+                <img src="/static/img/database-icon.png" class="icon" width="100%"/>
+                <div class="menutext menutitle">Database</div>
+                <div class="menutext menudesc">Browse the RMG database of chemical and kinetic parameters</div>
+            </div>
+        </a>
+
+
+        <a href="/molecule_search">
+            <div class="menuitem">
+                <img src="/static/img/molecule-icon.png" class="icon" width="100%"/>
+                <div class="menutext menutitle">Molecule Search</div>
+                <div class="menutext menudesc">View molecules and adjlists or search properties</div>
+            </div>
+        </a>
+
+        <a href="/database/kinetics/search/">
+            <div class="menuitem">
+                <img src="/static/img/kinetics-icon.png" class="icon" width="100%"/>
+                <div class="menutext menutitle">Kinetics Search</div>
+                <div class="menutext menudesc">Search kinetics of a chemical reaction</div>
+            </div>
+        </a>
+
+        <a href="/database/solvation/search/">
+            <div class="menuitem">
+                <img src="/static/img/solvation-icon.png" class="icon" width="100%"/>
+                <div class="menutext menutitle">Solvation Tools</div>
+                <div class="menutext menudesc">Search solvation properties for a solvent and a solute</div>
+            </div>
+        </a>
+
+        <a href="/pdep/">
+            <div class="menuitem">
+                <img src="/static/img/pdep-icon.png" class="icon" width="100%"/>
+                <div class="menutext menutitle">Pressure Dependent Networks</div>
+                <div class="menutext menudesc">Arkane pdep kinetic calculations</div>
+            </div>
+        </a>
+
+        <a href="/tools/">
+            <div class="menuitem">
+                <img src="/static/img/tools-icon.png" class="icon" width="100%"/>
+                <div class="menutext menutitle">Other RMG Tools</div>
+                <div class="menutext menudesc">Additional tools to supplement RMG </div>
+            </div>
+        </a>
+        </div>
+
+        <div id="sidebar-extra">
+        
+
+        </div>
+
+        <div id="sidebar-footer">
+            
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Frmg.mit&width=50&layout=button&action=like&size=small&show_faces=false&share=false&height=65&appId"
+                    width="51" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            
+            
+            <a class="github-button" href="https://github.com/ReactionMechanismGenerator" aria-label="Follow @ReactionMechanismGenerator on GitHub">GitHub</a>
+            
+        </div>
+    </div>
+
+    <div id="mainbar">
+        <div id="header">
+            <div id="announcement">
+                
+            </div>
+            <div class="user-toolbar">
+                <a class="user-button" onclick="toggleCSS()" href="#">Change Theme</a>
+                
+                <a class="user-button" href="/login?next=/database/kinetics/libraries/CurranPentane/15/">Log In</a>
+                
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="navbar">
+                <ul id="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    
+
+
+<li><a href="/database/">Database</a></li>
+<li><a href="/database/kinetics/">Kinetics</a></li>
+<li><a href="/database/kinetics/libraries/">Libraries</a></li>
+<li><a href="/database/kinetics/libraries/CurranPentane/">CurranPentane</a></li>
+<li><a href="/database/kinetics/libraries/CurranPentane/15/">15. H2O2 &lt;=&gt; OH + OH</a></li>
+
+
+
+
+
+                </ul>
+            </div>
+
+            <div id="contents">
+                <h1>
+
+15. H2O2 &lt;=&gt; OH + OH
+
+
+
+
+</h1>
+
+                
+
+
+<h2>Reaction</h2>
+<table class="reaction">
+    <tr>
+        <td class="reactants"><a href="/database/molecule/1%20O%20u0%20p2%20c0%20%7B2,S%7D%20%7B3,S%7D%0A2%20O%20u0%20p2%20c0%20%7B1,S%7D%20%7B4,S%7D%0A3%20H%20u0%20p0%20c0%20%7B1,S%7D%0A4%20H%20u0%20p0%20c0%20%7B2,S%7D%0A"><img src="/molecule/1%2520O%2520u0%2520p2%2520c0%2520%257B2%252CS%257D%2520%257B3%252CS%257D%250A2%2520O%2520u0%2520p2%2520c0%2520%257B1%252CS%257D%2520%257B4%252CS%257D%250A3%2520H%2520u0%2520p0%2520c0%2520%257B1%252CS%257D%250A4%2520H%2520u0%2520p0%2520c0%2520%257B2%252CS%257D%250A" alt="1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {4,S}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {2,S}
+" title="1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {4,S}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {2,S}
+"/></a></td>
+        <td class="reactionArrow">&hArr;</td>
+        <td class="products"><a href="/database/molecule/multiplicity%202%0A1%20O%20u1%20p2%20c0%20%7B2,S%7D%0A2%20H%20u0%20p0%20c0%20%7B1,S%7D%0A"><img src="/molecule/multiplicity%25202%250A1%2520O%2520u1%2520p2%2520c0%2520%257B2%252CS%257D%250A2%2520H%2520u0%2520p0%2520c0%2520%257B1%252CS%257D%250A" alt="multiplicity 2
+1 O u1 p2 c0 {2,S}
+2 H u0 p0 c0 {1,S}
+" title="multiplicity 2
+1 O u1 p2 c0 {2,S}
+2 H u0 p0 c0 {1,S}
+"/></a> + <a href="/database/molecule/multiplicity%202%0A1%20O%20u1%20p2%20c0%20%7B2,S%7D%0A2%20H%20u0%20p0%20c0%20%7B1,S%7D%0A"><img src="/molecule/multiplicity%25202%250A1%2520O%2520u1%2520p2%2520c0%2520%257B2%252CS%257D%250A2%2520H%2520u0%2520p0%2520c0%2520%257B1%252CS%257D%250A" alt="multiplicity 2
+1 O u1 p2 c0 {2,S}
+2 H u0 p0 c0 {1,S}
+" title="multiplicity 2
+1 O u1 p2 c0 {2,S}
+2 H u0 p0 c0 {1,S}
+"/></a></td>
+    </tr>
+    
+</table>
+
+<p><a href="/database/kinetics/reaction/reactant1=1%20O%20u0%20p2%20c0%20%7B2,S%7D%20%7B3,S%7D%0A2%20O%20u0%20p2%20c0%20%7B1,S%7D%20%7B4,S%7D%0A3%20H%20u0%20p0%20c0%20%7B1,S%7D%0A4%20H%20u0%20p0%20c0%20%7B2,S%7D%0A__product1=multiplicity%202%0A1%20O%20u1%20p2%20c0%20%7B2,S%7D%0A2%20H%20u0%20p0%20c0%20%7B1,S%7D%0A__product2=multiplicity%202%0A1%20O%20u1%20p2%20c0%20%7B2,S%7D%0A2%20H%20u0%20p0%20c0%20%7B1,S%7D%0A__res=True">Search other kinetics sources for this reaction.</a></p>
+
+
+<br/>
+
+<h2>Kinetic Data</h2>
+
+
+    <script type="math/tex; mode=display">
+\begin{split}
+k(T,P) &= k_\infty(T) \left[ \frac{P_\mathrm{r}}{1 + P_\mathrm{r}} \right] F \\
+P_\mathrm{r} &= \frac{k_0(T)}{k_\infty(T)} [\mathrm{M}] \\
+\log F &= \left\{1 + \left[ \frac{\log P_\mathrm{r} + c}{n - d (\log P_\mathrm{r} + c)} \right]^2 \right\}^{-1} \log F_\mathrm{cent} \\
+c &= -0.4 - 0.67 \log F_\mathrm{cent} \\
+n &= 0.75 - 1.27 \log F_\mathrm{cent} \\
+d &= 0.14 \\
+F_\mathrm{cent} &= (1 - \alpha) \exp \left( -T/T_3 \right) + \alpha \exp \left( -T/T_1 \right) + \exp \left( -T_2/T \right)
+\end{split}
+</script><script type="math/tex; mode=display">\begin{split}
+        k_\infty(T) &= 2 \times 10^{12} T^{ 0.90 } \exp \left( - \, \frac{ 203965.82 \ \mathrm{ J/mol } }{ R T } \right) \ \mathrm{ s^{-1} } \\k_0(T) &= 2.49 \times 10^{18} T^{ -2.30 } \exp \left( - \, \frac{ 203965.82 \ \mathrm{ J/mol } }{ R T } \right) \ \mathrm{ m^3/(mol*s) } \\\alpha &= 0.43 \\T_3 &= 1e-30 \ \mathrm{ K } \\T_1 &= 1e+30 \ \mathrm{ K } \\\end{split}</script><table>
+<tr><th colspan="2">Collision efficiencies</th></tr><tr><td><img src="/molecule/1%2520O%2520u0%2520p2%2520c0%2520%257B2%252CS%257D%2520%257B3%252CS%257D%250A2%2520O%2520u0%2520p2%2520c0%2520%257B1%252CS%257D%2520%257B4%252CS%257D%250A3%2520H%2520u0%2520p0%2520c0%2520%257B1%252CS%257D%250A4%2520H%2520u0%2520p0%2520c0%2520%257B2%252CS%257D%250A" alt="1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {4,S}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {2,S}
+" title="1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {4,S}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {2,S}
+"/></td><td>7.7</td></tr>
+<tr><td><img src="/molecule/1%2520O%2520u0%2520p2%2520c0%2520%257B2%252CD%257D%250A2%2520C%2520u0%2520p0%2520c0%2520%257B1%252CD%257D%2520%257B3%252CD%257D%250A3%2520O%2520u0%2520p2%2520c0%2520%257B2%252CD%257D%250A" alt="1 O u0 p2 c0 {2,D}
+2 C u0 p0 c0 {1,D} {3,D}
+3 O u0 p2 c0 {2,D}
+" title="1 O u0 p2 c0 {2,D}
+2 C u0 p0 c0 {1,D} {3,D}
+3 O u0 p2 c0 {2,D}
+"/></td><td>1.6</td></tr>
+<tr><td><img src="/molecule/1%2520O%2520u0%2520p2%2520c0%2520%257B2%252CS%257D%2520%257B3%252CS%257D%250A2%2520H%2520u0%2520p0%2520c0%2520%257B1%252CS%257D%250A3%2520H%2520u0%2520p0%2520c0%2520%257B1%252CS%257D%250A" alt="1 O u0 p2 c0 {2,S} {3,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+" title="1 O u0 p2 c0 {2,S} {3,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+"/></td><td>0</td></tr>
+<tr><td><img src="/molecule/1%2520H%2520u0%2520p0%2520c0%2520%257B2%252CS%257D%250A2%2520H%2520u0%2520p0%2520c0%2520%257B1%252CS%257D%250A" alt="1 H u0 p0 c0 {2,S}
+2 H u0 p0 c0 {1,S}
+" title="1 H u0 p0 c0 {2,S}
+2 H u0 p0 c0 {1,S}
+"/></td><td>3.7</td></tr>
+<tr><td><img src="/molecule/1%2520He%2520u0%2520p1%2520c0%250A" alt="1 He u0 p1 c0
+" title="1 He u0 p1 c0
+"/></td><td>0.65</td></tr>
+<tr><td><img src="/molecule/multiplicity%25203%250A1%2520O%2520u1%2520p2%2520c0%2520%257B2%252CS%257D%250A2%2520O%2520u1%2520p2%2520c0%2520%257B1%252CS%257D%250A" alt="multiplicity 3
+1 O u1 p2 c0 {2,S}
+2 O u1 p2 c0 {1,S}
+" title="multiplicity 3
+1 O u1 p2 c0 {2,S}
+2 O u1 p2 c0 {1,S}
+"/></td><td>1.2</td></tr>
+<tr><td><img src="/molecule/1%2520N%2520u0%2520p1%2520c0%2520%257B2%252CT%257D%250A2%2520N%2520u0%2520p1%2520c0%2520%257B1%252CT%257D%250A" alt="1 N u0 p1 c0 {2,T}
+2 N u0 p1 c0 {1,T}
+" title="1 N u0 p1 c0 {2,T}
+2 N u0 p1 c0 {1,T}
+"/></td><td>1.5</td></tr>
+<tr><td><img src="/molecule/1%2520C%2520u0%2520p1%2520c-1%2520%257B2%252CT%257D%250A2%2520O%2520u0%2520p1%2520c%252B1%2520%257B1%252CT%257D%250A" alt="1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
+" title="1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
+"/></td><td>2.8</td></tr>
+</table><br/>
+<table class="kineticsEntryData"></table>
+
+    <h2>Reference</h2>
+    
+<table class="reference">
+   
+
+
+    <tr>
+        <td class="label">Reference&nbsp;type:</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="label">Short&nbsp;description:</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="label">Long&nbsp;description:</td>
+        <td style="white-space: pre-wrap;"></td>
+    </tr>
+</table>
+
+
+    <div id="plotk" style="width: 500px; height: 300px; margin: auto;"></div>
+
+
+
+
+
+
+<h2>Update database</h2>
+If you noticed a mistake or have better data, then edit this entry here:
+    <a href="/database/kinetics/libraries/CurranPentane/15/edit">
+        <button type="button">Edit entry</button>
+    </a>.
+
+
+You must <a href="/login?next=/database/kinetics/libraries/CurranPentane/15/">log in first.</a>
+
+
+
+
+
+            </div>
+            
+        </div>
+
+        <div id="footer">
+            <div id="footer-content">
+                
+                Copyright &copy; 2022,
+                <a href="http://web.mit.edu/greengp/people/">W. H. Green</a>,
+                <a href="http://www.northeastern.edu/comocheng/people/">R. H. West</a>,
+                <i>et al.</i>
+                Created using <a href="http://www.djangoproject.com/">Django</a>.
+                Read the <a href="/privacy">Privacy Policy</a>.
+                <br />
+                Last updated: 10 May 2022 (RMG-Py), 16 May 2022 (RMG-database), 25 Apr 2022 (RMG-website).
+                See <a href="/version">Backend Version</a> for details.
+                
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+</div>
+
+</body>
+
+</html>
