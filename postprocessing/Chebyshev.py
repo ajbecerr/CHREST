@@ -31,7 +31,7 @@ def log10_k(Tin, Pin):
     Pmax = float(cheb_data[1].split(': ')[1][:-1].split(',')[1][1:-5])
     cheb_coeffs = [cheb_data[-6:][i][5:-2].split(', ') for i in range(6)]
     Tout = Tmap(Tin, Tmin, Tmax)
-    Pout = Pmap(Pin, Pmin*101325, Pmax*101325)
+    Pout = Pmap(Pin/101325, Pmin, Pmax)
     S = 0
     for i in range(1, 7):
         TCHEB_coeffs = [0 for k in range(i+1)]
@@ -41,8 +41,8 @@ def log10_k(Tin, Pin):
             PCHEB_coeffs = [0 for l in range(j+1)]
             PCHEB_coeffs[-1] = 1
             PCHEB = np.polynomial.chebyshev.Chebyshev(PCHEB_coeffs)
-            S = S + float(cheb_coeffs[i-1][j-1])*TCHEB(Tout)*PCHEB(Pout)
-    return(S)
+            S = S + float(cheb_coeffs[-i][-j])*TCHEB(Tout)*PCHEB(Pout)
+    return(np.log(np.exp(S)))
 
 kpred = np.array([log10_k(Tlist[i], Plist[i]) for i in range(250)])
 
