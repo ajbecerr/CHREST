@@ -1,18 +1,14 @@
 #!/bin/sh
-#SBATCH --constraint=CPU-Gold-6130
-#SBATCH --partition=general-compute
-#SBATCH --qos=general-compute
-#SBATCH --job-name='chem_sens'
-#SBATCH --output=out_chem_sens-%j.out
-#SBATCH --error=error_chem_sens-%j.err
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
-#SBATCH --time=72:00:00
-#SBATCH --mail-user=ajbecerr@buffalo.edu
-#SBATCH --mail-type=ALL
+#SBATCH -J DAKOTA_TCHEMtest
+#SBATCH -N 1 # nodes requested
+#SBATCH --mem=2000 # memory in Mb
+#SBATCH -o outfile # send stdout to outfile
+#SBATCH -e errfile # send stderr to errfile
+#SBATCH	--mail-type=ALL
+#SBATCH	--mail-user=ajbecerr@buffalo.edu
 module purge
-module load dakota/6.15
-export DAK_INSTALL=/util/academic/dakota/dakota-6.15.0-release-public-rhel7.x86_64-gui_cli
+module load dakota/6.13
+export DAK_INSTALL=/cluster/tufts/hpc/tools/module/dakota
 export PATH=$DAK_INSTALL/bin:$DAK_INSTALL/share/dakota/test:$PATH
 export PYTHONPATH=$DAK_INSTALL/share/dakota/Python:$PYTHONPATH
-srun --overlap dakota -i sensitivity.in
+srun dakota -i sensitivity.in
