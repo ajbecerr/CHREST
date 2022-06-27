@@ -1,7 +1,7 @@
 Dakota version 6.13 released Nov. 16 2020.
 Repository revision 457a5f3 (2020-11-12) built Nov 13 2020 01:07:20.
 Running MPI Dakota executable in serial mode.
-Start time: Tue Jun 14 23:14:51 2022
+Start time: Mon Jun 27 14:27:17 2022
 
 -----------------------
 Begin DAKOTA input file
@@ -39,7 +39,7 @@ Writing new restart file 'dakota.rst'.
 
 >>>>> Running random_sampling iterator.
 
-NonD lhs Samples = 10 Seed (system-generated) = 253941
+NonD lhs Samples = 10 Seed (system-generated) = 972568
 
 NonD lhs Samples = 10 Seed not reset from previous LHS execution
 
@@ -47,9 +47,9 @@ NonD lhs Samples = 10 Seed not reset from previous LHS execution
 Begin Evaluation    1
 ---------------------
 Parameters for evaluation 1:
-                      5.4012569628e+00 x2
-                      8.9711515984e+00 x3
-                      5.2281636214e+00 x4
-                      3.9688472581e+00 x5
+                      5.3795493138e+00 x2
+                      9.0832318179e+00 x3
+                      5.0145667172e+00 x4
+                      3.5522076752e+00 x5
 
 blocking fork: python driver.py params.in results.out
