@@ -1,1 +1,0 @@
-Computed Ignition Delay (Temperature): 3.17322e-05

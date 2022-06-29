@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "driver.py", line 1, in <module>
-    import dakota.interfacing as di
-ImportError: No module named dakota.interfacing
-
-Error: cannot open results file "results.out" for evaluation 1
-srun: error: i2cmp001: task 0: Exited with exit code 252
