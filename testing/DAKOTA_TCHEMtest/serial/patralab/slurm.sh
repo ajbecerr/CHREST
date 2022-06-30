@@ -8,7 +8,7 @@
 #SBATCH	--mail-user=ajbecerr@buffalo.edu
 module purge
 module load dakota/6.13
-export DAK_INSTALL=/cluster/tufts/hpc/tools/module/dakota
+export DAK_INSTALL=/cluster/tufts/hpc/tools/dakota/6.13.1/dakota
 export PATH=$DAK_INSTALL/bin:$DAK_INSTALL/share/dakota/test:$PATH
 export PYTHONPATH=$DAK_INSTALL/share/dakota/Python:$PYTHONPATH
 srun dakota -i sensitivity.in

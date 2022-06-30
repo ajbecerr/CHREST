@@ -4,8 +4,8 @@
 #SBATCH --time=0-1:00:00 #day-hour:minute:second
 #SBATCH -N 1 #request 1 cores
 #SBATCH --mem=2000 #request 2000MG memory
-#SBATCH --output=%j.out #your output file
-#SBATCH --error=%j.err #your error file
+#SBATCH --output=outfile #your output file
+#SBATCH --error=errfile #your error file
 #SBATCH	--mail-type=ALL
 #SBATCH	--mail-user=ajbecerr@buffalo.edu
 export I_MPI_PMI_LIBRARY=/usr/lib64/libpmi.so
