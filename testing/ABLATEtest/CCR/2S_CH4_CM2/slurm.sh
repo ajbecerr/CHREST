@@ -12,4 +12,5 @@
 #SBATCH --mail-type=ALL
 module use /projects/academic/chrest/modules
 module load chrest/release
-bash 2S_CH4_CM2.sh
+export I_MPI_PMI_LIBRARY=/usr/lib64/libpmi.so
+srun 2S_CH4_CM2.sh

@@ -1,0 +1,7 @@
+Element : 2 T
+Element : 4 CI
+Element : 6 OI
+Element : 17 X
+Found error : 150
+ Error 150: Could not find element in the periodic table!
+TC_initChem() : received error from the kinetic model interpreter !!!
