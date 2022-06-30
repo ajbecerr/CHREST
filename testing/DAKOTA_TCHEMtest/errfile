@@ -1,9 +1,0 @@
-/cluster/tufts/patralab/shared/chrest/lib/tchem/v2.0.0_25-04-2022_6ae59e8/example/TChem_IgnitionZeroD.x: /cluster/tufts/hpc/tools/spack/linux-rhel7-sandybridge/gcc-8.4.0/gcc-9.3.0-hv7dnzblbdfkadid4q76jcdpq5sfyfkb/lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by /cluster/tufts/patralab/shared/chrest/lib/tchem/v2.0.0_25-04-2022_6ae59e8/example/TChem_IgnitionZeroD.x)
-/cluster/tufts/patralab/shared/chrest/lib/tchem/v2.0.0_25-04-2022_6ae59e8/example/TChem_IgnitionZeroD.x: /cluster/tufts/hpc/tools/spack/linux-rhel7-sandybridge/gcc-8.4.0/gcc-9.3.0-hv7dnzblbdfkadid4q76jcdpq5sfyfkb/lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by /cluster/tufts/patralab/shared/chrest/lib/yaml-cpp/lib64/libyaml-cpp.so.0.7)
-Traceback (most recent call last):
-  File "driver.py", line 33, in <module>
-    with open ('outputs/IgnitionDelayTimeTthreshold.dat', "r") as myoutfile:
-IOError: [Errno 2] No such file or directory: 'outputs/IgnitionDelayTimeTthreshold.dat'
-
-Error: cannot open results file "results.out" for evaluation 1
-srun: error: i2cmp001: task 0: Exited with exit code 252
