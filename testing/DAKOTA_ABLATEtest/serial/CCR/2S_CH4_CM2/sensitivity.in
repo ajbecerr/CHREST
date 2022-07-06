@@ -1,0 +1,22 @@
+environment,
+    tabular_data
+method,
+  sampling
+    sample_type lhs
+    samples = 100
+    variance_based_decomp
+variables,
+  normal_uncertain 2
+    means      2.0     2.0 
+    std_deviations      0.125     0.125
+    descriptors 'x1' 'x2'
+interface,
+        fork
+        analysis_drivers = 'python driver.py params.in results.out'
+        parameters_file = 'params.in'
+        results_file    = 'results.out'
+        verbatim
+responses,
+	response_functions = 1
+	no_gradients
+	no_hessians

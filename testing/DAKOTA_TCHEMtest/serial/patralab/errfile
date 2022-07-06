@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "driver.py", line 2, in <module>
-    import numpy as np
-ImportError: No module named numpy
-
-Error: cannot open results file "results.out" for evaluation 1
-srun: error: i2cmp001: task 0: Exited with exit code 252
