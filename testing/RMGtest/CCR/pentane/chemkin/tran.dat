@@ -1,0 +1,45 @@
+! Species         Shape    LJ-depth  LJ-diam   DiplMom   Polzblty  RotRelaxNum Data     
+! Name            Index    epsilon/k_B sigma     mu        alpha     Zrot      Source   
+Ar                  0     136.501     3.330     0.000     0.000     0.000    ! GRI-Mech
+Ne                  0     148.600     3.758     0.000     0.000     0.000    ! Epsilon & sigma estimated with fixed Lennard Jones Parameters. This is the fallback method! Try improving transport databases!
+N2                  1      97.530     3.621     0.000     1.760     4.000    ! GRI-Mech
+pentane(1)          2     367.022     5.734     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=476.65 K, Pc=36.73 bar (from Joback method)
+O2(2)               1     107.400     3.458     0.000     1.600     3.800    ! GRI-Mech
+C2H5(14)            2     252.301     4.302     0.000     0.000     1.500    ! GRI-Mech
+C3H7(13)            2     266.801     4.982     0.000     0.000     1.000    ! GRI-Mech
+C4H9(16)            2     357.002     5.176     0.000     0.000     1.000    ! GRI-Mech
+CH3(17)             2     144.001     3.800     0.000     0.000     0.000    ! GRI-Mech
+C2H4(22)            2     280.801     3.971     0.000     0.000     1.500    ! GRI-Mech
+H(3)                0     145.000     2.050     0.000     0.000     0.000    ! GRI-Mech
+H2(6)               1      38.000     2.920     0.000     0.790   280.000    ! GRI-Mech
+C5H11(18)           2     367.022     5.734     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=476.65 K, Pc=36.73 bar (from Joback method)
+C3H6(27)            2     266.801     4.982     0.000     0.000     1.000    ! GRI-Mech
+HO2(9)              2     107.400     3.458     0.000     0.000     1.000    ! GRI-Mech
+C5H11(15)           2     367.022     5.734     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=476.65 K, Pc=36.73 bar (from Joback method)
+C4H8(35)            2     357.002     5.176     0.000     0.000     1.000    ! GRI-Mech
+CH4(43)             2     141.400     3.746     0.000     2.600    13.000    ! GRI-Mech
+CH3OO(44)           2     417.000     3.690     1.700     0.000     2.000    ! NOx2018
+OH(5)               1      80.000     2.750     0.000     0.000     0.000    ! GRI-Mech
+H2O(7)              2     572.402     2.605     1.844     0.000     4.000    ! GRI-Mech
+H2O2(10)            2     107.400     3.458     0.000     0.000     3.800    ! GRI-Mech
+C2H6(24)            2     252.301     4.302     0.000     0.000     1.500    ! GRI-Mech
+C5H11(19)           2     367.022     5.734     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=476.65 K, Pc=36.73 bar (from Joback method)
+allyl(82)           2     260.001     4.850     0.000     0.000     1.000    ! GRI-Mech
+S(462)              2     420.239     5.815     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=545.77 K, Pc=40.31 bar (from Joback method)
+C4H8(189)           2     531.400     4.687     0.000     0.000     0.000    ! Epsilon & sigma estimated with fixed Lennard Jones Parameters. This is the fallback method! Try improving transport databases!
+C4H8(396)           2     359.053     5.289     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=466.30 K, Pc=45.78 bar (from Joback method)
+C2H3(60)            2     209.001     4.100     0.000     0.000     1.000    ! GRI-Mech
+O(4)                0      80.000     2.750     0.000     0.000     0.000    ! GRI-Mech
+S(1351)             2     436.001     3.970     0.000     0.000     2.000    ! GRI-Mech
+S(1375)             2     436.001     3.970     0.000     0.000     2.000    ! GRI-Mech
+S(1381)             2     436.001     3.970     0.000     0.000     2.000    ! GRI-Mech
+HCO(1372)           2     498.002     3.590     0.000     0.000     0.000    ! GRI-Mech
+CO(2039)            1      98.100     3.650     0.000     1.950     1.800    ! GRI-Mech
+C4H7(186)           2     348.453     5.213     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=452.54 K, Pc=46.4 bar (from Joback method)
+C4H6(1350)          2     357.002     5.180     0.000     0.000     1.000    ! GRI-Mech
+C4H6(4846)          2     381.310     5.503     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=495.21 K, Pc=43.17 bar (from Joback method)
+S(1373)             2     436.000     3.970     0.000     0.000     2.000    ! NOx2018
+S(3748)             2     440.057     6.163     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=571.50 K, Pc=35.47 bar (from Joback method)
+C4H6(3743)          2     359.053     5.289     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=466.30 K, Pc=45.78 bar (from Joback method)
+HCCO(2227)          2     150.001     2.500     0.000     0.000     1.000    ! GRI-Mech
+S(3676)             2     440.200     4.010     0.000     0.000     2.000    ! NOx2018

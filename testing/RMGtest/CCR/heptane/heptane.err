@@ -1,0 +1,6 @@
+/util/common/rmg/3.0.0/RMG-Py/rmgpy/rmg/main.py:822: RuntimeWarning: invalid value encountered in true_divide
+  conditions=self.rmg_memories[index].get_cond()
+/util/common/rmg/3.0.0/RMG-Py/rmgpy/rmg/main.py:822: RuntimeWarning: divide by zero encountered in true_divide
+  conditions=self.rmg_memories[index].get_cond()
+/util/common/rmg/3.0.0/RMG-Py/rmgpy/rmg/main.py:878: RuntimeWarning: invalid value encountered in true_divide
+  conditions=self.rmg_memories[index].get_cond()

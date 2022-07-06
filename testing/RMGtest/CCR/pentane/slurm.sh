@@ -11,8 +11,9 @@
 #SBATCH --error=pentane.err
 #SBATCH --mail-user=ajbecerr@buffalo.edu
 #SBATCH --mail-type=ALL
-module load python/py37-anaconda-2020.02
-module load rmg/py37
 eval "$(/util/common/python/py37/anaconda-2020.02/bin/conda shell.bash hook)"
 conda activate rmg_env
-python /projects/academic/swihart/Venus/computations/RMG-jobs/job1/RMG-Py/rmg.py pentane.py
+pip install numpy==1.16.1
+export PATH=/util/common/rmg/3.0.0/RMG-Py:$PATH
+export PYTHONPATH=/util/common/rmg/3.0.0/RMG-Py:$PYTHONPATH
+python /util/common/rmg/3.0.0/RMG-Py/rmg.py pentane.py
