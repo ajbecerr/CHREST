@@ -24,7 +24,9 @@ with open ('input_template.yaml', "r") as myfile:
     np.savetxt('temp'+tag+'.yaml', inputfile, fmt='%s',delimiter='')
 
 #-----------------------------------------------------------------
-command = 'module use /projects/academic/chrest/modules; module load chrest/release ; $ABLATE_DIR/ablate --input temp'+tag+'.yaml  '
+# os.system('/projects/academic/danialfa/software/chrest_ablet/debug/ablate --input temp.yaml  > "temp.out"  ')
+
+command = '/projects/academic/danialfa/software/chrest_ablet/debug/ablate --input temp'+tag+'.yaml  '
 
 p = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
 
