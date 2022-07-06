@@ -1,5 +1,4 @@
 #!/bin/sh
-export TCHEM_INSTALL_PATH=/cluster/tufts/patralab/shared/chrest/lib/tchem/v2.0.0_25-04-2022_6ae59e8
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/cluster/tufts/patralab/shared/chrest/lib/gtest/30-03-2022_af29db7/lib64/
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/cluster/tufts/patralab/shared/chrest/lib/kokkos/v3.5.00_30-03-2022_2834f94/lib64/
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/cluster/tufts/patralab/shared/chrest/lib/openblas/release/lib/
@@ -11,6 +10,7 @@ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/cluster/tufts/patralab/shared/intel/20.2/compi
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/cluster/tufts/patralab/shared/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release/
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/cluster/tufts/patralab/shared/intel/20.2/compilers_and_libraries_2020.2.254/linux/mpi/intel64/libfabric/lib/
 export LD_LIBRARY_PATH
+export TCHEM_INSTALL_PATH=/cluster/tufts/patralab/shared/chrest/lib/tchem/v2.0.0_25-04-2022_6ae59e8
 exec=$TCHEM_INSTALL_PATH/example/TChem_IgnitionZeroD.x
 this="$exec --chemfile=inputs/pentane.yaml \
             --use-cvode=false \

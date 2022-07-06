@@ -1,0 +1,55 @@
+Dakota version 6.13 released Nov. 16 2020.
+Repository revision 457a5f3 (2020-11-12) built Nov 13 2020 01:07:20.
+Running MPI Dakota executable in serial mode.
+Start time: Wed Jul  6 03:39:45 2022
+
+-----------------------
+Begin DAKOTA input file
+sensitivity.in
+-----------------------
+environment,
+    tabular_data
+method,
+  sampling
+    sample_type lhs
+    samples = 10
+    variance_based_decomp
+variables,
+  uniform_uncertain 4
+    upper_bounds      5.5     9.1     5.6     4.3
+    lower_bounds      4.7     8.3     4.8     3.5
+    descriptors 'x2' 'x3' 'x4' 'x5'
+interface,
+        fork
+        analysis_drivers = 'python driver.py params.in results.out'
+        parameters_file = 'params.in'
+        results_file    = 'results.out'
+        verbatim
+responses,
+	response_functions = 1
+	no_gradients
+	no_hessians---------------------
+End DAKOTA input file
+---------------------
+
+Using Dakota input file 'sensitivity.in'
+Writing new restart file 'dakota.rst'.
+
+>>>>> Executing environment.
+
+>>>>> Running random_sampling iterator.
+
+NonD lhs Samples = 10 Seed (system-generated) = 587002
+
+NonD lhs Samples = 10 Seed not reset from previous LHS execution
+
+---------------------
+Begin Evaluation    1
+---------------------
+Parameters for evaluation 1:
+                      5.2755311468e+00 x2
+                      9.0712536339e+00 x3
+                      5.0517880880e+00 x4
+                      4.1577997586e+00 x5
+
+blocking fork: python driver.py params.in results.out
