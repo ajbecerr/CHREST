@@ -4441,7 +4441,7 @@ entry(
     index = 341,
     label = "ketene(T) <=> ketene",
     degeneracy = 1.0,
-    kinetics = Chebyshev(coeffs=[[7.54882,2.39773,-0.0707338,-0.0380292],[1.09895,0.105195,0.0702239,0.035259],[-0.247988,-0.00830781,-0.00368744,2.57708e-05],[-0.188337,0.00559851,0.00357807,0.00164123],[-0.163011,0.00930775,0.00613991,0.00300306],[-0.104022,0.000933889,0.000947551,0.000804666]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+    kinetics = Chebyshev(coeffs=[[7.63763,2.39004,-0.0776245,-0.0400976],[1.19632,0.13934,0.0796057,0.0333199],[-0.16143,0.010988,0.0021854,0.00158203],[-0.106693,0.0160072,0.00439875,0.00091087],[-0.0944891,0.0130828,0.00412697,0.00145304],[-0.071526,0.00714616,0.00196126,0.00110976]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
 )
 
 entry(
@@ -5491,7 +5491,7 @@ entry(
     index = 441,
     label = "H + HCCO <=> ketene",
     degeneracy = 1.0,
-    kinetics = Chebyshev(coeffs=[[10.3429,2.47834,-0.0160379,-0.00966978],[-0.741311,0.0230311,0.0169978,0.0101953],[-0.308136,-0.000625854,-0.000400575,-0.000182214],[-0.129641,-0.000724919,-0.000542725,-0.000332794],[-0.0453857,-0.000600519,-0.000446696,-0.000271237],[-0.0166366,5.81927e-05,4.01643e-05,2.1452e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+    kinetics = Chebyshev(coeffs=[[12.7502,1.09624,-0.225556,0.0432099],[-0.797158,0.526896,0.00410377,-0.0365144],[-0.480465,0.20929,0.029511,-0.0172736],[-0.233641,0.0708046,0.0224223,-0.00379779],[-0.0970848,0.028717,0.010505,0.00045628],[-0.031126,0.0143723,0.00517621,0.00127247]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
 )
 
 entry(
@@ -5900,7 +5900,7 @@ entry(
     index = 472,
     label = "H + HCCO <=> ketene(T)",
     degeneracy = 1.0,
-    kinetics = Chebyshev(coeffs=[[7.95373,2.47871,-0.0157629,-0.00950113],[-0.0904591,0.0232683,0.0171753,0.010304],[0.0750703,-0.000812008,-0.000539832,-0.00026751],[-0.0155591,-0.000870841,-0.000651893,-0.000399668],[-0.0577654,-0.000640886,-0.000476907,-0.000289753],[-0.0502297,6.46377e-05,4.4964e-05,2.43715e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+    kinetics = Chebyshev(coeffs=[[12.2476,1.14405,-0.224545,0.0383896],[-0.0778334,0.592151,0.0159296,-0.039383],[-0.126329,0.233669,0.0369632,-0.0177177],[-0.14966,0.0773713,0.0260594,-0.00278602],[-0.123487,0.0294405,0.0118685,0.00146572],[-0.0768422,0.0136313,0.00573597,0.00199599]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
 )
 
 entry(
@@ -6161,5 +6161,5655 @@ entry(
     degeneracy = 1.0,
     duplicate = True,
     kinetics = Chebyshev(coeffs=[[-16.2659,-0.00901955,-0.00665096,-0.00398371],[20.5364,0.0138396,0.0102043,0.00611125],[0.202033,-0.00563365,-0.00415315,-0.00248659],[-0.000637488,0.000639649,0.000473041,0.000284639],[0.0298378,-0.000194912,-0.000147235,-9.15164e-05],[-0.00924558,0.000466858,0.00034601,0.000208909]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 499,
+    label = "OCHCO + butadiene13 <=> OCHCO + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.3158,-0.0162192,-0.0120649,-0.007326],[18.8581,0.0126909,0.00940672,0.00568033],[0.284119,0.000318448,0.000256481,0.000174162],[0.0855651,0.000192522,0.000143746,8.77934e-05],[0.0315027,6.5464e-05,4.91767e-05,3.03126e-05],[0.010973,2.16226e-05,1.62638e-05,1.00445e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 500,
+    label = "OCHCO + butadiene13 <=> OCHCO + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.7464,-1.05059e-05,-7.86847e-06,-4.82822e-06],[18.1797,9.49943e-06,7.11467e-06,4.36566e-06],[0.333718,-9.1026e-07,-6.81736e-07,-4.18312e-07],[0.118851,-1.18213e-08,-8.85572e-09,-5.4359e-09],[0.0493593,1.70234e-08,1.27499e-08,7.82359e-09],[0.0201088,7.81118e-09,5.85027e-09,3.58986e-09]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 501,
+    label = "O + ketene <=> H + OCHCO",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[7.55731,-0.00135872,-0.00101716,-0.000623702],[3.23673,0.000665828,0.000498412,0.000305585],[0.578701,0.000472857,0.000353925,0.000216962],[0.10807,0.000183168,0.000137112,8.40653e-05],[-0.00737558,-1.76349e-05,-1.31628e-05,-8.03482e-06],[-0.000315725,-0.000129234,-9.66863e-05,-5.92303e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 502,
+    label = "CO + CH3 <=> H + ketene",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-2.48761,-0.0132138,-0.00647493,-0.00294264],[12.3079,0.00559562,0.00429521,0.00340676],[0.352118,0.00299116,-0.00150712,-0.00209069],[0.121925,0.00395724,0.00162854,-0.000218868],[0.0411468,0.000393088,0.0011544,0.000615754],[0.014497,-0.00117353,-2.64919e-05,0.000485561]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 503,
+    label = "CO + CH3 <=> H + ketene(T)",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-21.6848,-0.0101784,-0.00759263,-0.00463039],[27.4972,0.0110293,0.00821775,0.00500261],[0.225054,-0.00106952,-0.000788493,-0.000472122],[0.0887509,-0.000721801,-0.000539976,-0.000330752],[0.0291076,-0.000213477,-0.00016042,-9.89358e-05],[0.00924212,-2.80139e-05,-2.11449e-05,-1.3128e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 504,
+    label = "CO + CH3 <=> O + C2H3",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-72.3025,-0.000133962,-0.000100329,-6.15614e-05],[60.0555,7.66459e-05,5.74022e-05,3.52205e-05],[-0.385382,-1.82332e-05,-1.36549e-05,-8.37794e-06],[-0.108133,-1.94816e-05,-1.45905e-05,-8.95252e-06],[-0.0395655,-1.13319e-05,-8.4869e-06,-5.2075e-06],[-0.0169084,-5.62775e-06,-4.21481e-06,-2.58614e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 505,
+    label = "CH3 + butadiene13 <=> CH3 + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-3.42507,-0.709355,-0.30185,-0.03726],[14.5846,0.686856,0.23315,-0.0239051],[-0.0184614,0.0653796,0.0744951,0.0406901],[-0.0823795,-0.0569981,-0.0102528,0.0188117],[-0.034163,-0.0199506,-0.0132345,-0.00231967],[-0.00337837,0.0138644,0.00280829,-0.0037799]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 506,
+    label = "H + CH2CHCHCH <=> C2H3 + C2H3",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[10.2256,-0.4519,-0.239025,-0.0658596],[2.70981,0.442437,0.211648,0.0347915],[0.238101,0.0457355,0.0418604,0.028629],[-0.0482529,-0.0406696,-0.0164244,0.00188442],[-0.0498354,-0.0238601,-0.0154415,-0.00678697],[-0.0218528,-0.000509062,-0.00242862,-0.00314191]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 507,
+    label = "O2 + butadiene13 <=> HO2 + CH2CHCHCH",
+    degeneracy = 8.0,
+    kinetics = Arrhenius(A=(7.1e+13,'cm^3/(mol*s)'), n=0, Ea=(263.069,'kJ/mol'), T0=(1,'K'), comment="""From training reaction 219 used for Cd/H2/NonDeC;O2b
+    Exact match found for rate rule [Cd/H2/NonDeC;O2b]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 8.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+From training reaction 219 used for Cd/H2/NonDeC;O2b
+Exact match found for rate rule [Cd/H2/NonDeC;O2b]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 8.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 508,
+    label = "C2H5 + butadiene13 <=> C2H6 + CH2CHCHCH",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(632,'cm^3/(mol*s)','*|/',10), n=3.13, Ea=(75.312,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 343 used for Cd/H2/NonDeC;C_rad/H2/Cs\H3
+    Exact match found for rate rule [Cd/H2/NonDeC;C_rad/H2/Cs\H3]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+From training reaction 343 used for Cd/H2/NonDeC;C_rad/H2/Cs\H3
+Exact match found for rate rule [Cd/H2/NonDeC;C_rad/H2/Cs\H3]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 509,
+    label = "CH3 + butadiene13 <=> CH4 + CH2CHCHCH",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.03432,'cm^3/(mol*s)'), n=4.34, Ea=(86.6506,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""From training reaction 1566 used for Cd/H2/NonDeC;C_methyl
+    Exact match found for rate rule [Cd/H2/NonDeC;C_methyl]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+From training reaction 1566 used for Cd/H2/NonDeC;C_methyl
+Exact match found for rate rule [Cd/H2/NonDeC;C_methyl]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 510,
+    label = "C2H5 + CH2CHCHCH <=> C2H4 + butadiene13",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(4.56e+14,'cm^3/(mol*s)','*|/',1.5), n=-0.7, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 11 used for Cd_pri_rad;Cmethyl_Csrad
+    Exact match found for rate rule [Cd_pri_rad;Cmethyl_Csrad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 3.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 11 used for Cd_pri_rad;Cmethyl_Csrad
+Exact match found for rate rule [Cd_pri_rad;Cmethyl_Csrad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 3.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 511,
+    label = "H + butadiene13 <=> H2 + CH2CHCHCH",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(240,'cm^3/(mol*s)'), n=3.62, Ea=(47.1369,'kJ/mol'), T0=(1,'K'), comment="""From training reaction 217 used for Cd/H2/NonDeC;H_rad
+    Exact match found for rate rule [Cd/H2/NonDeC;H_rad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+From training reaction 217 used for Cd/H2/NonDeC;H_rad
+Exact match found for rate rule [Cd/H2/NonDeC;H_rad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 512,
+    label = "CH2CHCHCH + pentane <=> butadiene13 + C[CH]CCC",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(9.17625e-06,'m^3/(mol*s)'), n=3.67, Ea=(22.374,'kJ/mol'), T0=(1,'K'), comment="""Estimated using an average for rate rule [C/H2/NonDeC;Cd_pri_rad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [C/H2/NonDeC;Cd_pri_rad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 513,
+    label = "npropyl + CH2CHCHCH <=> C3H6 + butadiene13",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(2.42e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 29 used for Cd_pri_rad;C/H2/Nd_Csrad
+    Exact match found for rate rule [Cd_pri_rad;C/H2/Nd_Csrad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 29 used for Cd_pri_rad;C/H2/Nd_Csrad
+Exact match found for rate rule [Cd_pri_rad;C/H2/Nd_Csrad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 514,
+    label = "H2O2 + CH2CHCHCH <=> HO2 + butadiene13",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(2e-06,'m^3/(mol*s)'), n=3.52, Ea=(-31.2963,'kJ/mol'), T0=(1,'K'), comment="""Estimated using an average for rate rule [H2O2;Cd_pri_rad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [H2O2;Cd_pri_rad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 515,
+    label = "CH2CHCHCH + pentane <=> butadiene13 + CC[CH]CC",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(4.58812e-06,'m^3/(mol*s)'), n=3.67, Ea=(22.374,'kJ/mol'), T0=(1,'K'), comment="""Estimated using an average for rate rule [C/H2/NonDeC;Cd_pri_rad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [C/H2/NonDeC;Cd_pri_rad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 516,
+    label = "CH2CHCHCH + butyl_1 <=> butadiene13 + butene1",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(2.42e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 29 used for Cd_pri_rad;C/H2/Nd_Csrad
+    Exact match found for rate rule [Cd_pri_rad;C/H2/Nd_Csrad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 29 used for Cd_pri_rad;C/H2/Nd_Csrad
+Exact match found for rate rule [Cd_pri_rad;C/H2/Nd_Csrad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 517,
+    label = "OH + butadiene13 <=> H2O + CH2CHCHCH",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.13,'cm^3/(mol*s)'), n=4.2, Ea=(-3.59824,'kJ/mol'), T0=(1,'K'), comment="""From training reaction 218 used for Cd/H2/NonDeC;O_pri_rad
+    Exact match found for rate rule [Cd/H2/NonDeC;O_pri_rad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+From training reaction 218 used for Cd/H2/NonDeC;O_pri_rad
+Exact match found for rate rule [Cd/H2/NonDeC;O_pri_rad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 518,
+    label = "CH2CHCHCH + pentane <=> butadiene13 + [CH2]CCCC",
+    degeneracy = 6.0,
+    kinetics = Arrhenius(A=(1.866e-10,'m^3/(mol*s)'), n=4.87, Ea=(14.644,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C/H3/Cs\H2\Cs;Cd_rad] for rate rule [C/H3/Cs\H2\Cs;Cd_pri_rad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 6.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C/H3/Cs\H2\Cs;Cd_rad] for rate rule [C/H3/Cs\H2\Cs;Cd_pri_rad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 6.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 519,
+    label = "allyl + butadiene13 <=> C3H6 + CH2CHCHCH",
+    degeneracy = 8.0,
+    kinetics = Arrhenius(A=(0.1856,'cm^3/(mol*s)'), n=4.34, Ea=(123.93,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""From training reaction 1569 used for Cd/H2/NonDeC;C_rad/H2/Cd\H_Cd\H2
+    Exact match found for rate rule [Cd/H2/NonDeC;C_rad/H2/Cd\H_Cd\H2]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 8.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+From training reaction 1569 used for Cd/H2/NonDeC;C_rad/H2/Cd\H_Cd\H2
+Exact match found for rate rule [Cd/H2/NonDeC;C_rad/H2/Cd\H_Cd\H2]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 8.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 520,
+    label = "C2H3 + butadiene13 <=> C2H4 + CH2CHCHCH",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.0003437,'cm^3/(mol*s)'), n=4.732, Ea=(6.579,'kcal/mol'), T0=(1,'K'), comment="""Matched reaction 177 C4H6-3 + C2H3 <=> C2H4 + C4H5 in H_Abstraction/training
+    This reaction matched rate rule [Cd/H2/NonDeC;Cd_Cd\H2_pri_rad]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 177 C4H6-3 + C2H3 <=> C2H4 + C4H5 in H_Abstraction/training
+This reaction matched rate rule [Cd/H2/NonDeC;Cd_Cd\H2_pri_rad]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 521,
+    label = "O + butadiene13 <=> OH + CH2CHCHCH",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(1.512e+07,'cm^3/(mol*s)'), n=1.91, Ea=(116.399,'kJ/mol'), T0=(1,'K'), Tmin=(290,'K'), Tmax=(1510,'K'), comment="""From training reaction 342 used for Cd/H2/NonDeC;O_atom_triplet
+    Exact match found for rate rule [Cd/H2/NonDeC;O_atom_triplet]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+From training reaction 342 used for Cd/H2/NonDeC;O_atom_triplet
+Exact match found for rate rule [Cd/H2/NonDeC;O_atom_triplet]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 522,
+    label = "CH3CHO + CH2CHCHCH <=> vinoxy + butadiene13",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(9.55296e-09,'m^3/(mol*s)'), n=4.34, Ea=(1.2552,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C/H3/OneDe;Cd_pri_rad] for rate rule [C/H3/CO;Cd_pri_rad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 3.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C/H3/OneDe;Cd_pri_rad] for rate rule [C/H3/CO;Cd_pri_rad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 3.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 523,
+    label = "vinoxy + CH2CHCHCH <=> ketene + butadiene13",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.41e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [Cd_pri_rad;Cdpri_Rrad] for rate rule [Cd_pri_rad;Cdpri_Orad]
+    Euclidian distance = 1.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Cd_pri_rad;Cdpri_Rrad] for rate rule [Cd_pri_rad;Cdpri_Orad]
+Euclidian distance = 1.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 524,
+    label = "HCO + CH2CHCHCH <=> CO + butadiene13",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(9.033e+13,'cm^3/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), comment="""From training reaction 6 used for Cd_pri_rad;HCO
+    Exact match found for rate rule [Cd_pri_rad;HCO]
+    Euclidian distance = 0
+    family: CO_Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 6 used for Cd_pri_rad;HCO
+Exact match found for rate rule [Cd_pri_rad;HCO]
+Euclidian distance = 0
+family: CO_Disproportionation
+""",
+)
+
+entry(
+    index = 525,
+    label = "butadiene13 + m1_allyl <=> CH2CHCHCH + butene1",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.07,'cm^3/(mol*s)'), n=4.34, Ea=(112.767,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""From training reaction 1570 used for Cd/H2/NonDeC;C_rad/H/CdCs
+    Exact match found for rate rule [Cd/H2/NonDeC;C_rad/H/CdCs]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+From training reaction 1570 used for Cd/H2/NonDeC;C_rad/H/CdCs
+Exact match found for rate rule [Cd/H2/NonDeC;C_rad/H/CdCs]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 526,
+    label = "butadiene13 + m1_allyl <=> CH2CHCHCH + butene2t",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.0928,'cm^3/(mol*s)'), n=4.34, Ea=(123.93,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""From training reaction 1569 used for Cd/H2/NonDeC;C_rad/H2/Cd\H_Cd\H2
+    Exact match found for rate rule [Cd/H2/NonDeC;C_rad/H2/Cd\H_Cd\H2]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+From training reaction 1569 used for Cd/H2/NonDeC;C_rad/H2/Cd\H_Cd\H2
+Exact match found for rate rule [Cd/H2/NonDeC;C_rad/H2/Cd\H_Cd\H2]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 527,
+    label = "CH2CHCHCH + m1_allyl <=> butadiene13 + butadiene13",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(4.56e+14,'cm^3/(mol*s)','*|/',1.5), n=-0.7, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [Cd_pri_rad;Cmethyl_Csrad] for rate rule [Cd_pri_rad;Cmethyl_Csrad/H/Cd]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 3.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Cd_pri_rad;Cmethyl_Csrad] for rate rule [Cd_pri_rad;Cmethyl_Csrad/H/Cd]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 3.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 528,
+    label = "H + CH2CHCHCH <=> butadiene13",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[13.0526,1.83132,-0.321983,-0.0625719],[-1.50235,0.446236,0.174941,-0.00525581],[-0.546445,0.116942,0.0678432,0.0208819],[-0.191067,0.000326089,0.010924,0.0132221],[-0.06006,-0.0161167,-0.00503973,0.00278823],[-0.0269289,-0.00191484,-0.00234088,-0.00161192]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 529,
+    label = "H + CH2CHCHCH <=> C1=CCC1",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[11.1796,1.75224,-0.372103,-0.0854605],[-1.31679,0.428075,0.166614,-0.0062629],[-0.74135,0.0844251,0.0512714,0.0171439],[-0.372721,-0.0301262,-0.0061968,0.00738626],[-0.215198,-0.0318762,-0.0136332,8.63527e-05],[-0.146149,-0.00584115,-0.00379144,-0.0013628]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 530,
+    label = "vinoxy + CH2CHCHCH <=> ketene(T) + butadiene13",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(0.0006874,'cm^3/(mol*s)'), n=4.732, Ea=(27.5265,'kJ/mol'), T0=(1,'K'), comment="""Estimated using an average for rate rule [Cd/H2/NonDeC;Cd_pri_rad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [Cd/H2/NonDeC;Cd_pri_rad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 531,
+    label = "H + CH2CHCHCH <=> [CH2][CH]C=C",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[11.378,1.60163,-0.479473,-0.145482],[-1.88053,0.543597,0.242242,0.0300286],[-0.974828,0.103768,0.0667167,0.0272933],[-0.544948,-0.029878,-0.00514295,0.00892161],[-0.285057,-0.0338733,-0.0150697,-0.000601825],[-0.134031,-0.00676393,-0.00457385,-0.00189302]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 532,
+    label = "ketene(T) + CH2CHCHCH <=> HCCO + butadiene13",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.41e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [Cd_pri_rad;Cdpri_Rrad] for rate rule [Cd_pri_rad;Cdpri_Orad]
+    Euclidian distance = 1.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Cd_pri_rad;Cdpri_Rrad] for rate rule [Cd_pri_rad;Cdpri_Orad]
+Euclidian distance = 1.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 533,
+    label = "HCCO + butadiene13 <=> ketene + CH2CHCHCH",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.1052,'cm^3/(mol*s)'), n=4.34, Ea=(92.8848,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""From training reaction 1585 used for Cd/H2/NonDeC;Cd_Cdd_rad/H
+    Exact match found for rate rule [Cd/H2/NonDeC;Cd_Cdd_rad/H]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+From training reaction 1585 used for Cd/H2/NonDeC;Cd_Cdd_rad/H
+Exact match found for rate rule [Cd/H2/NonDeC;Cd_Cdd_rad/H]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 534,
+    label = "CH2CHCHCH + butadiene13 <=> CH2CHCHCH + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-9.3106,-0.00972056,-0.00724985,-0.00442015],[17.8406,0.008151,0.00606843,0.00368972],[0.113826,0.000671284,0.000508389,0.000317209],[-0.0254698,0.000350459,0.000262295,0.000160776],[-0.0371154,9.02911e-05,6.78743e-05,4.18823e-05],[-0.0279486,-1.5094e-05,-1.1108e-05,-6.63197e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 535,
+    label = "CH2CHCHCH + butadiene13 <=> CH2CHCHCH + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-5.69829,-0.0171504,-0.0127513,-0.00773683],[15.4494,0.0137774,0.0102067,0.00615827],[0.214986,0.000611697,0.00047744,0.000310981],[0.0544754,0.000274429,0.000205424,0.000125952],[0.0163994,7.61258e-05,5.73917e-05,3.55682e-05],[0.00349259,1.56586e-05,1.19034e-05,7.46852e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 536,
+    label = "CH2CHCHCH + butadiene13 <=> CH2CHCHCH + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.9145,-0.00444134,-0.00331897,-0.00202964],[18.6209,0.00462249,0.00345235,0.00210934],[-0.0788238,0.000165461,0.000125772,7.89031e-05],[-0.0752906,-0.000239436,-0.000178782,-0.000109193],[-0.0335612,-0.000124728,-9.34326e-05,-5.73472e-05],[-0.0126437,-3.82692e-05,-2.87171e-05,-1.76727e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 537,
+    label = "CH2CHCHCH + butadiene13 <=> CH2CHCHCH + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-8.85017,-0.013505,-0.010057,-0.00611713],[18.1717,0.0108523,0.00805865,0.00488016],[0.220962,0.000390893,0.000305164,0.000198833],[0.0568813,0.000204639,0.000153102,9.37949e-05],[0.0161759,7.71865e-05,5.79527e-05,3.56944e-05],[0.00222546,3.22701e-05,2.42196e-05,1.49089e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 538,
+    label = "O2 + C2H3 <=> HO2 + C2H2",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(1.04e+16,'cm^3/(mol*s)','*|/',5), n=-1.26, Ea=(3.31,'kcal/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K'), comment="""Matched reaction 1 C2H3 + O2 = C2H2_1 + HO2 in Disproportionation/training
+    This reaction matched rate rule [O2b;Cds/H2_d_Crad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 1 C2H3 + O2 = C2H2_1 + HO2 in Disproportionation/training
+This reaction matched rate rule [O2b;Cds/H2_d_Crad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 539,
+    label = "C2H3 + C2H5 <=> C2H2 + C2H6",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cs;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cs;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 540,
+    label = "CH3 + C2H3 <=> CH4 + C2H2",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_methyl;Cds/H2_d_Crad]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_methyl;Cds/H2_d_Crad]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 541,
+    label = "H + C2H3 <=> H2 + C2H2",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(678.823,'m^3/(mol*s)'), n=1.5, Ea=(-3.72376,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [H_rad;Cds/H2_d_Rrad] for rate rule [H_rad;Cds/H2_d_Crad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [H_rad;Cds/H2_d_Rrad] for rate rule [H_rad;Cds/H2_d_Crad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 542,
+    label = "C2H3 + C[CH]CCC <=> C2H2 + pentane",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H/NonDeC;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H/NonDeC;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 543,
+    label = "HO2 + C2H3 <=> H2O2 + C2H2",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(28000,'cm^3/(mol*s)'), n=2.69, Ea=(-6.73624,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [O_rad/NonDeO;Cds/H2_d_Rrad] for rate rule [O_rad/NonDeO;Cds/H2_d_Crad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [O_rad/NonDeO;Cds/H2_d_Rrad] for rate rule [O_rad/NonDeO;Cds/H2_d_Crad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 544,
+    label = "C2H3 + CC[CH]CC <=> C2H2 + pentane",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H/NonDeC;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H/NonDeC;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 545,
+    label = "OH + C2H3 <=> H2O + C2H2",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(3.39411,'m^3/(mol*s)'), n=2, Ea=(-4.97896,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [O_pri_rad;Cds/H2_d_Rrad] for rate rule [O_pri_rad;Cds/H2_d_Crad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [O_pri_rad;Cds/H2_d_Rrad] for rate rule [O_pri_rad;Cds/H2_d_Crad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 546,
+    label = "C2H3 + [CH2]CCCC <=> C2H2 + pentane",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cs;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cs;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 547,
+    label = "C2H3 + allyl <=> C2H2 + C3H6",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(16.4093,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cd;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 4.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cd;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 4.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 548,
+    label = "C2H3 + C2H3 <=> C2H2 + C2H4",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 549,
+    label = "H + C2H2 <=> C2H3",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[11.4164,1.26424,-0.206918,0.00643622],[-0.0938381,0.88358,0.0788409,-0.0315813],[-0.481957,0.192806,0.06647,0.00762426],[-0.203587,0.0216711,0.0148871,0.00641396],[-0.0677704,-0.00710698,-0.000349295,0.000899855],[-0.0127435,-0.00710176,-0.00182374,-0.000385187]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 550,
+    label = "O + C2H3 <=> OH + C2H2",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(3.4e+08,'cm^3/(mol*s)'), n=1.5, Ea=(-3.72376,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [O_atom_triplet;Cds/H2_d_Rrad] for rate rule [O_atom_triplet;Cds/H2_d_Crad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [O_atom_triplet;Cds/H2_d_Rrad] for rate rule [O_atom_triplet;Cds/H2_d_Crad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 551,
+    label = "C2H3 + vinoxy <=> C2H2 + CH3CHO",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/CO;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/CO;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 552,
+    label = "C2H3 + m1_allyl <=> C2H2 + butene1",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.526e+12,'cm^3/(mol*s)'), n=0, Ea=(-2.3012,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""Estimated using template [C_rad/H/OneDeC;XH_Rrad] for rate rule [C_rad/H/OneDeC;Cds/H2_d_Crad]
+    Euclidian distance = 4.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [C_rad/H/OneDeC;XH_Rrad] for rate rule [C_rad/H/OneDeC;Cds/H2_d_Crad]
+Euclidian distance = 4.0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 553,
+    label = "C2H3 + m1_allyl <=> C2H2 + butene2t",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cd;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cd;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 554,
+    label = "O + C2H2 <=> ketene",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[7.41863,2.39773,-0.0671344,-0.0326105],[0.940175,0.0638926,0.0382249,0.0147934],[-0.286423,0.00671224,0.00563237,0.00393328],[-0.149052,0.00229734,0.00204137,0.00155165],[-0.0681992,0.00270795,0.00192937,0.00109705],[-0.0197642,0.00161308,0.00117062,0.000682844]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 555,
+    label = "ketene(T) + C2H3 <=> C2H2 + vinoxy",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 556,
+    label = "O + C2H2 <=> ketene(T)",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[7.38559,2.40726,-0.060372,-0.0288007],[1.64576,0.0612217,0.0362326,0.0135717],[0.0759912,0.00764391,0.00637976,0.00443753],[-0.0574398,0.00238049,0.00213442,0.00163772],[-0.0897078,0.00255891,0.00183521,0.00105556],[-0.0640281,0.00127417,0.000934945,0.000554983]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 557,
+    label = "C2H3 + [CH2][CH]C=C <=> C2H2 + m1_allyl",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(16.4093,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cd;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 4.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cd;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 4.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 558,
+    label = "HCCO + C2H3 <=> C2H2 + ketene",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 559,
+    label = "O + C2H2 <=> H + HCCO",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[10.7898,-0.101997,-0.0666484,-0.0320391],[1.93144,0.0850488,0.0521643,0.0215791],[0.127338,0.00948456,0.00838766,0.00623887],[0.0418468,6.386e-05,0.000657257,0.000974299],[0.0162717,0.00040815,0.000272291,0.000141968],[0.00630253,-0.000186082,-0.000128192,-6.90626e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 560,
+    label = "C2H3 + CH2CHCHCH <=> C2H2 + butadiene13",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 561,
+    label = "C2H2 + C2H3 <=> CH2CHCHCH",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[8.73699,1.86031,-0.299779,-0.0536598],[1.45513,0.551168,0.214266,-0.00311992],[-0.285917,0.0723306,0.0629538,0.0336742],[-0.10857,-0.0270362,-0.0024524,0.0126598],[-0.0368126,-0.0159554,-0.00868683,-0.00125668],[-0.0256825,0.00540363,0.000405,-0.00241136]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 562,
+    label = "C2H2 + C2H4 <=> butadiene13",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-6.63202,0.804746,-0.369654,0.0203813],[13.8093,0.805227,0.0206185,-0.0478295],[-0.183279,0.319152,0.0794245,-0.0206017],[-0.0791241,0.0874946,0.0538673,0.000666961],[-0.0300479,0.0217754,0.0285402,0.00862037],[-0.0180305,0.0179999,0.0125624,0.00668109]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 563,
+    label = "C2H2 + C2H4 <=> C1=CCC1",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-7.95603,1.52948,-0.030945,0.0821765],[13.9213,0.360512,-0.147343,-0.0334005],[-0.244942,0.204663,0.00990054,-0.0435724],[-0.110549,0.0755581,0.0358637,-0.0175496],[-0.08831,0.017903,0.0246184,0.00250793],[-0.0933486,0.00133428,0.00762363,0.00747242]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 564,
+    label = "C2H2 + C2H4 <=> [CH2][CH]C=C",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-8.32591,1.33098,-0.194087,-0.000883165],[13.6924,0.543944,-0.0545231,-0.00404685],[-0.344461,0.245366,0.0474273,-0.0277838],[-0.245683,0.073026,0.04846,-0.00751202],[-0.156025,0.00634715,0.0242835,0.0072318],[-0.0874632,-0.00711138,0.00388982,0.00805486]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 565,
+    label = "C2H2 + C2H4 <=> H + CH2CHCHCH",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-16.9187,-0.297995,-0.108571,0.0156465],[24.77,0.387271,0.135872,-0.0262922],[0.447981,-0.079503,-0.0285588,0.00356676],[0.0625708,-0.0210982,-0.00156096,0.0088411],[-0.0256426,0.00572127,0.000688194,-0.00166727],[-0.030647,0.00267491,-0.000312388,-0.00147727]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 566,
+    label = "C2H2 + C2H4 <=> C2H3 + C2H3",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-17.1735,-0.599321,-0.315042,-0.0865554],[25.3111,0.49444,0.231529,0.0348842],[0.149079,0.109263,0.0706432,0.0307664],[-0.00506871,-0.0243706,-0.00413279,0.00820511],[-0.0254395,-0.0315548,-0.0163095,-0.00345184],[-0.0153916,-0.00857692,-0.00681903,-0.00412163]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 567,
+    label = "C2H2 + C3H6 <=> CH3 + CH2CHCHCH",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-15.4328,-0.0172444,-0.0128254,-0.0077858],[23.6327,0.0123341,0.00913822,0.00551438],[0.310298,0.000910189,0.000695204,0.000439194],[0.0469088,0.000654967,0.0004891,0.000298773],[-0.0159027,0.000383959,0.000287211,0.000175902],[-0.0230369,0.000217568,0.000162822,9.979e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 568,
+    label = "C2H2 + butene1 <=> C2H5 + CH2CHCHCH",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-15.1125,-0.0181404,-0.0134867,-0.00818239],[22.7524,0.0130117,0.00963452,0.00580844],[0.255291,0.000935624,0.000715992,0.00045357],[0.0486531,0.000681124,0.000508498,0.000310497],[-0.00910811,0.000400125,0.000299262,0.000183243],[-0.0177957,0.00022565,0.000168859,0.000103479]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 569,
+    label = "C2H2 + butadiene13 <=> C2H3 + CH2CHCHCH",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-18.6578,-0.012888,-0.00959643,-0.00583603],[26.5613,0.0116967,0.00868842,0.00526413],[0.135005,0.000146716,0.000125776,9.20196e-05],[0.0166388,4.99159e-05,3.72841e-05,2.27874e-05],[-0.00507708,-3.48605e-05,-2.57876e-05,-1.55232e-05],[-0.0085572,-1.50382e-05,-1.12237e-05,-6.85026e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 570,
+    label = "C2H2 + butadiene13 <=> C2H2 + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-6.77818,-0.0161352,-0.0119974,-0.00728034],[16.7427,0.0142403,0.0105575,0.00637742],[0.0458213,0.000842591,0.000649417,0.00041562],[-0.00718759,3.50491e-05,2.801e-05,1.88365e-05],[-0.00296574,-0.000172275,-0.000127891,-7.74141e-05],[-0.00157545,-0.000105766,-7.90348e-05,-4.8329e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 571,
+    label = "C2H2 + butadiene13 <=> C2H2 + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-9.53726,-0.0150724,-0.0112194,-0.00681967],[19.1098,0.0110915,0.00822813,0.00497512],[0.212701,0.000486574,0.00037707,0.000243181],[0.0441413,0.000351796,0.000262805,0.000160633],[0.00126969,0.000203172,0.00015207,9.32213e-05],[-0.0113738,0.000124535,9.31964e-05,5.71162e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 572,
+    label = "C2H2 + vinoxy <=> ketene(T) + C2H3",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-10.8414,-0.000176298,-0.000132024,-8.09966e-05],[19.1282,0.000137465,0.000102931,6.31366e-05],[0.404276,-7.08058e-05,-5.30143e-05,-3.25151e-05],[0.115372,1.91843e-05,1.436e-05,8.80371e-06],[0.0310272,-2.91467e-06,-2.17993e-06,-1.33481e-06],[0.0115904,-6.05085e-07,-4.5389e-07,-2.79174e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 573,
+    label = "C2H2 + vinoxy <=> O + CH2CHCHCH",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-24.4067,-0.00224006,-0.00167611,-0.00102699],[29.5233,0.00191009,0.00142859,0.000874753],[0.231609,5.11629e-05,3.87115e-05,2.41211e-05],[0.0529354,3.48406e-05,2.60868e-05,1.60004e-05],[0.00141988,1.45169e-05,1.08745e-05,6.67452e-06],[-0.00737249,3.0497e-06,2.28771e-06,1.40715e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 574,
+    label = "OCHCO + C2H2 <=> HCCO + ketene(T)",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-8.51657,-0.011897,-0.00885838,-0.00538705],[17.2078,0.0115064,0.00854409,0.00517392],[0.0780639,-0.00242915,-0.00179102,-0.00107255],[0.0601879,-0.000554035,-0.000417841,-0.000259091],[0.0155491,0.000140752,0.000104008,6.2503e-05],[-0.00283188,0.000118936,8.89935e-05,5.45283e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 575,
+    label = "O2 + allyl <=> HO2 + allene",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.2044e+12,'cm^3/(mol*s)'), n=0, Ea=(56.6932,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 45 C3H5-2 + O2 <=> HO2 + C3H4 in Disproportionation/training
+    This reaction matched rate rule [O2b;Cdpri_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 45 C3H5-2 + O2 <=> HO2 + C3H4 in Disproportionation/training
+This reaction matched rate rule [O2b;Cdpri_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 576,
+    label = "C2H5 + allyl <=> C2H6 + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(9.64e+11,'cm^3/(mol*s)','*|/',2), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 47 C3H5-2 + C2H5-2 <=> C2H6 + C3H4 in Disproportionation/training
+    This reaction matched rate rule [C_rad/H2/Cs;Cdpri_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 47 C3H5-2 + C2H5-2 <=> C2H6 + C3H4 in Disproportionation/training
+This reaction matched rate rule [C_rad/H2/Cs;Cdpri_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 577,
+    label = "CH3 + allyl <=> CH4 + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.01e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 46 CH3 + C3H5-2 <=> CH4 + C3H4 in Disproportionation/training
+    This reaction matched rate rule [C_methyl;Cdpri_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 46 CH3 + C3H5-2 <=> CH4 + C3H4 in Disproportionation/training
+This reaction matched rate rule [C_methyl;Cdpri_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 578,
+    label = "H + allyl <=> H2 + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.01e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [Y_rad;Cdpri_Csrad] for rate rule [H_rad;Cdpri_Csrad]
+    Euclidian distance = 1.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cdpri_Csrad] for rate rule [H_rad;Cdpri_Csrad]
+Euclidian distance = 1.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 579,
+    label = "allyl + C[CH]CCC <=> allene + pentane",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(4.58e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 49 used for C_rad/H/NonDeC;Cdpri_Csrad
+    Exact match found for rate rule [C_rad/H/NonDeC;Cdpri_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 49 used for C_rad/H/NonDeC;Cdpri_Csrad
+Exact match found for rate rule [C_rad/H/NonDeC;Cdpri_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 580,
+    label = "HO2 + allyl <=> H2O2 + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(5007.83,'m^3/(mol*s)'), n=1.00875, Ea=(10.0416,'kJ/mol'), T0=(1,'K'), comment="""Estimated using average of templates [O_rad;Cdpri_Csrad] + [O_rad/NonDeO;XH_s_Rrad] for rate rule [O_rad/NonDeO;Cdpri_Csrad]
+    Euclidian distance = 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using average of templates [O_rad;Cdpri_Csrad] + [O_rad/NonDeO;XH_s_Rrad] for rate rule [O_rad/NonDeO;Cdpri_Csrad]
+Euclidian distance = 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 581,
+    label = "allyl + CC[CH]CC <=> allene + pentane",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(4.58e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 49 used for C_rad/H/NonDeC;Cdpri_Csrad
+    Exact match found for rate rule [C_rad/H/NonDeC;Cdpri_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 49 used for C_rad/H/NonDeC;Cdpri_Csrad
+Exact match found for rate rule [C_rad/H/NonDeC;Cdpri_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 582,
+    label = "OH + allyl <=> H2O + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(6.03e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 52 HO + C3H5-2 <=> H2O + C3H4 in Disproportionation/training
+    This reaction matched rate rule [O_pri_rad;Cdpri_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 52 HO + C3H5-2 <=> H2O + C3H4 in Disproportionation/training
+This reaction matched rate rule [O_pri_rad;Cdpri_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 583,
+    label = "allyl + [CH2]CCCC <=> allene + pentane",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(9.64e+11,'cm^3/(mol*s)','*|/',2), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 47 used for C_rad/H2/Cs;Cdpri_Csrad
+    Exact match found for rate rule [C_rad/H2/Cs;Cdpri_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 47 used for C_rad/H2/Cs;Cdpri_Csrad
+Exact match found for rate rule [C_rad/H2/Cs;Cdpri_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 584,
+    label = "allyl + allyl <=> allene + C3H6",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.686e+11,'cm^3/(mol*s)','*|/',2.5), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 48 C3H5 + C3H5-2 <=> C3H6 + C3H4 in Disproportionation/training
+    This reaction matched rate rule [C_rad/H2/Cd;Cdpri_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 48 C3H5 + C3H5-2 <=> C3H6 + C3H4 in Disproportionation/training
+This reaction matched rate rule [C_rad/H2/Cd;Cdpri_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 585,
+    label = "H + allene <=> allyl",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[11.535,0.580331,-0.0844934,0.00466074],[0.564297,0.936382,-0.0929967,-0.00908162],[-0.541103,0.515316,0.0111499,-0.0188871],[-0.329049,0.187835,0.0464963,-0.00706086],[-0.148893,0.0275399,0.0302955,0.00460737],[-0.0486342,-0.0212061,0.00727849,0.00598817]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 586,
+    label = "HO2 + allene <=> O2 + allyl",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[3.7226,-0.16322,-0.108901,-0.0546446],[6.28677,0.178043,0.113904,0.0522027],[0.274764,-0.0265593,-0.0125174,-0.00104992],[0.107459,-0.00372259,-0.00356341,-0.00282744],[0.0433821,0.00905595,0.00603776,0.00300384],[0.0135102,0.00460827,0.00355594,0.0022732]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 587,
+    label = "HO2 + allene <=> allylperoxy",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[1.28957,2.32747,-0.114909,-0.0574536],[5.36045,0.178778,0.113625,0.0512914],[0.115079,-0.0225537,-0.00959669,0.000655324],[0.0118201,-0.00148829,-0.00185884,-0.00175152],[-0.0752847,0.0104901,0.00700965,0.00350711],[-0.0806578,0.00548415,0.00415604,0.00258901]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 588,
+    label = "C2H3 + allyl <=> C2H4 + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.41e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 51 C2H3-2 + C3H5-2 <=> C2H4-2 + C3H4 in Disproportionation/training
+    This reaction matched rate rule [Cd_pri_rad;Cdpri_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 51 C2H3-2 + C3H5-2 <=> C2H4-2 + C3H4 in Disproportionation/training
+This reaction matched rate rule [Cd_pri_rad;Cdpri_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 589,
+    label = "O + allyl <=> OH + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1684.49,'m^3/(mol*s)'), n=0.625, Ea=(-0.990213,'kJ/mol'), T0=(1,'K'), comment="""Estimated using average of templates [Y_rad_birad_trirad_quadrad;Cdpri_Csrad] + [O_atom_triplet;XH_s_Rrad] for rate rule [O_atom_triplet;Cdpri_Csrad]
+    Euclidian distance = 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using average of templates [Y_rad_birad_trirad_quadrad;Cdpri_Csrad] + [O_atom_triplet;XH_s_Rrad] for rate rule [O_atom_triplet;Cdpri_Csrad]
+Euclidian distance = 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 590,
+    label = "vinoxy + allyl <=> CH3CHO + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(285071,'m^3/(mol*s)'), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C_pri_rad;Cdpri_Csrad] for rate rule [C_rad/H2/CO;Cdpri_Csrad]
+    Euclidian distance = 1.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [C_pri_rad;Cdpri_Csrad] for rate rule [C_rad/H2/CO;Cdpri_Csrad]
+Euclidian distance = 1.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 591,
+    label = "allyl + m1_allyl <=> allene + butene1",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.86937e+06,'m^3/(mol*s)'), n=0, Ea=(11.4014,'kJ/mol'), T0=(1,'K'), comment="""Estimated using average of templates [C_sec_rad;Cdpri_Csrad] + [C_rad/H/OneDeC;XH_s_Rrad] for rate rule [C_rad/H/OneDeC;Cdpri_Csrad]
+    Euclidian distance = 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using average of templates [C_sec_rad;Cdpri_Csrad] + [C_rad/H/OneDeC;XH_s_Rrad] for rate rule [C_rad/H/OneDeC;Cdpri_Csrad]
+Euclidian distance = 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 592,
+    label = "allyl + m1_allyl <=> allene + butene2t",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(8.43e+10,'cm^3/(mol*s)','*|/',2.5), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 48 used for C_rad/H2/Cd;Cdpri_Csrad
+    Exact match found for rate rule [C_rad/H2/Cd;Cdpri_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 48 used for C_rad/H2/Cd;Cdpri_Csrad
+Exact match found for rate rule [C_rad/H2/Cd;Cdpri_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 593,
+    label = "ketene(T) + allyl <=> vinoxy + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.41e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 51 used for Cd_pri_rad;Cdpri_Csrad
+    Exact match found for rate rule [Cd_pri_rad;Cdpri_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 51 used for Cd_pri_rad;Cdpri_Csrad
+Exact match found for rate rule [Cd_pri_rad;Cdpri_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 594,
+    label = "allyl + [CH2][CH]C=C <=> allene + m1_allyl",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.686e+11,'cm^3/(mol*s)','*|/',2.5), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 48 used for C_rad/H2/Cd;Cdpri_Csrad
+    Exact match found for rate rule [C_rad/H2/Cd;Cdpri_Csrad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 48 used for C_rad/H2/Cd;Cdpri_Csrad
+Exact match found for rate rule [C_rad/H2/Cd;Cdpri_Csrad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 595,
+    label = "HCCO + allyl <=> ketene + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.41e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 51 used for Cd_pri_rad;Cdpri_Csrad
+    Exact match found for rate rule [Cd_pri_rad;Cdpri_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 51 used for Cd_pri_rad;Cdpri_Csrad
+Exact match found for rate rule [Cd_pri_rad;Cdpri_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 596,
+    label = "allyl + CH2CHCHCH <=> allene + butadiene13",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.41e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 51 used for Cd_pri_rad;Cdpri_Csrad
+    Exact match found for rate rule [Cd_pri_rad;Cdpri_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 51 used for Cd_pri_rad;Cdpri_Csrad
+Exact match found for rate rule [Cd_pri_rad;Cdpri_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 597,
+    label = "allene + butadiene13 <=> allene + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-7.50272,-0.0175704,-0.0130601,-0.00792098],[16.9779,0.0143932,0.0106612,0.006431],[0.181787,0.00098715,0.000758076,0.000482655],[0.0278032,0.000420608,0.000315104,0.000193437],[-0.00101866,9.97761e-05,7.54396e-05,4.69557e-05],[-0.00669456,1.22883e-07,4.65182e-07,6.34417e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 598,
+    label = "allene + butadiene13 <=> allene + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-8.58982,-0.0180704,-0.0134339,-0.00814975],[17.7474,0.0132782,0.0098328,0.00592887],[0.223605,0.00106928,0.000816205,0.000515164],[0.0261841,0.000775264,0.00057891,0.000353614],[-0.018784,0.000456446,0.000341435,0.000209113],[-0.0264685,0.000252444,0.000188972,0.000115863]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 599,
+    label = "allene + butadiene13 <=> allene + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-9.96801,-0.0156825,-0.0116681,-0.00708733],[18.9756,0.012329,0.00914391,0.00552671],[0.189568,0.00093015,0.000710401,0.000448753],[0.0076956,0.0006339,0.000473756,0.000289764],[-0.0279193,0.000335791,0.000251415,0.000154199],[-0.0298618,0.000153302,0.000114923,7.06172e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 600,
+    label = "allene + butadiene13 <=> allene + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-9.90155,-0.0160094,-0.0119127,-0.00723715],[19.1386,0.0115896,0.00859293,0.0051913],[0.318884,0.000681184,0.00052319,0.000333182],[0.0702512,0.000528484,0.000394711,0.000241173],[0.00341368,0.000340125,0.000254412,0.000155805],[-0.0159269,0.000225122,0.000168367,0.000103088]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 601,
+    label = "C2H2 + ketene <=> HCCO + C2H3",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-15.9827,-1.47113,-0.278525,0.0435553],[23.6749,0.938552,-0.00413042,-0.088809],[-0.0833736,0.315968,0.0962723,-0.0302888],[-0.154496,0.0432004,0.059839,0.0124228],[-0.108672,-0.0314567,0.0153878,0.0165024],[-0.0495762,-0.023211,-0.00516682,0.00623799]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 602,
+    label = "C2H4 + butadiene13 <=> C3H3 + npropyl",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-16.1322,-1.40428,-0.246757,0.0454314],[23.3793,0.964095,0.0763801,-0.0750195],[-0.450905,0.506587,0.0666896,-0.0162555],[-0.442455,0.0252775,0.0892042,0.0147381],[-0.248973,-0.0845126,0.0325511,0.0215225],[-0.093579,-0.0397624,-0.0106967,0.0113133]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 603,
+    label = "C3H6 + butadiene13 <=> C3H3 + butyl_1",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-15.5841,-0.902183,-0.341283,-0.0240692],[22.016,0.317999,0.14946,0.0148469],[-1.17309,0.469911,0.110585,-0.0285659],[-0.81648,0.156092,0.0531674,0.00837415],[-0.438024,0.0153939,0.0304491,0.0149021],[-0.154568,-0.0224278,0.00687405,0.0085465]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 604,
+    label = "HO2 + C3H3 <=> O2 + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.05168e-08,'m^3/(mol*s)'), n=4.2608, Ea=(82.6916,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [X_H;Cd_Cdd_rad/H] for rate rule [Orad_O_H;Cd_Cdd_rad/H]
+    Euclidian distance = 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [X_H;Cd_Cdd_rad/H] for rate rule [Orad_O_H;Cd_Cdd_rad/H]
+Euclidian distance = 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 605,
+    label = "C2H6 + C3H3 <=> C2H5 + allene",
+    degeneracy = 6.0,
+    kinetics = Arrhenius(A=(0.099,'cm^3/(mol*s)'), n=4.34, Ea=(71.128,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""Matched reaction 888 C3H3 + C2H6 <=> C3H4-1 + C2H5 in H_Abstraction/training
+    This reaction matched rate rule [Cd_Cdd/H2;C_rad/H2/Cs\H3]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 888 C3H3 + C2H6 <=> C3H4-1 + C2H5 in H_Abstraction/training
+This reaction matched rate rule [Cd_Cdd/H2;C_rad/H2/Cs\H3]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 606,
+    label = "CH4 + C3H3 <=> CH3 + allene",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.0636,'cm^3/(mol*s)'), n=4.34, Ea=(85.772,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""Matched reaction 845 C3H3 + CH4b <=> C3H4-1 + CH3_p23 in H_Abstraction/training
+    This reaction matched rate rule [Cd_Cdd/H2;C_methyl]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 845 C3H3 + CH4b <=> C3H4-1 + CH3_p23 in H_Abstraction/training
+This reaction matched rate rule [Cd_Cdd/H2;C_methyl]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 607,
+    label = "C2H5 + C3H3 <=> C2H4 + allene",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(4.56e+14,'cm^3/(mol*s)','*|/',1.5), n=-0.7, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 11 used for Cd_pri_rad;Cmethyl_Csrad
+    Exact match found for rate rule [Cd_pri_rad;Cmethyl_Csrad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 3.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 11 used for Cd_pri_rad;Cmethyl_Csrad
+Exact match found for rate rule [Cd_pri_rad;Cmethyl_Csrad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 3.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 608,
+    label = "H2 + C3H3 <=> H + allene",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(0.07496,'cm^3/(mol*s)'), n=3.944, Ea=(16.255,'kcal/mol'), T0=(1,'K'), comment="""Matched reaction 246 C3H3 + H2 <=> C3H4-1 + H in H_Abstraction/training
+    This reaction matched rate rule [Cd_Cdd/H2;H_rad]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 246 C3H3 + H2 <=> C3H4-1 + H in H_Abstraction/training
+This reaction matched rate rule [Cd_Cdd/H2;H_rad]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 609,
+    label = "allene + C[CH]CCC <=> C3H3 + pentane",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.02524,'cm^3/(mol*s)'), n=4.34, Ea=(23.8488,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""Estimated using an average for rate rule [Cd_Cdd/H2;C_rad/H/NonDeC]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [Cd_Cdd/H2;C_rad/H/NonDeC]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 610,
+    label = "C3H3 + npropyl <=> allene + C3H6",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(2.42e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 29 used for Cd_pri_rad;C/H2/Nd_Csrad
+    Exact match found for rate rule [Cd_pri_rad;C/H2/Nd_Csrad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 29 used for Cd_pri_rad;C/H2/Nd_Csrad
+Exact match found for rate rule [Cd_pri_rad;C/H2/Nd_Csrad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 611,
+    label = "H2O2 + C3H3 <=> HO2 + allene",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.32288e-06,'m^3/(mol*s)'), n=3.555, Ea=(-24.0789,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [H2O2;Cd_rad] for rate rule [H2O2;Cd_Cdd_rad/H]
+    Euclidian distance = 2.0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [H2O2;Cd_rad] for rate rule [H2O2;Cd_Cdd_rad/H]
+Euclidian distance = 2.0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 612,
+    label = "allene + CC[CH]CC <=> C3H3 + pentane",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.02524,'cm^3/(mol*s)'), n=4.34, Ea=(23.8488,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""Estimated using an average for rate rule [Cd_Cdd/H2;C_rad/H/NonDeC]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [Cd_Cdd/H2;C_rad/H/NonDeC]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 613,
+    label = "C3H3 + butyl_1 <=> allene + butene1",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(2.42e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 29 used for Cd_pri_rad;C/H2/Nd_Csrad
+    Exact match found for rate rule [Cd_pri_rad;C/H2/Nd_Csrad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 29 used for Cd_pri_rad;C/H2/Nd_Csrad
+Exact match found for rate rule [Cd_pri_rad;C/H2/Nd_Csrad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 614,
+    label = "OH + allene <=> H2O + C3H3",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(33830,'cm^3/(mol*s)'), n=2.802, Ea=(0.933,'kcal/mol'), T0=(1,'K'), comment="""Matched reaction 256 C3H4-1 + OH <=> H2O + C3H3 in H_Abstraction/training
+    This reaction matched rate rule [Cd_Cdd/H2;O_pri_rad]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 256 C3H4-1 + OH <=> H2O + C3H3 in H_Abstraction/training
+This reaction matched rate rule [Cd_Cdd/H2;O_pri_rad]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 615,
+    label = "allene + [CH2]CCCC <=> C3H3 + pentane",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.0218,'cm^3/(mol*s)'), n=4.34, Ea=(24.6856,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""Estimated using an average for rate rule [Cd_Cdd/H2;C_rad/H2/Cs]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [Cd_Cdd/H2;C_rad/H2/Cs]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 616,
+    label = "C3H3 + C3H6 <=> allene + allyl",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(0.00492,'cm^3/(mol*s)'), n=4.34, Ea=(45.6056,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""Matched reaction 1021 C3H3 + C3H6 <=> C3H4-1 + C3H5 in H_Abstraction/training
+    This reaction matched rate rule [Cd_Cdd/H2;C_rad/H2/Cd\H_Cd\H2]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 1021 C3H3 + C3H6 <=> C3H4-1 + C3H5 in H_Abstraction/training
+This reaction matched rate rule [Cd_Cdd/H2;C_rad/H2/Cd\H_Cd\H2]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 617,
+    label = "C2H4 + C3H3 <=> C2H3 + allene",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.1052,'cm^3/(mol*s)'), n=4.34, Ea=(92.8848,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""Matched reaction 1585 C3H3 + C2H4 <=> C3H4-1 + C2H3 in H_Abstraction/training
+    This reaction matched rate rule [Cd_Cdd/H2;Cd_Cd\H2_pri_rad]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 1585 C3H3 + C2H4 <=> C3H4-1 + C2H3 in H_Abstraction/training
+This reaction matched rate rule [Cd_Cdd/H2;Cd_Cd\H2_pri_rad]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 618,
+    label = "O + allene <=> OH + C3H3",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.300244,'m^3/(mol*s)'), n=2.47045, Ea=(70.9174,'kJ/mol'), T0=(1,'K'), comment="""Estimated using average of templates [Cd_H;O_atom_triplet] + [Cd_Cdd/H2;Y_rad_birad_trirad_quadrad] for rate rule [Cd_Cdd/H2;O_atom_triplet]
+    Euclidian distance = 2.0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using average of templates [Cd_H;O_atom_triplet] + [Cd_Cdd/H2;Y_rad_birad_trirad_quadrad] for rate rule [Cd_Cdd/H2;O_atom_triplet]
+Euclidian distance = 2.0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 619,
+    label = "vinoxy + allene <=> CH3CHO + C3H3",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(6.08167e-08,'m^3/(mol*s)'), n=4.34, Ea=(46.7911,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Cd_Cdd/H2;C_pri_rad] for rate rule [Cd_Cdd/H2;C_rad/H2/CO]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [Cd_Cdd/H2;C_pri_rad] for rate rule [Cd_Cdd/H2;C_rad/H2/CO]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 620,
+    label = "vinoxy + C3H3 <=> ketene + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.41e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [Cd_pri_rad;Cdpri_Rrad] for rate rule [Cd_pri_rad;Cdpri_Orad]
+    Euclidian distance = 1.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Cd_pri_rad;Cdpri_Rrad] for rate rule [Cd_pri_rad;Cdpri_Orad]
+Euclidian distance = 1.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 621,
+    label = "HCO + C3H3 <=> CO + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(9.033e+13,'cm^3/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), comment="""From training reaction 6 used for Cd_pri_rad;HCO
+    Exact match found for rate rule [Cd_pri_rad;HCO]
+    Euclidian distance = 0
+    family: CO_Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 6 used for Cd_pri_rad;HCO
+Exact match found for rate rule [Cd_pri_rad;HCO]
+Euclidian distance = 0
+family: CO_Disproportionation
+""",
+)
+
+entry(
+    index = 622,
+    label = "C3H3 + butene1 <=> allene + m1_allyl",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(0.01024,'cm^3/(mol*s)'), n=4.34, Ea=(35.564,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""Matched reaction 1064 C3H3 + C4H8-4 <=> C3H4-1 + C4H7-4 in H_Abstraction/training
+    This reaction matched rate rule [Cd_Cdd/H2;C_rad/H/CdCs]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 1064 C3H3 + C4H8-4 <=> C3H4-1 + C4H7-4 in H_Abstraction/training
+This reaction matched rate rule [Cd_Cdd/H2;C_rad/H/CdCs]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 623,
+    label = "allene + m1_allyl <=> C3H3 + butene2t",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.1088,'cm^3/(mol*s)'), n=4.34, Ea=(60.668,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""From training reaction 1763 used for Cd_Cdd/H2;C_rad/H2/Cd\H_Cd\H2
+    Exact match found for rate rule [Cd_Cdd/H2;C_rad/H2/Cd\H_Cd\H2]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+From training reaction 1763 used for Cd_Cdd/H2;C_rad/H2/Cd\H_Cd\H2
+Exact match found for rate rule [Cd_Cdd/H2;C_rad/H2/Cd\H_Cd\H2]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 624,
+    label = "C3H3 + m1_allyl <=> allene + butadiene13",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(4.56e+14,'cm^3/(mol*s)','*|/',1.5), n=-0.7, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [Cd_pri_rad;Cmethyl_Csrad] for rate rule [Cd_pri_rad;Cmethyl_Csrad/H/Cd]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 3.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Cd_pri_rad;Cmethyl_Csrad] for rate rule [Cd_pri_rad;Cmethyl_Csrad/H/Cd]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 3.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 625,
+    label = "vinoxy + C3H3 <=> ketene(T) + allene",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(0.0526,'cm^3/(mol*s)'), n=4.34, Ea=(92.8848,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""From training reaction 1585 used for Cd/H2/NonDeC;Cd_Cdd_rad/H
+    Exact match found for rate rule [Cd/H2/NonDeC;Cd_Cdd_rad/H]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+From training reaction 1585 used for Cd/H2/NonDeC;Cd_Cdd_rad/H
+Exact match found for rate rule [Cd/H2/NonDeC;Cd_Cdd_rad/H]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 626,
+    label = "ketene(T) + C3H3 <=> HCCO + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.41e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [Cd_pri_rad;Cdpri_Rrad] for rate rule [Cd_pri_rad;Cdpri_Orad]
+    Euclidian distance = 1.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Cd_pri_rad;Cdpri_Rrad] for rate rule [Cd_pri_rad;Cdpri_Orad]
+Euclidian distance = 1.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 627,
+    label = "HCCO + allene <=> ketene + C3H3",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.1232,'cm^3/(mol*s)'), n=4.34, Ea=(49.7896,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""From training reaction 3044 used for Cd_Cdd/H2;Cd_Cdd_rad/H
+    Exact match found for rate rule [Cd_Cdd/H2;Cd_Cdd_rad/H]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+From training reaction 3044 used for Cd_Cdd/H2;Cd_Cdd_rad/H
+Exact match found for rate rule [Cd_Cdd/H2;Cd_Cdd_rad/H]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 628,
+    label = "C3H3 + butadiene13 <=> allene + CH2CHCHCH",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.1052,'cm^3/(mol*s)'), n=4.34, Ea=(92.8848,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""From training reaction 1585 used for Cd/H2/NonDeC;Cd_Cdd_rad/H
+    Exact match found for rate rule [Cd/H2/NonDeC;Cd_Cdd_rad/H]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+From training reaction 1585 used for Cd/H2/NonDeC;Cd_Cdd_rad/H
+Exact match found for rate rule [Cd/H2/NonDeC;Cd_Cdd_rad/H]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 629,
+    label = "C2H3 + C3H3 <=> C2H2 + allene",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 630,
+    label = "C3H3 + allyl <=> allene + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.41e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 51 used for Cd_pri_rad;Cdpri_Csrad
+    Exact match found for rate rule [Cd_pri_rad;Cdpri_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 51 used for Cd_pri_rad;Cdpri_Csrad
+Exact match found for rate rule [Cd_pri_rad;Cdpri_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 631,
+    label = "H + C3H3 <=> allene",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[10.4815,2.44779,-0.0378424,-0.0220484],[-1.18329,0.059091,0.0425076,0.0244561],[-0.521765,-0.00282052,-0.00162983,-0.000552344],[-0.210386,-0.00336485,-0.00248889,-0.00149745],[-0.0647902,-0.00124153,-0.000944087,-0.000592537],[-0.00529896,-0.000253533,-0.000198584,-0.000129974]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 632,
+    label = "allene + butadiene13 <=> C3H3 + m1_allyl",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-19.4855,-0.0173776,-0.0129202,-0.00783927],[24.7397,0.0135114,0.010011,0.00604151],[-0.736361,0.00133176,0.00101177,0.000634208],[-0.316872,0.000814345,0.000608652,0.000372305],[-0.155668,0.000371411,0.000278321,0.000170922],[-0.0845367,0.000127503,9.58805e-05,5.91944e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 633,
+    label = "C3H3 + butadiene13 <=> C3H3 + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-13.4636,-0.00292756,-0.00218978,-0.00134103],[19.6255,0.0026265,0.00196346,0.00120137],[0.291245,-7.36022e-05,-5.42032e-05,-3.2398e-05],[0.0855401,5.43884e-06,4.0293e-06,2.43118e-06],[0.0259729,1.30118e-05,9.73836e-06,5.96909e-06],[0.00406433,9.96874e-06,7.46477e-06,4.57918e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 634,
+    label = "C3H3 + butadiene13 <=> C3H3 + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-9.83254,-0.0126082,-0.00939087,-0.00571364],[19.2303,0.0108325,0.00804892,0.00487899],[0.136277,0.000491542,0.000380057,0.000244334],[-0.00636964,0.000218783,0.000164047,0.000100839],[-0.031135,0.000108249,8.10903e-05,4.97734e-05],[-0.0308335,2.38388e-05,1.81309e-05,1.13839e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 635,
+    label = "C3H3 + butadiene13 <=> C3H3 + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-15.8993,-0.0167269,-0.01243,-0.00753597],[23.275,0.0157367,0.0116643,0.00704359],[-0.0425481,0.00133705,0.00102133,0.000645312],[-0.101447,0.000128765,9.86613e-05,6.2622e-05],[-0.0611162,-0.000327501,-0.000243373,-0.00014755],[-0.0277506,-0.000299184,-0.000223519,-0.000136633]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 636,
+    label = "C3H3 + butadiene13 <=> C3H3 + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-8.13812,-0.0184086,-0.0136857,-0.00830289],[17.5762,0.0128757,0.00953066,0.00574285],[0.271684,0.000569288,0.000443228,0.000287699],[0.0784994,0.000398665,0.000297427,0.00018143],[0.02518,0.000205563,0.000153809,9.42396e-05],[0.00580111,0.000110033,8.23436e-05,5.04647e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 637,
+    label = "C3H3 + butadiene13 <=> C3H3 + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.2881,-0.0164145,-0.0122014,-0.00740055],[18.8496,0.0150287,0.0111408,0.00672867],[-0.0424116,0.00105976,0.000814934,0.000519856],[-0.147864,0.00047945,0.000359025,0.00022025],[-0.118608,5.17845e-05,3.94632e-05,2.48497e-05],[-0.0735091,-0.00014437,-0.000107547,-6.54508e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 638,
+    label = "C3H3 + butadiene13 <=> C3H3 + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.1661,-0.0147057,-0.0109485,-0.00665693],[18.8202,0.0107007,0.0079396,0.00480197],[0.316917,0.000309589,0.000244374,0.000161626],[0.0963236,0.00023,0.000171744,0.000104905],[0.0324647,0.000128897,9.64755e-05,5.91398e-05],[0.00835493,8.02944e-05,6.00776e-05,3.68089e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 639,
+    label = "O2 + C3H3 <=> HCO + ketene",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[7.45568,-0.882837,-0.22254,-0.0293112],[1.58475,0.834753,0.0911696,-0.038011],[-0.13305,-0.00857373,0.065623,0.0219341],[-0.128566,-0.0327401,0.0128996,0.0149813],[-0.055295,0.0120406,0.00541319,0.00575897],[-0.0169868,0.0229019,0.00689167,0.0021033]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 640,
+    label = "O2 + C3H3 <=> CO + vinoxy",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[6.07396,-0.782897,-0.206954,-0.03193],[2.07163,0.82222,0.120777,-0.0223485],[0.168504,-0.0418855,0.0648823,0.0291964],[0.0146338,-0.0432435,0.00179359,0.012911],[0.00385598,0.00950939,-0.00127207,0.00208143],[0.00675947,0.0183547,0.00426009,0.000304244]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 641,
+    label = "O2 + C3H3 <=> [C]1=COOC1",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[10.3157,-0.606085,-0.280368,-0.0500143],[0.839398,0.577704,0.224332,0.000476462],[-0.0358543,0.0332435,0.0510561,0.0367564],[-0.0486842,-0.0247652,-0.00570437,0.00853646],[0.00643075,0.00142722,-0.00209672,-0.00228028],[0.0211686,0.00870737,0.00376974,-0.0001845]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 642,
+    label = "O2 + C3H3 <=> [C]1=COOC1",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[8.7433,0.897687,-0.410487,-0.0647617],[-0.170821,1.39041,0.217864,-0.00470732],[-0.347153,0.173742,0.114991,0.020868],[-0.103414,-0.0380143,0.0201436,0.0120949],[-0.0313085,-0.0038479,0.00285318,0.0041549],[-0.0419661,0.0263603,0.00996514,0.00325748]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 643,
+    label = "O2 + C3H3 <=> C#CCO[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[9.80865,1.24986,-0.213044,0.00608995],[-0.381224,1.05568,0.0460578,-0.0485143],[-0.269001,0.185376,0.11091,0.00632834],[-0.0947204,-0.0138598,0.0345302,0.0173077],[-0.053344,-0.00753101,0.00131134,0.00495606],[-0.0437076,0.00650224,-0.00101398,1.99275e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 644,
+    label = "[C]1=COOC1 <=> C#CCO[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[5.22929,1.69292,-0.250703,-0.0092915],[3.1774,1.28466,0.15999,-0.0685905],[-0.845605,0.449809,0.112253,0.0040085],[-0.408976,0.135476,0.0432919,0.014033],[-0.236154,0.0840994,0.0172409,0.00259048],[-0.15492,0.0581042,0.0153406,-0.000871703]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 645,
+    label = "C#CCO[O] + butadiene13 <=> C#CCO[O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-7.67769,-0.0174818,-0.0129748,-0.00785091],[16.9376,0.0189233,0.0140101,0.00844496],[-0.021939,-0.000378497,-0.000240909,-0.000108091],[-0.0351453,-0.000887469,-0.000661245,-0.000402527],[-0.0109247,-0.000424661,-0.000318584,-0.000195983],[-0.00419385,-6.96293e-05,-5.30978e-05,-3.34682e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 646,
+    label = "C#CCO[O] + butadiene13 <=> C#CCO[O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-7.25659,-0.00742261,-0.00553788,-0.00337816],[16.547,0.00810714,0.00604184,0.00367925],[0.067198,-0.000550866,-0.000403311,-0.000238819],[0.00549938,-0.000258878,-0.000194155,-0.000119384],[-0.00107055,-6.46352e-05,-4.85823e-05,-2.99728e-05],[-0.00514404,1.6275e-05,1.20435e-05,7.25381e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 647,
+    label = "C#CCO[O] + butadiene13 <=> C#CCO[O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.3343,-0.0172462,-0.0128123,-0.00776435],[19.765,0.0163483,0.012112,0.00730867],[0.0170914,0.00102555,0.000792568,0.000509171],[-0.058633,6.87005e-05,5.3334e-05,3.44908e-05],[-0.0366641,-0.000271374,-0.000201735,-0.000122373],[-0.0163032,-0.000236144,-0.000176478,-0.00010793]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 648,
+    label = "C#CCO[O] + butadiene13 <=> C#CCO[O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.6469,-0.00301376,-0.00225424,-0.00138048],[18.9898,0.00259032,0.00193637,0.00118476],[0.184069,3.5781e-05,2.75344e-05,1.75837e-05],[0.0535795,-4.97155e-06,-3.68859e-06,-2.23071e-06],[0.0191194,9.14839e-06,6.83276e-06,4.17491e-06],[0.00739556,-5.99814e-06,-4.48164e-06,-2.73998e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 649,
+    label = "ketene + C3H3 <=> HCCO + allene",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-7.80806,-0.356947,-0.208584,-0.0774628],[14.193,0.337062,0.174505,0.041229],[0.394797,-0.0132049,0.0118537,0.0240637],[0.148452,0.0115731,0.00705435,0.00384324],[0.0593608,0.0186884,0.0108389,0.00371606],[0.0141317,-0.000531549,0.000738595,0.00137893]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 650,
+    label = "O2 + C3H3 <=> C=C=CO[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[8.89745,1.2367,0.0169041,-0.0713577],[0.257885,1.27402,-0.138406,-0.00236437],[-0.0753661,0.0420784,0.0296144,0.0579189],[-0.03871,-0.0820756,0.0469816,0.0115526],[-0.0760354,-0.0247777,0.0309772,-0.00748048],[-0.0845709,0.0150856,0.0106724,-0.00286351]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 651,
+    label = "C=C=CO[O] <=> [C]1=COOC1",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[3.23861,1.61874,0.00140247,-0.0528551],[3.52474,1.11739,0.235464,-0.037057],[-0.958206,0.512733,0.1052,-0.0551428],[-0.440887,0.194635,0.0258648,-0.0220858],[-0.246593,0.0860136,0.00706849,0.00188572],[-0.150135,0.0293707,0.00792124,0.0124423]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 652,
+    label = "C=C=CO[O] <=> C#CCO[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[3.40255,0.61148,-0.307741,-0.0417252],[3.81039,1.61832,0.377765,-0.0625879],[-0.958134,0.452496,0.148682,-0.0253724],[-0.493141,0.122277,0.024425,-0.00707049],[-0.25197,0.0792155,0.0111889,0.00513871],[-0.149935,0.0440106,0.0166865,0.0124129]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 653,
+    label = "C=C=CO[O] + butadiene13 <=> C=C=CO[O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-7.75886,-0.00653775,-0.00487991,-0.00297887],[16.2986,0.00683504,0.00509549,0.00310454],[0.195057,-0.000755117,-0.000557061,-0.000333886],[0.0487948,0.00011114,8.16089e-05,4.85534e-05],[0.0255352,-3.40386e-05,-2.53861e-05,-1.54771e-05],[0.0199992,-0.000140149,-0.00010459,-6.38261e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 654,
+    label = "C=C=CO[O] + butadiene13 <=> C=C=CO[O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-8.06464,-0.00989562,-0.00737981,-0.00449881],[16.8266,0.00833361,0.00620226,0.0037691],[0.222969,3.99356e-05,3.82927e-05,3.13286e-05],[0.05845,9.48696e-05,7.0882e-05,4.33353e-05],[0.0133665,0.000117863,8.80469e-05,5.38142e-05],[0.000786917,6.83862e-05,5.10458e-05,3.1161e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 655,
+    label = "C=C=CO[O] + butadiene13 <=> C=C=CO[O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-9.19086,-0.0008507,-0.000636882,-0.000390559],[16.8842,0.000867487,0.000649358,0.000398125],[0.172089,-4.08285e-05,-3.04785e-05,-1.86081e-05],[0.0541059,-1.82322e-05,-1.36578e-05,-8.38315e-06],[0.026409,-8.76862e-06,-6.56759e-06,-4.03021e-06],[0.0110908,-1.85102e-06,-1.38689e-06,-8.51541e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 656,
+    label = "C=C=CO[O] + butadiene13 <=> C=C=CO[O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.0273,-0.0035265,-0.00263701,-0.00161418],[18.9403,0.00326619,0.0024407,0.00149246],[0.248747,-0.000148649,-0.00010989,-6.60815e-05],[0.0798943,-8.25903e-05,-6.18057e-05,-3.78772e-05],[0.0122429,4.27603e-05,3.1972e-05,1.95683e-05],[-0.0192786,0.000102043,7.6321e-05,4.67337e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 657,
+    label = "C=C=CO[O] + butadiene13 <=> C=C=CO[O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.5471,-0.00584512,-0.00436663,-0.00266903],[19.5812,0.00507096,0.00378375,0.00230849],[0.249785,-0.000144031,-0.000104463,-6.09119e-05],[0.0783804,-4.48826e-05,-3.36002e-05,-2.06033e-05],[0.0193634,6.14276e-05,4.58312e-05,2.79586e-05],[-0.00583489,4.30488e-05,3.22931e-05,1.98636e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 658,
+    label = "C=C=CO[O] + butadiene13 <=> C=C=CO[O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.4635,-0.000593383,-0.0004443,-0.000272518],[18.8721,0.000572401,0.000428545,0.000262813],[0.218544,-1.60443e-05,-1.19742e-05,-7.30791e-06],[0.0643569,-2.57471e-06,-1.93097e-06,-1.18733e-06],[0.0304961,-8.5533e-06,-6.40383e-06,-3.9274e-06],[0.0109669,1.07727e-06,8.05242e-07,4.92625e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 659,
+    label = "O2 + C3H3 <=> C=[C]C1OO1",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[4.91721,-0.334594,0.0717488,0.171641],[-0.857,2.0396,0.164996,-0.251414],[-0.657123,0.663487,-0.0727377,-0.0721276],[-0.25623,0.187709,-0.118849,0.0207731],[-0.0195975,0.0121965,-0.0735861,0.0528625],[0.0828996,-0.0409015,-0.0151031,0.0498303]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 660,
+    label = "C=[C]C1OO1 <=> [C]1=COOC1",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[4.08116,0.844583,-0.261584,-0.0425912],[0.821317,0.258889,0.109396,0.101954],[-1.57531,0.0793194,0.0965144,0.0277752],[-0.727627,0.0660385,0.0931963,0.0484304],[-0.279284,0.0939224,0.0623075,0.035967],[-0.0635019,0.0797598,0.0336545,0.0218325]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 661,
+    label = "C=[C]C1OO1 <=> C#CCO[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[4.10839,-0.327607,-0.629356,0.00350947],[1.00816,0.612098,0.219197,0.132074],[-1.46041,0.101162,0.195909,0.0956865],[-0.74457,0.106287,0.140001,0.0779634],[-0.244021,0.145502,0.0774915,0.0320704],[-0.0130398,0.115585,0.0281855,0.0018368]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 662,
+    label = "C=[C]C1OO1 <=> C=C=CO[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[7.386,2.14314,-0.244154,-0.0701025],[-0.484814,0.336203,0.0800811,0.0177902],[-1.19814,-0.0262158,-0.0180446,0.0130799],[-0.729558,0.0230971,0.0113242,0.00460326],[-0.352505,0.0142578,0.0107586,0.00508381],[-0.126277,-0.00178978,-0.00276112,0.000568089]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 663,
+    label = "C=[C]C([O])[O] <=> O2 + C3H3",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[3.3499,1.69586,-0.184971,-0.0141586],[0.579116,0.851163,0.101386,-0.0381915],[-0.0973785,-0.040679,0.064127,0.0306862],[-0.0705398,-0.0361742,0.0105173,0.014495],[-0.0280123,0.00844761,-0.000719563,0.00316929],[-0.00250951,0.0122852,0.00250034,0.000592568]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 664,
+    label = "C=[C]C([O])[O] <=> [C]1=COOC1",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[2.12323,3.29403,-0.454133,-0.051346],[-1.98754,1.03127,0.197208,0.00417163],[-0.889074,0.337493,0.120694,-0.00104528],[-0.29473,0.0929745,0.0376069,0.00315149],[-0.132262,0.0597373,0.0153256,0.00321531],[-0.0810199,0.0435465,0.0096421,0.00458397]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 665,
+    label = "C=[C]C([O])[O] <=> C#CCO[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[2.33793,2.4655,-0.776271,-0.072465],[-1.92527,1.46966,0.375582,0.000722897],[-0.899159,0.330642,0.166393,0.0255784],[-0.437547,0.0711408,0.0370218,0.00701873],[-0.182362,0.080889,0.0192767,-0.000670016],[-0.0784681,0.0784002,0.0179124,0.00173788]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 666,
+    label = "C=[C]C([O])[O] <=> C=C=CO[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[3.83336,4.3175,-0.332138,-0.0687583],[-2.06174,0.360239,0.145995,0.00259229],[-0.710855,0.0725329,0.056715,0.0286185],[-0.295436,0.0728761,0.0370039,0.0103532],[-0.150579,0.0576939,0.0257673,0.00326193],[-0.0865569,0.0338158,0.0147128,0.00159268]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 667,
+    label = "C=[C]C([O])[O] <=> C=[C]C1OO1",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[2.87487,4.99855,-0.000690325,-0.000209105],[-1.81202,0.00140708,0.00066267,0.000223103],[-0.524949,8.31035e-05,2.71478e-05,-4.77931e-05],[-0.22346,0.000148693,0.000104794,6.79671e-05],[-0.0302471,-0.000135219,-7.0378e-05,-1.79838e-05],[0.0633177,-0.000150348,-8.65928e-05,-3.72044e-05]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 668,
+    label = "O2 + C=[C]C1OO1 <=> O2 + C=[C]C([O])[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-6.03051,-6.19441e-06,-4.63937e-06,-2.8468e-06],[14.5947,3.91388e-06,2.93134e-06,1.79872e-06],[-0.223566,4.47664e-07,3.35284e-07,2.05738e-07],[-0.0925321,-1.08588e-09,-8.12876e-10,-4.98404e-10],[-0.0484508,2.5327e-09,1.89691e-09,1.16399e-09],[-0.0310358,2.65481e-09,1.98834e-09,1.22009e-09]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 669,
+    label = "O2 + C3H3 <=> C=C1OC1[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[3.0352,1.70866,-0.201566,-0.0260458],[1.15982,0.808381,0.106142,-0.0297802],[-0.138324,-0.0297856,0.0662461,0.0280531],[-0.0785505,-0.0351375,0.00667863,0.0140701],[-0.0681934,0.0107121,0.0013731,0.00337619],[-0.0347734,0.0182738,0.00483412,0.000872789]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 670,
+    label = "O2 + C=[C]C1OO1 <=> O2 + C=C1OC1[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-12.007,-6.01893e-06,-4.50794e-06,-2.76616e-06],[17.6831,3.7937e-06,2.84133e-06,1.74349e-06],[0.476963,4.05849e-07,3.03966e-07,1.8652e-07],[0.0698878,-1.5271e-09,-1.14337e-09,-7.01243e-10],[-0.00660866,6.91839e-09,5.18161e-09,3.17953e-09],[-0.0175153,4.713e-09,3.52984e-09,2.16598e-09]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 671,
+    label = "[C]1=COOC1 <=> C=C1OC1[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-5.10307,3.35396,-0.455332,-0.0571818],[5.71898,1.04672,0.195742,-0.000204941],[-1.01926,0.302113,0.113006,0.000135514],[-0.382006,0.0630938,0.0323693,0.0051273],[-0.180404,0.0471314,0.0152117,0.00465277],[-0.120183,0.0390998,0.0119987,0.00510219]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 672,
+    label = "C#CCO[O] <=> C=C1OC1[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-5.43382,2.5539,-0.773015,-0.0824355],[5.44591,1.48999,0.371133,-0.00468356],[-1.05648,0.294166,0.152397,0.0264305],[-0.512076,0.0485489,0.0303541,0.00834241],[-0.225273,0.0751755,0.0194827,0.000210402],[-0.11612,0.0756321,0.0197875,0.00200048]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 673,
+    label = "C=C=CO[O] <=> C=C1OC1[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-2.6318,4.28931,-0.350886,-0.0781501],[4.83209,0.332091,0.1313,-0.00108233],[-0.882249,0.0474206,0.0420132,0.0237767],[-0.399167,0.0474222,0.0258206,0.0088508],[-0.231031,0.058099,0.0240724,0.00113029],[-0.13628,0.0361143,0.0152725,0.00100158]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 674,
+    label = "C=[C]C1OO1 <=> C=C1OC1[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-1.12768,4.99692,-0.00198897,-0.00104653],[2.92456,0.00268919,0.00167595,0.000866843],[-0.719918,2.83647e-05,1.08792e-05,-3.48444e-05],[-0.348447,0.000117913,9.46752e-05,6.91647e-05],[-0.115375,-7.69563e-05,-3.69531e-05,-5.43944e-06],[-0.005167,-8.55174e-05,-4.98024e-05,-2.2527e-05]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 675,
+    label = "C=[C]C([O])[O] <=> C=C1OC1[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[1.62451,4.99797,-0.00148185,-0.000887219],[-0.50752,0.00169449,0.00121349,0.000716274],[-0.252263,-3.1792e-05,-8.78493e-06,-1.09111e-06],[-0.108283,4.40518e-05,3.41968e-05,2.37125e-05],[-0.0549005,1.4485e-05,1.01745e-05,5.8809e-06],[-0.0365873,2.73615e-06,1.99681e-06,7.79344e-07]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 676,
+    label = "C=C1OC1[O] + butadiene13 <=> C=C1OC1[O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-9.1507,-0.0039584,-0.00295809,-0.00180897],[16.9736,0.00410695,0.00306625,0.00187244],[0.121771,-0.000531426,-0.000393935,-0.00023791],[-0.0375802,0.000132441,9.79794e-05,5.89884e-05],[-0.0634766,2.85371e-05,2.16779e-05,1.35863e-05],[-0.0570184,1.62625e-05,1.21149e-05,7.37318e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 677,
+    label = "C=C1OC1[O] + butadiene13 <=> C=C1OC1[O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-7.18767,-0.0108339,-0.0080712,-0.00491247],[16.0825,0.0104856,0.0077966,0.00473117],[0.141348,1.81193e-05,2.69552e-05,2.9042e-05],[0.02888,-0.000151178,-0.000112973,-6.90813e-05],[0.010228,-0.000187812,-0.000139855,-8.50614e-05],[-0.00326405,5.12086e-05,3.77376e-05,2.25812e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 678,
+    label = "C=C1OC1[O] + butadiene13 <=> C=C1OC1[O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.0597,-0.00219213,-0.00164028,-0.00100506],[18.8871,0.00185781,0.00138955,0.000850903],[0.0913488,9.56972e-05,7.20029e-05,4.44904e-05],[-0.0507173,4.41819e-05,3.30972e-05,2.03152e-05],[-0.0683143,2.09377e-05,1.56843e-05,9.62668e-06],[-0.0591798,7.94835e-06,5.95605e-06,3.65758e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 679,
+    label = "C=C1OC1[O] + butadiene13 <=> C=C1OC1[O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-9.69438,-0.00602099,-0.0044979,-0.00274916],[18.3765,0.00491761,0.00366983,0.00223947],[0.149329,0.000692222,0.000519278,0.000319415],[0.0273424,-1.86047e-05,-1.31697e-05,-7.36632e-06],[0.00609724,-7.98256e-05,-5.95051e-05,-3.62505e-05],[-0.00450223,7.72215e-06,5.68463e-06,3.39569e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 680,
+    label = "O2 + C=C1OC1[O] <=> O2 + C=[C]C([O])[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-27.4699,-7.20391e-06,-5.39544e-06,-3.31074e-06],[33.4783,5.33497e-06,3.99568e-06,2.45181e-06],[-0.186392,-4.05859e-08,-3.03938e-08,-1.8647e-08],[-0.0604214,5.27442e-08,3.95032e-08,2.42398e-08],[-0.0231144,1.29137e-08,9.67193e-09,5.93489e-09],[-0.0173692,1.55794e-09,1.16681e-09,7.16003e-10]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 681,
+    label = "ketene + CH3CHO <=> CH3 + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-25.1524,-0.0201031,-0.0149265,-0.00903774],[31.8127,0.016219,0.0119944,0.00721713],[0.116912,0.00123607,0.000948962,0.000603935],[-0.00593619,0.000586388,0.000438791,0.000268891],[-0.0277666,0.000171565,0.000129219,7.9967e-05],[-0.0197441,8.40049e-06,6.8411e-06,4.71154e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 682,
+    label = "OCHCO + ketene <=> CO + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[4.34623,-0.00543379,-0.00404583,-0.0024603],[4.57142,0.00737221,0.00548496,0.00333153],[-0.0943321,-0.00180228,-0.00133452,-0.000804578],[0.0452296,-0.000221252,-0.000168014,-0.000105248],[0.045185,2.77341e-05,2.02739e-05,1.19747e-05],[0.0206992,1.72018e-05,1.3109e-05,8.25445e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 683,
+    label = "OCHCO + ketene <=> CO + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-23.9082,-0.00011042,-8.26962e-05,-5.07401e-05],[28.1157,0.000106885,8.00471e-05,4.91133e-05],[0.300394,-2.40786e-06,-1.80198e-06,-1.10441e-06],[0.0887698,-1.49215e-06,-1.11756e-06,-6.85757e-07],[0.0321783,-5.96018e-07,-4.46408e-07,-2.73938e-07],[0.0194759,-3.6526e-07,-2.73562e-07,-1.67858e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 684,
+    label = "OCHCO + ketene <=> CO + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.6204,-1.35015e-05,-1.01121e-05,-6.20491e-06],[15.6405,1.36536e-05,1.02259e-05,6.27474e-06],[0.13106,-2.22545e-06,-1.66674e-06,-1.02271e-06],[0.0519193,4.22635e-08,3.16463e-08,1.94118e-08],[0.0664382,7.69845e-08,5.76583e-08,3.53801e-08],[-0.00236241,1.02947e-08,7.71061e-09,4.73166e-09]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 685,
+    label = "O2 + C3H3 <=> C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[6.29667,1.70523,-0.202187,-0.0260052],[0.918285,0.808487,0.104994,-0.0303684],[-0.10677,-0.0287403,0.066241,0.0277857],[-0.0683078,-0.0346986,0.00709244,0.0141532],[-0.0568512,0.0109126,0.00165493,0.00352143],[-0.0235354,0.0185157,0.00497527,0.000951843]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 686,
+    label = "[C]1=COOC1 <=> C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-1.82053,3.34811,-0.456786,-0.0572207],[5.47439,1.03961,0.193661,-0.00034004],[-0.986274,0.30029,0.112341,-4.87042e-05],[-0.36367,0.0639866,0.032538,0.00497634],[-0.17352,0.0487723,0.0155145,0.00451495],[-0.110277,0.0405909,0.012173,0.00498504]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 687,
+    label = "C#CCO[O] <=> C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-2.14942,2.54547,-0.775382,-0.082463],[5.20595,1.47985,0.36804,-0.00484131],[-1.0192,0.290713,0.151519,0.0263766],[-0.490733,0.0480087,0.0304402,0.00837847],[-0.216575,0.0755452,0.0196618,0.000192799],[-0.105166,0.076271,0.019892,0.0019398]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 688,
+    label = "C=C=CO[O] <=> C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[0.649666,4.2867,-0.352084,-0.0783231],[4.59886,0.328282,0.129468,-0.00143011],[-0.841058,0.0455106,0.0410399,0.023519],[-0.385889,0.0469358,0.0254976,0.00868921],[-0.222766,0.0583479,0.0240764,0.00101826],[-0.121298,0.0365738,0.0153778,0.00091699]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 689,
+    label = "C=[C]C1OO1 <=> C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[2.15137,4.9969,-0.00200293,-0.00105414],[2.67243,0.00269806,0.00168242,0.000870823],[-0.693077,3.11621e-05,1.19905e-05,-3.4889e-05],[-0.333768,0.000120257,9.58677e-05,6.95126e-05],[-0.110015,-7.68679e-05,-3.69738e-05,-5.45487e-06],[0.00445885,-8.65426e-05,-5.04864e-05,-2.28346e-05]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 690,
+    label = "C=[C]C([O])[O] <=> C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[4.89604,4.99795,-0.0014933,-0.000894073],[-0.766325,0.00170402,0.00122033,0.000720326],[-0.225684,-3.25722e-05,-9.42473e-06,-1.55157e-06],[-0.0918728,4.35599e-05,3.38634e-05,2.35315e-05],[-0.0481093,1.41121e-05,9.91591e-06,5.74105e-06],[-0.0262818,2.55903e-06,1.86779e-06,7.01746e-07]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 691,
+    label = "C=C1OC1[O] <=> C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[5.20112,4.99495,-0.00377431,-0.00230728],[-0.896255,0.0049697,0.00370941,0.00226429],[-0.215813,-0.000374293,-0.00027661,-0.000166255],[-0.0759017,-8.68866e-05,-6.52726e-05,-4.02372e-05],[-0.0189328,-1.32783e-05,-9.9991e-06,-6.18631e-06],[-0.00552256,-8.09872e-06,-6.01868e-06,-3.6493e-06]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 692,
+    label = "O2 + C=C1OC1[O] <=> O2 + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-10.5288,-0.00616,-0.00460063,-0.0028109],[20.5045,0.00572699,0.0042723,0.00260567],[0.16982,-0.000140039,-0.000100575,-5.76878e-05],[0.0602334,6.79692e-06,4.86679e-06,2.77751e-06],[0.0264431,-7.72988e-07,-5.83549e-07,-3.62416e-07],[0.0139115,-1.59238e-05,-1.18746e-05,-7.23818e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 693,
+    label = "C=C([O])[CH][O] + butadiene13 <=> C=C([O])[CH][O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-34.8073,-0.0096865,-0.0072126,-0.00438634],[37.9426,0.0113501,0.0084375,0.00511825],[0.172189,-0.00175648,-0.00129018,-0.000767993],[0.0576831,-0.000238677,-0.000182722,-0.000115818],[0.0222806,2.80681e-05,2.06662e-05,1.2347e-05],[0.00742376,4.19432e-05,3.13683e-05,1.92055e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 694,
+    label = "C=C([O])[CH][O] + butadiene13 <=> C=C([O])[CH][O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-29.068,-0.0137563,-0.0102278,-0.00620576],[33.4723,0.014692,0.0108987,0.00658952],[0.138072,-0.000869602,-0.000619519,-0.000350473],[0.0302345,-0.000373838,-0.000281193,-0.000173659],[0.0113173,-0.000137341,-0.000103186,-6.36189e-05],[0.00283539,-1.58303e-05,-1.21331e-05,-7.70405e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 695,
+    label = "C=C([O])[CH][O] + butadiene13 <=> C=C([O])[CH][O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-35.5149,-0.00649766,-0.00484155,-0.00294756],[38.3006,0.00760439,0.00565584,0.00343357],[0.0301585,-0.00208097,-0.00153874,-0.000925671],[0.0154045,0.000209731,0.000151424,8.76355e-05],[0.00497704,9.55554e-05,7.17821e-05,4.4246e-05],[0.00173432,-2.62588e-05,-1.92233e-05,-1.13812e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 696,
+    label = "C=C([O])[CH][O] + butadiene13 <=> C=C([O])[CH][O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-28.2029,-0.0136551,-0.0101679,-0.00618391],[33.4114,0.010785,0.00800595,0.00484567],[0.303769,-9.78604e-05,-5.80645e-05,-2.14076e-05],[0.0935569,0.000152324,0.00011311,6.84986e-05],[0.0316342,0.000105905,7.92292e-05,4.85327e-05],[0.00780983,7.17967e-05,5.37204e-05,3.29147e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 697,
+    label = "C=C([O])[CH][O] + butadiene13 <=> C=C([O])[CH][O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-34.9452,-0.0221976,-0.0164712,-0.00996327],[38.5991,0.0168164,0.0124179,0.00745465],[-0.0641167,0.00113678,0.000877238,0.000562378],[-0.0496181,0.000604933,0.000452089,0.000276501],[-0.0290334,0.000250403,0.000187842,0.000115543],[-0.017794,8.90558e-05,6.70152e-05,4.14169e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 698,
+    label = "C=C([O])[CH][O] + butadiene13 <=> C=C([O])[CH][O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-28.153,-0.0203779,-0.0151316,-0.00916286],[33.5258,0.0157366,0.0116309,0.00699189],[0.296959,0.000262347,0.000225595,0.000165585],[0.0924607,0.000185966,0.000138781,8.47e-05],[0.0325326,0.000132615,9.90914e-05,6.0587e-05],[0.00922266,8.59336e-05,6.42925e-05,3.9387e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 699,
+    label = "C=C([O])[CH][O] + butadiene13 <=> C=C([O])[CH][O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-38.5681,-0.00244318,-0.00178474,-0.00105306],[39.3488,0.0043757,0.00319603,0.00188537],[0.287884,-0.00313058,-0.00228602,-0.001348],[0.0616681,0.00173304,0.00126514,0.000745667],[0.0429967,-0.000673365,-0.00049147,-0.00028958],[0.0125709,0.000117469,8.58986e-05,5.07672e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 700,
+    label = "C=C([O])[CH][O] + butadiene13 <=> C=C([O])[CH][O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-38.954,-0.00211294,-0.00154273,-0.000909525],[39.6756,0.00379137,0.00276777,0.00163134],[0.278923,-0.00273283,-0.00199439,-0.00117491],[0.0642956,0.00153916,0.0011228,0.000661007],[0.0422714,-0.000623534,-0.000454643,-0.000267446],[0.0126196,0.000131466,9.5876e-05,5.64175e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 701,
+    label = "C=C([O])[CH][O] + butadiene13 <=> C=C([O])[CH][O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-33.4653,-0.00101357,-0.000739253,-0.000435078],[34.9423,0.00183153,0.00133546,0.000785601],[0.351845,-0.00136155,-0.000992259,-0.000583217],[0.104166,0.000821568,0.000598321,0.000351278],[0.0508517,-0.000384886,-0.000280003,-0.000164108],[0.0178295,0.00012559,9.1204e-05,5.32987e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 702,
+    label = "C=C([O])[CH][O] + butadiene13 <=> C=C([O])[CH][O] + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-34.1699,-0.00074099,-0.000540026,-0.000317426],[35.5286,0.00133846,0.000975088,0.000572802],[0.344218,-0.000999489,-0.000727671,-0.000427006],[0.106609,0.000611235,0.000444636,0.000260565],[0.0498902,-0.000294464,-0.000213928,-0.0001251],[0.018148,0.000102856,7.45566e-05,4.34377e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 703,
+    label = "C=C([O])[CH][O] <=> HCO + ketene",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[5.41957,0.992172,-0.304978,-0.000380641],[2.98177,1.10498,0.0391948,-0.0540701],[-0.641541,0.238202,0.102415,-0.0243586],[-0.337228,-0.0132222,0.0487727,0.0180673],[-0.13872,-0.0209386,0.00422742,0.0143555],[-0.0501681,0.00347987,-0.00336214,0.0014148]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 704,
+    label = "C=C([O])[CH][O] <=> CO + vinoxy",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-7.30544,2.1998,-0.183746,-0.0765115],[13.1901,0.303159,0.171582,0.0568163],[-0.437399,-0.0155324,0.00251441,0.0132704],[-0.214424,-0.0242738,-0.0150854,-0.00614886],[-0.0945303,0.00116429,-0.00106924,-0.00235889],[-0.0485189,0.00631203,0.00400534,0.00175241]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 705,
+    label = "H2CC(S) <=> C2H2",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[6.43609,2.44318,-0.0415417,-0.0245475],[2.28107,0.0211014,0.0154059,0.00908226],[-0.113968,0.00198286,0.0015844,0.00106476],[-0.0203386,-0.00210052,-0.00144378,-0.000765128],[-0.00982135,-0.000447739,-0.000298452,-0.000148479],[-0.0122929,0.000497801,0.000371873,0.000227553]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 706,
+    label = "C=C=CO[O] <=> HCO + ketene",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[1.98599,1.73519,-0.381463,-0.0894881],[5.31132,0.296165,0.116001,-0.00146978],[-0.844098,0.0234785,0.0291131,0.0195984],[-0.408872,0.0391743,0.0200919,0.00572751],[-0.225086,0.0606571,0.0239411,-0.000240131],[-0.138745,0.041731,0.0168363,0.000293115]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 707,
+    label = "C=C=CO[O] <=> CO + vinoxy",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[0.20171,1.8041,-0.350091,-0.0852105],[5.46721,0.392365,0.162183,0.00721932],[-0.628559,0.0651099,0.0505212,0.0255519],[-0.276438,0.043556,0.0245542,0.00922278],[-0.167499,0.0486249,0.0212306,0.00220455],[-0.120616,0.0272038,0.0129112,0.00225883]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 708,
+    label = "O + C2H3 <=> H + [CH2][C]=O",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-23.9563,-0.000106601,-7.98366e-05,-4.89858e-05],[18.4423,9.74805e-05,7.30044e-05,4.47924e-05],[-0.81548,-7.57635e-08,-5.5767e-08,-3.33059e-08],[-0.275333,-6.14156e-06,-4.59958e-06,-2.82219e-06],[-0.106317,-3.78131e-06,-2.83205e-06,-1.73779e-06],[-0.0440796,-1.69862e-06,-1.27221e-06,-7.80665e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 709,
+    label = "[CH2][C]=O + C2H5 <=> vinoxy + C2H4",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(6.57e+14,'cm^3/(mol*s)','*|/',1.1), n=-0.68, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 5 used for Y_rad;Cmethyl_Csrad
+    Exact match found for rate rule [Y_rad;Cmethyl_Csrad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 3.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 5 used for Y_rad;Cmethyl_Csrad
+Exact match found for rate rule [Y_rad;Cmethyl_Csrad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 3.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 710,
+    label = "[CH2][C]=O + npropyl <=> vinoxy + C3H6",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(2.3e+13,'cm^3/(mol*s)','*|/',1.7), n=-0.32, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 20 used for Y_rad;C/H2/Nd_Csrad
+    Exact match found for rate rule [Y_rad;C/H2/Nd_Csrad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 20 used for Y_rad;C/H2/Nd_Csrad
+Exact match found for rate rule [Y_rad;C/H2/Nd_Csrad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 711,
+    label = "[CH2][C]=O + butyl_1 <=> vinoxy + butene1",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(2.3e+13,'cm^3/(mol*s)','*|/',1.7), n=-0.32, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 20 used for Y_rad;C/H2/Nd_Csrad
+    Exact match found for rate rule [Y_rad;C/H2/Nd_Csrad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 20 used for Y_rad;C/H2/Nd_Csrad
+Exact match found for rate rule [Y_rad;C/H2/Nd_Csrad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 712,
+    label = "H + [CH2][C]=O <=> vinoxy",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[8.08931,2.4931,-0.00514678,-0.00314072],[-2.03864,0.00739623,0.00551362,0.00335907],[-0.550014,-0.000533244,-0.000391971,-0.000233596],[-0.136783,-0.000474952,-0.000355284,-0.000217599],[-0.0107418,-0.000151906,-0.000114081,-7.02909e-05],[0.0187426,-3.47104e-05,-2.60785e-05,-1.60787e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 713,
+    label = "[CH2][C]=O + vinoxy <=> ketene + vinoxy",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.48031e+06,'m^3/(mol*s)'), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cdpri_Rrad] for rate rule [Y_rad;Cdpri_Orad]
+    Euclidian distance = 1.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cdpri_Rrad] for rate rule [Y_rad;Cdpri_Orad]
+Euclidian distance = 1.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 714,
+    label = "ketene + C2H4 <=> [CH2][C]=O + C2H4",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.4452,-0.0157644,-0.0117234,-0.0071157],[19.9876,0.0138814,0.0102944,0.0062213],[0.138827,0.000908805,0.000697611,0.000443889],[0.0195372,0.00014337,0.000108431,6.75237e-05],[0.00231855,-0.000125197,-9.28368e-05,-5.60958e-05],[0.000272321,-0.000121447,-9.066e-05,-5.53505e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 715,
+    label = "H + [CH2][C]=O <=> H + ketene",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[12.1116,-0.00661931,-0.00493981,-0.00301452],[-1.24246,0.00739361,0.00551246,0.00335911],[-0.329814,-0.000588551,-0.000433312,-0.000258888],[-0.117856,-0.00047208,-0.000353246,-0.000216455],[-0.0473426,-0.000124482,-9.36008e-05,-5.778e-05],[-0.0202088,-1.22527e-05,-9.27002e-06,-5.77551e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 716,
+    label = "ketene + C2H4 <=> [CH2][C]=O + C2H4",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.5162,-0.018669,-0.0138777,-0.00841777],[20.3466,0.0130872,0.00968611,0.00583552],[0.274938,0.000728198,0.000561938,0.000360252],[0.0764007,0.000517571,0.000386244,0.000235704],[0.01406,0.000287627,0.000215137,0.000131745],[-0.00270635,0.000158226,0.000118401,7.25551e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 717,
+    label = "ketene + C3H6 <=> [CH2][C]=O + C3H6",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.4001,-0.0176343,-0.0131049,-0.0079456],[19.8947,0.0150032,0.0111142,0.00670536],[0.147039,0.00136163,0.00103753,0.000653182],[0.0164791,0.000433399,0.000325206,0.000200125],[-0.000180679,-5.77747e-05,-4.18584e-05,-2.43647e-05],[0.00162923,-0.000160979,-0.000119824,-7.2832e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 718,
+    label = "ketene + C3H6 <=> [CH2][C]=O + C3H6",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.3787,-0.0197927,-0.014706,-0.0089136],[20.132,0.0139042,0.0102833,0.00618815],[0.283839,0.000783774,0.00060592,0.000389438],[0.0841441,0.000602232,0.000449277,0.000274034],[0.019381,0.000370769,0.000277161,0.000169574],[0.00116237,0.000224431,0.000167825,0.000102732]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 719,
+    label = "ketene + C3H6 <=> [CH2][C]=O + C3H6",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.2827,-0.0179171,-0.0133166,-0.00807547],[19.39,0.0143812,0.010651,0.00642357],[0.183179,0.00123013,0.000938191,0.000591431],[0.0359552,0.000533301,0.000399169,0.000244705],[0.00387375,8.93589e-05,6.78291e-05,4.24647e-05],[-0.00368693,-5.7395e-05,-4.23678e-05,-2.5419e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 720,
+    label = "ketene + C3H6 <=> [CH2][C]=O + C3H6",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.1583,-0.0196049,-0.0145671,-0.0088301],[19.4507,0.0139021,0.0102831,0.00618945],[0.261234,0.000831075,0.000640986,0.000410619],[0.0754339,0.000619739,0.000462406,0.000282105],[0.0141146,0.00036764,0.000274885,0.00016824],[-0.00488969,0.000212176,0.000158722,9.72174e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 721,
+    label = "ketene + butene1 <=> [CH2][C]=O + butene1",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.3602,-0.0189401,-0.0140694,-0.00852485],[19.9394,0.0155042,0.0114756,0.00691415],[0.174808,0.00144085,0.0010981,0.000691509],[0.0263116,0.000610136,0.00045675,0.000280071],[-0.000195504,7.00285e-05,5.37152e-05,3.41443e-05],[-0.00163909,-0.000110197,-8.16187e-05,-4.92277e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 722,
+    label = "ketene + butene1 <=> [CH2][C]=O + butene1",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.5866,-0.0207899,-0.01544,-0.009352],[20.2204,0.0147231,0.0108819,0.00654174],[0.284669,0.000862881,0.000667425,0.000429282],[0.0801502,0.000672805,0.000501855,0.000306038],[0.0147049,0.00042306,0.000316196,0.000193407],[-0.00300943,0.000257544,0.00019257,0.000117864]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 723,
+    label = "ketene + butene1 <=> [CH2][C]=O + butene1",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.4228,-0.0188337,-0.0139914,-0.0084786],[19.4396,0.0153165,0.0113374,0.00683157],[0.149506,0.00141697,0.00107985,0.000679964],[0.0149397,0.00062758,0.000469691,0.000287896],[-0.00866371,0.000102663,7.803e-05,4.89455e-05],[-0.0113349,-8.22842e-05,-6.07743e-05,-3.64943e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 724,
+    label = "ketene + butene1 <=> [CH2][C]=O + butene1",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.4357,-0.0205569,-0.0152676,-0.00924814],[19.623,0.0147902,0.0109337,0.00657499],[0.224668,0.00098395,0.000757543,0.000484059],[0.0523918,0.000752492,0.000561449,0.000342522],[-0.00245429,0.000467713,0.000349642,0.000213932],[-0.0171429,0.000278568,0.00020836,0.000127595]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 725,
+    label = "ketene + allyl <=> [CH2][C]=O + allyl",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.5274,-0.0171459,-0.0127429,-0.00772704],[19.9115,0.0151066,0.0111936,0.00675592],[0.142619,0.00117477,0.000899273,0.000569929],[0.0180192,0.000299825,0.000225554,0.000139341],[0.00578072,-0.0001097,-8.08363e-05,-4.83641e-05],[0.00739659,-0.000166502,-0.000124146,-7.56565e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 726,
+    label = "ketene + allyl <=> [CH2][C]=O + allyl",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.5455,-0.0175203,-0.013022,-0.00789714],[20.0369,0.0146354,0.0108402,0.00653867],[0.242764,0.000800996,0.000620531,0.000400008],[0.068538,0.000264711,0.000198762,0.00012244],[0.011605,2.51105e-05,1.95582e-05,1.27035e-05],[0.0141938,-6.46087e-06,-4.64833e-06,-2.67392e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 727,
+    label = "ketene + allyl <=> [CH2][C]=O + allyl",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.2517,-0.0182295,-0.0135481,-0.00821517],[21.0374,0.0143048,0.0105924,0.00638637],[0.136989,0.00127222,0.000969319,0.000610163],[0.0139937,0.000634083,0.000474073,0.000290128],[-0.0058928,0.000153533,0.000115737,7.17167e-05],[-0.00957719,-3.83177e-05,-2.80187e-05,-1.65573e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 728,
+    label = "ketene + allyl <=> [CH2][C]=O + allyl",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.2528,-0.019591,-0.0145557,-0.00882203],[21.1354,0.0142274,0.0105245,0.0063354],[0.186517,0.000980536,0.000753075,0.000479537],[0.0250202,0.000706552,0.00052735,0.000321886],[-0.00146827,0.000397489,0.00029735,0.000182128],[-0.0234377,0.000210024,0.000157246,9.64385e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 729,
+    label = "ketene + ketene <=> [CH2][C]=O + ketene",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-27.5686,-0.0044184,-0.00330305,-0.00202105],[34.6553,0.00354845,0.00265048,0.00161968],[-0.0841523,0.000289202,0.000217511,0.000134318],[-0.0444885,5.46542e-05,4.1038e-05,2.5279e-05],[-0.0221066,-9.2583e-06,-6.87354e-06,-4.16108e-06],[-0.0136152,-1.3046e-05,-9.75187e-06,-5.96608e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 730,
+    label = "ketene + ketene <=> [CH2][C]=O + ketene",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-29.1518,-3.30028e-05,-2.47176e-05,-1.51669e-05],[34.945,1.8712e-05,1.40143e-05,8.5992e-06],[0.0450841,1.44747e-06,1.08412e-06,6.65256e-07],[0.0197394,4.51266e-07,3.37981e-07,2.07392e-07],[0.00142141,1.04437e-07,7.82201e-08,4.79981e-08],[-0.0013222,2.64832e-08,1.98352e-08,1.21715e-08]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 731,
+    label = "ketene + ketene <=> [CH2][C]=O + [CH2][C]=O",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-48.9937,-0.00301073,-0.00225015,-0.00137628],[52.2193,0.00239376,0.00178618,0.00108981],[0.125363,-0.000536561,-0.000399183,-0.00024244],[0.0612242,-8.59035e-06,-6.88891e-06,-4.65234e-06],[0.0200372,1.51381e-05,1.12769e-05,6.86267e-06],[0.00282132,3.25508e-07,2.70848e-07,1.91479e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 732,
+    label = "ketene + ketene <=> [CH2][C]=O + ketene",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-28.3103,-0.000251204,-0.000188127,-0.000115423],[35.0357,9.35778e-05,7.00759e-05,4.29903e-05],[0.0399037,2.25619e-05,1.68966e-05,1.03668e-05],[0.00261943,9.63733e-06,7.21743e-06,4.42823e-06],[-0.0113911,3.4898e-06,2.61361e-06,1.60366e-06],[-0.0118715,1.22421e-06,9.16888e-07,5.62618e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 733,
+    label = "ketene + ketene <=> [CH2][C]=O + ketene",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-27.7659,-0.00107699,-0.000806216,-0.000494328],[34.5863,0.00106666,0.000798339,0.00048936],[-0.081268,-4.65765e-05,-3.473e-05,-2.1167e-05],[-0.0264524,-9.91148e-06,-7.43199e-06,-4.56852e-06],[-0.013948,-7.36283e-06,-5.51359e-06,-3.38242e-06],[-0.00873927,-3.01196e-06,-2.25615e-06,-1.3847e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 734,
+    label = "ketene + ketene <=> [CH2][C]=O + ketene",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-27.5864,-0.00917373,-0.00684193,-0.00417137],[34.5505,0.00778367,0.00579709,0.00352674],[-0.21418,0.00108697,0.000816027,0.000502532],[-0.109419,2.36237e-05,1.91333e-05,1.30868e-05],[-0.053656,-0.000104888,-7.81045e-05,-4.75028e-05],[-0.0202924,-7.47863e-05,-5.59041e-05,-3.42027e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 735,
+    label = "ketene + butene2t <=> [CH2][C]=O + butene2t",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.6482,-0.0189541,-0.0140798,-0.00853116],[19.603,0.0154891,0.0114643,0.00690728],[0.150942,0.00144361,0.00110012,0.000692692],[0.0132797,0.000618384,0.000462884,0.000283796],[-0.0122425,7.72807e-05,5.91269e-05,3.74463e-05],[-0.0104506,-0.000106176,-7.86078e-05,-4.73806e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 736,
+    label = "ketene + butene2t <=> [CH2][C]=O + butene2t",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.7469,-0.0207585,-0.0154164,-0.0093375],[19.8349,0.0148108,0.0109472,0.00658152],[0.242259,0.000920528,0.000710577,0.000455738],[0.0576468,0.000716317,0.000534384,0.000325943],[-0.00367399,0.00045131,0.000337335,0.000206359],[-0.0165961,0.00027288,0.000204062,0.000124922]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 737,
+    label = "ketene + vinoxy <=> [CH2][C]=O + vinoxy",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.5342,-0.0199471,-0.014813,-0.00897122],[20.9839,0.0157733,0.0116665,0.00702134],[0.109275,0.00130924,0.00100181,0.000634538],[-0.0163504,0.000698063,0.000521785,0.000319213],[-0.0298679,0.00022428,0.000168612,0.000104057],[-0.0265905,1.50083e-05,1.18739e-05,7.878e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 738,
+    label = "ketene + vinoxy <=> [CH2][C]=O + vinoxy",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.6495,-0.0207873,-0.0154312,-0.00934021],[20.9203,0.0164458,0.012157,0.00731004],[0.149079,0.00133436,0.00102282,0.000649474],[0.0542383,0.000721756,0.000539451,0.000329981],[-0.0298662,0.000249399,0.000187384,0.000115537],[-0.0624043,3.12994e-05,2.40881e-05,1.53849e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 739,
+    label = "ketene + vinoxy <=> [CH2][C]=O + vinoxy",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-13.0158,-0.00117044,-0.000875687,-0.000536471],[21.1928,0.001299,0.000971448,0.000594739],[0.256219,-0.000332614,-0.000248404,-0.00015176],[0.0696601,3.44699e-05,2.56223e-05,1.55407e-05],[0.0129276,1.34139e-05,1.00532e-05,6.17502e-06],[-5.84662e-05,-2.25945e-06,-1.67989e-06,-1.01926e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 740,
+    label = "ketene + vinoxy <=> [CH2][C]=O + vinoxy",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.9543,-0.0166618,-0.0123907,-0.00752057],[20.6422,0.0133176,0.00987099,0.00596042],[0.130749,0.00105333,0.00080367,0.000506929],[0.00713115,0.000416798,0.000312107,0.000191463],[-0.0123978,3.93039e-05,3.02379e-05,1.9303e-05],[-0.00968374,-6.45278e-05,-4.78548e-05,-2.89214e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 741,
+    label = "ketene + vinoxy <=> [CH2][C]=O + vinoxy",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-15.211,-0.00372719,-0.00278668,-0.00170542],[22.0326,0.0035243,0.00263306,0.00160962],[0.00862052,-0.000212429,-0.000157267,-9.47861e-05],[-0.009525,-3.2293e-05,-2.42968e-05,-1.50122e-05],[-0.0112424,3.56861e-06,2.6474e-06,1.60077e-06],[-0.00946694,2.66664e-06,1.99776e-06,1.22637e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 742,
+    label = "ketene + vinoxy <=> [CH2][C]=O + vinoxy",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-15.2795,-0.00322775,-0.00241403,-0.00147809],[22.0789,0.00285057,0.00213058,0.00130325],[0.00556221,-5.78905e-05,-4.23125e-05,-2.49864e-05],[-0.0165544,-3.52182e-06,-2.66406e-06,-1.65931e-06],[-0.0200494,9.08708e-06,6.79502e-06,4.1594e-06],[-0.0134142,5.54548e-06,4.15455e-06,2.55042e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 743,
+    label = "HO2 + ketene <=> HO2 + [CH2][C]=O",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-10.4985,-0.000115294,-8.63356e-05,-5.29628e-05],[18.0099,-9.66005e-05,-7.23232e-05,-4.43538e-05],[0.0782685,-6.2596e-05,-4.68606e-05,-2.87345e-05],[0.03295,-4.13854e-05,-3.09807e-05,-1.8996e-05],[0.00522514,-1.57141e-05,-1.176e-05,-7.20757e-06],[-0.000741711,4.86517e-07,3.68798e-07,2.30431e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 744,
+    label = "CH3 + ketene <=> CH3 + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-6.7989,-0.197113,-0.12845,-0.0613931],[17.5791,0.212225,0.132924,0.0580053],[0.0199712,-0.00146774,0.00492097,0.00834188],[0.0271252,-0.0178413,-0.0114855,-0.00528755],[0.0128348,-0.00125816,-0.00235273,-0.00270043],[-0.001668,-0.00509633,-0.00332184,-0.00160119]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 745,
+    label = "ketene + allylperoxy <=> [CH2][C]=O + allylperoxy",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-9.66948,-0.021006,-0.0155882,-0.00943015],[19.2834,0.0175036,0.0129381,0.00777889],[0.108471,0.00159394,0.00121877,0.000771143],[-0.0275582,0.000680289,0.000509259,0.000312264],[-0.0367794,8.04932e-05,6.17999e-05,3.93359e-05],[-0.0164547,-0.000127066,-9.4049e-05,-5.66646e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 746,
+    label = "ketene + allylperoxy <=> [CH2][C]=O + allylperoxy",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-9.56649,-0.0227526,-0.0168804,-0.0102083],[19.3453,0.0168705,0.0124537,0.00747212],[0.182372,0.00116504,0.000899429,0.000576953],[0.0278952,0.00085579,0.000638382,0.000389328],[-0.0102124,0.000490298,0.00036663,0.000224424],[-0.0153275,0.000245943,0.000184215,0.000113049]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 747,
+    label = "ketene + allylperoxy <=> [CH2][C]=O + allylperoxy",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.7433,-0.0109421,-0.0081577,-0.00497064],[20.1573,0.00865724,0.00643987,0.00391043],[0.146368,0.000525418,0.000400527,0.000252317],[0.0127498,0.000306751,0.000229373,0.000140401],[-0.00896496,8.78062e-05,6.59418e-05,4.06298e-05],[-0.0112978,-3.21726e-06,-2.24162e-06,-1.21841e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 748,
+    label = "ketene + allylperoxy <=> [CH2][C]=O + allylperoxy",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.414,-0.0118217,-0.00881179,-0.00536762],[20.0908,0.00862044,0.0064083,0.00388731],[0.19345,0.000293138,0.000227523,0.00014706],[0.0454264,0.000263696,0.000196902,0.000120267],[0.0056049,0.000140388,0.000105074,6.44092e-05],[-0.00438117,7.08233e-05,5.30354e-05,3.25356e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 749,
+    label = "CH3 + ketene <=> CH3 + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-9.24882,-0.000820641,-0.000614414,-0.000376816],[18.1081,0.000631067,0.000472373,0.000289603],[0.384122,-0.000232533,-0.000174031,-0.00010667],[0.194982,-5.31334e-05,-3.98013e-05,-2.44288e-05],[0.0664155,6.08741e-05,4.557e-05,2.79416e-05],[0.0281837,3.83155e-05,2.86942e-05,1.76048e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 750,
+    label = "ketene + CH3CHO <=> [CH2][C]=O + CH3CHO",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.551,-0.00315206,-0.00234797,-0.00142879],[19.8605,0.0043421,0.00323286,0.0019658],[0.0444508,-0.00109085,-0.000809807,-0.000490189],[0.102842,-0.000218755,-0.000164174,-0.000101053],[0.048927,5.90451e-05,4.3774e-05,2.64413e-05],[0.0113595,5.47252e-05,4.08981e-05,2.50125e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 751,
+    label = "ketene + CH3CHO <=> [CH2][C]=O + CH3CHO",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-14.6553,-0.0200163,-0.0148636,-0.00900109],[22.6562,0.0159073,0.0117656,0.00708099],[0.133811,0.00144977,0.00110641,0.000698118],[-0.00248434,0.000761141,0.000568884,0.000347979],[-0.0242096,0.00021435,0.000161339,9.97477e-05],[-0.0175777,-2.87151e-05,-2.06479e-05,-1.18673e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 752,
+    label = "ketene + CH3CHO <=> [CH2][C]=O + CH3CHO",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.1085,-0.0145046,-0.0107851,-0.00654481],[20.1613,0.0146862,0.0108995,0.00659474],[-0.246842,0.000657781,0.000511505,0.000331469],[-0.12568,-0.000346531,-0.000257478,-0.000156063],[-0.0389503,-0.000403855,-0.000301576,-0.000184216],[-0.00105434,-0.000206214,-0.00015435,-9.46218e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 753,
+    label = "ketene + CH3CHO <=> [CH2][C]=O + CH3CHO",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-14.6178,-0.0216981,-0.0161052,-0.00974615],[22.7264,0.0161405,0.0119234,0.00716216],[0.183438,0.001177,0.000905236,0.000577578],[0.0230433,0.000786505,0.000586925,0.000358158],[-0.0175814,0.000381387,0.000285524,0.000175089],[-0.0177418,0.000147449,0.00011074,6.8238e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 754,
+    label = "HCO + [CH2][C]=O <=> CO + vinoxy",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.34765e+09,'m^3/(mol*s)'), n=-0.548333, Ea=(1.64222,'kJ/mol'), T0=(1,'K'), comment="""Estimated using an average for rate rule [Y_rad;HCO]
+    Euclidian distance = 0
+    family: CO_Disproportionation"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [Y_rad;HCO]
+Euclidian distance = 0
+family: CO_Disproportionation
+""",
+)
+
+entry(
+    index = 755,
+    label = "CO + C2H5 <=> CH3 + [CH2][C]=O",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-15.3194,-0.000849983,-0.000636382,-0.000390287],[24.4725,0.000598868,0.000448263,0.000274815],[0.0789802,-0.000249121,-0.00018645,-0.000114285],[0.0412247,-5.86121e-05,-4.39025e-05,-2.69435e-05],[0.0149136,6.38686e-05,4.78111e-05,2.93154e-05],[0.00370666,4.50679e-05,3.37486e-05,2.07036e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 756,
+    label = "O2 + ketene <=> O2 + [CH2][C]=O",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-7.60522,-0.044218,-0.0324314,-0.0192605],[17.7258,0.0376381,0.0274144,0.0160994],[0.0448867,0.00762598,0.00568707,0.00346659],[0.0321332,-0.00281205,-0.00199823,-0.00112557],[0.00915611,-0.00283182,-0.00207539,-0.00123097],[0.00357194,3.83512e-05,2.07976e-06,-2.35167e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 757,
+    label = "ketene + m1_allyl <=> [CH2][C]=O + m1_allyl",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.5492,-0.0192525,-0.0143008,-0.00866451],[20.981,0.0153954,0.0113929,0.00686237],[0.103257,0.00148775,0.00113281,0.000712399],[-0.0148107,0.000753676,0.000563411,0.000344731],[-0.0264795,0.000175122,0.000132115,8.19606e-05],[-0.0189695,-7.35137e-05,-5.40729e-05,-3.22583e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 758,
+    label = "ketene + m1_allyl <=> [CH2][C]=O + m1_allyl",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.6328,-0.0205341,-0.0152482,-0.00923414],[21.1342,0.015449,0.0114214,0.0068689],[0.157436,0.00114727,0.000880707,0.000560423],[0.0156313,0.000741141,0.000553407,0.000338019],[-0.0198512,0.000366753,0.000274642,0.000168486],[-0.0227557,0.000159923,0.000119997,7.38395e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 759,
+    label = "ketene + m1_allyl <=> [CH2][C]=O + m1_allyl",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.5321,-0.017217,-0.0127966,-0.00776042],[19.9491,0.0148558,0.0110062,0.00664128],[0.167158,0.000913562,0.000705155,0.000452231],[0.0219701,0.00035905,0.000269015,0.000165171],[-0.000560736,1.76223e-05,1.3996e-05,9.33359e-06],[-0.00334718,-8.92615e-05,-6.63527e-05,-4.0247e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 760,
+    label = "ketene + m1_allyl <=> [CH2][C]=O + m1_allyl",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.5766,-0.0190902,-0.0141814,-0.0085932],[21.0422,0.0152433,0.0112815,0.00679626],[0.121162,0.00145048,0.00110462,0.000694846],[0.00858084,0.000724105,0.000541383,0.000331326],[-0.00734573,0.000167003,0.000126032,7.82258e-05],[-0.0103544,-6.48488e-05,-4.76452e-05,-2.8372e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 761,
+    label = "ketene + m1_allyl <=> [CH2][C]=O + m1_allyl",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.4925,-0.0175706,-0.0130609,-0.00792207],[20.0552,0.0142072,0.0105221,0.00634581],[0.223897,0.000612193,0.000479344,0.000313579],[0.0675972,0.000298255,0.00022326,0.000136888],[0.0112218,0.000121333,9.11273e-05,5.61541e-05],[-0.00319281,5.58099e-05,4.1879e-05,2.57722e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 762,
+    label = "ketene + m1_allyl <=> [CH2][C]=O + m1_allyl",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.5086,-0.0207063,-0.0153779,-0.0093144],[21.141,0.0148071,0.0109448,0.00658038],[0.194452,0.00091599,0.000707174,0.000453646],[0.0575156,0.000711534,0.00053081,0.000323757],[-0.00198837,0.00044651,0.000333759,0.000204183],[-0.00808592,0.000269579,0.000201609,0.000123435]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 763,
+    label = "[CH2][C]=O + m1_allyl <=> vinoxy + butadiene13",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(1.5e+11,'cm^3/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using an average for rate rule [Y_rad;Cmethyl_Csrad/H/Cd]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 3.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [Y_rad;Cmethyl_Csrad/H/Cd]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 3.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 764,
+    label = "ketene + butadiene13 <=> [CH2][C]=O + butadiene13",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.7826,-0.0181863,-0.0135132,-0.00819143],[20.0906,0.0150839,0.0111701,0.0067354],[0.160878,0.00142255,0.00108322,0.000681272],[0.020421,0.000573107,0.000429192,0.000263325],[0.00190238,3.54113e-05,2.78253e-05,1.82924e-05],[-0.000286513,-0.000130171,-9.66135e-05,-5.84617e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 765,
+    label = "ketene + butadiene13 <=> [CH2][C]=O + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-23.1636,-0.0136674,-0.0101737,-0.00618424],[31.1983,0.0120819,0.00897143,0.00543265],[-0.145448,0.000659958,0.000507836,0.000324272],[-0.0661736,8.15415e-05,6.20063e-05,3.89249e-05],[-0.0238227,-8.18546e-05,-6.07508e-05,-3.67587e-05],[-0.00984852,-7.50087e-05,-5.60229e-05,-3.4231e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 766,
+    label = "ketene + butadiene13 <=> [CH2][C]=O + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-23.1145,-0.0102371,-0.00763307,-0.00465191],[31.2585,0.00867456,0.00645564,0.00392272],[-0.130729,0.000536756,0.000408698,0.000257033],[-0.0698407,0.000131637,9.89812e-05,6.11022e-05],[-0.0369656,-3.81618e-06,-2.59771e-06,-1.35044e-06],[-0.0234565,-2.18946e-05,-1.63125e-05,-9.92945e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 767,
+    label = "ketene + butadiene13 <=> [CH2][C]=O + butadiene13",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-8.7249,-0.0152176,-0.0113219,-0.00687683],[18.7328,0.0128002,0.00949582,0.00574176],[0.17107,0.000847886,0.00064992,0.000412699],[0.0285374,0.000320851,0.000240466,0.000147709],[-0.000715504,2.42156e-05,1.87899e-05,1.21405e-05],[-0.0080503,-5.17987e-05,-3.84567e-05,-2.32812e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 768,
+    label = "ketene + butadiene13 <=> [CH2][C]=O + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-24.1464,-0.00123261,-0.000922747,-0.000565816],[31.5815,0.000773587,0.000578947,0.000354841],[0.011185,4.22675e-05,3.17036e-05,1.94977e-05],[-0.0186032,7.82406e-06,5.86341e-06,3.60116e-06],[-0.0156796,1.57382e-06,1.1798e-06,7.24943e-07],[-0.00974095,1.22019e-06,9.13764e-07,5.60598e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 769,
+    label = "ketene + butadiene13 <=> [CH2][C]=O + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-25.7949,-2.392e-05,-1.79151e-05,-1.09929e-05],[31.9673,-2.87763e-06,-2.15521e-06,-1.32245e-06],[0.110922,-8.19581e-07,-6.13825e-07,-3.76646e-07],[0.0319807,-2.67943e-07,-2.00676e-07,-1.23136e-07],[0.00784915,-1.79844e-07,-1.34695e-07,-8.26492e-08],[0.000692048,-1.19692e-07,-8.96431e-08,-5.50054e-08]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 770,
+    label = "ketene + butadiene13 <=> [CH2][C]=O + butadiene13",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.8381,-0.0191091,-0.0141932,-0.00859827],[20.0935,0.015771,0.0116727,0.00703256],[0.128147,0.00163889,0.00124638,0.000782446],[-0.0157464,0.0007992,0.000597762,0.000366048],[-0.0250931,0.000165796,0.000125315,7.79602e-05],[-0.0158456,-0.000105425,-7.78549e-05,-4.67406e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 771,
+    label = "ketene + butadiene13 <=> [CH2][C]=O + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-23.2164,-0.0157255,-0.0116928,-0.00709553],[31.2729,0.0144387,0.0107075,0.0064708],[-0.163093,0.000842373,0.000650236,0.000417041],[-0.0941121,9.28449e-05,7.08615e-05,4.47245e-05],[-0.0400669,-0.000153295,-0.000113859,-6.89754e-05],[-0.0156427,-0.000140782,-0.000105165,-6.4273e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 772,
+    label = "ketene + butadiene13 <=> [CH2][C]=O + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-23.5689,-0.0143637,-0.0106938,-0.00650203],[31.3467,0.0109986,0.008164,0.00494089],[-0.0990508,0.000814364,0.000620753,0.000391012],[-0.0721783,0.000553621,0.000413718,0.000253005],[-0.0520007,0.000272175,0.000203864,0.000125109],[-0.0368075,0.000123729,9.27341e-05,5.69651e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 773,
+    label = "ketene + butadiene13 <=> [CH2][C]=O + butadiene13",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-8.7126,-0.0157282,-0.0117039,-0.00711087],[18.8635,0.0116932,0.00867092,0.00523948],[0.258262,0.00055168,0.000427203,0.000275222],[0.0619834,0.000431266,0.000322065,0.000196753],[0.0220208,0.000261469,0.000195669,0.000119914],[-0.014415,0.000172439,0.000128953,7.89434e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 774,
+    label = "ketene + C1=CCC1 <=> [CH2][C]=O + C1=CCC1",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.7255,-0.0191887,-0.0142507,-0.00863145],[19.6337,0.0161659,0.011963,0.00720554],[0.139537,0.00136326,0.00104266,0.000659971],[0.0186167,0.000479846,0.00035988,0.000221297],[-0.00640405,1.2716e-06,2.34599e-06,2.74203e-06],[-0.00997743,-0.000119007,-8.83537e-05,-5.34879e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 775,
+    label = "ketene + C1=CCC1 <=> [CH2][C]=O + C1=CCC1",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.7367,-0.0211998,-0.0157388,-0.00952778],[19.7722,0.0156876,0.0115934,0.00696831],[0.189569,0.00127562,0.000977245,0.000620038],[0.0223144,0.000936901,0.000699249,0.000426786],[-0.0281575,0.000550214,0.000411443,0.000251865],[-0.0340573,0.000285361,0.000213654,0.000131036]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 776,
+    label = "[CH2][C]=O <=> ketene",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[8.71065,1.69097,-0.397162,-0.0773631],[-0.296738,0.221931,0.0609025,-0.026556],[-0.123584,0.0625908,0.0229596,-0.000847058],[-0.0748731,0.0317403,0.0111723,0.00143638],[-0.0467437,0.0183373,0.00615309,0.00163628],[-0.0275993,0.0107388,0.0034115,0.0013649]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 777,
+    label = "[CH2][C]=O <=> ketene(T)",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[5.55688,1.64038,-0.444553,-0.102413],[1.93604,0.378628,0.140169,0.0118223],[0.477,0.0902991,0.023733,0.00212288],[0.0974098,0.065434,0.0188993,0.00660001],[-0.0583714,0.0453137,0.0145489,0.00767305],[-0.0782239,0.0280045,0.00919187,0.00586288]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 778,
+    label = "H + [CH2][C]=O <=> H + ketene(T)",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[7.26987,-0.0053577,-0.004,-0.0024426],[0.566747,0.00644565,0.00480878,0.00293321],[0.167252,-0.0009128,-0.00067685,-0.000408969],[0.00821012,-0.000378789,-0.000284075,-0.000174664],[-0.0197287,-3.63514e-05,-2.75968e-05,-1.72808e-05],[-0.0160437,1.27106e-05,9.51274e-06,5.83059e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 779,
+    label = "ketene + ketene(T) <=> [CH2][C]=O + ketene(T)",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-22.0557,-0.00111756,-0.000835605,-0.000511429],[28.3011,0.00144399,0.00107922,0.000660107],[0.242652,-0.000451638,-0.000337091,-0.000205752],[0.0881356,4.63778e-05,3.44075e-05,2.08067e-05],[0.0273446,1.78601e-05,1.33874e-05,8.22495e-06],[0.00760506,-2.29704e-06,-1.70282e-06,-1.02845e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 780,
+    label = "ketene + ketene(T) <=> [CH2][C]=O + ketene(T)",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-21.5086,-0.00692872,-0.00517122,-0.00315622],[27.6487,0.00542603,0.00404051,0.00245747],[0.0965135,-0.000569474,-0.000418905,-0.000249939],[0.0185751,0.000190395,0.000141172,8.5294e-05],[-0.00868978,0.000159473,0.000119235,7.29735e-05],[-0.0138338,8.37048e-05,6.26751e-05,3.8443e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 781,
+    label = "ketene + ketene(T) <=> [CH2][C]=O + ketene(T)",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-16.7372,-0.00166695,-0.00124626,-0.00076265],[24.123,0.00209501,0.00156556,0.000957368],[0.22898,-0.000564184,-0.000420859,-0.000256664],[0.103887,2.02383e-05,1.47455e-05,8.66281e-06],[0.0381188,2.19846e-05,1.64658e-05,1.01039e-05],[0.0118536,2.4394e-06,1.84275e-06,1.14545e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 782,
+    label = "ketene + ketene(T) <=> [CH2][C]=O + ketene(T)",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-19.3075,-0.00383718,-0.00286527,-0.00175012],[25.6525,0.00301004,0.00224249,0.0013649],[0.146977,-0.00056387,-0.000417799,-0.000252148],[0.0481775,-5.09937e-06,-4.41651e-06,-3.26766e-06],[-0.00257673,9.39995e-05,7.01879e-05,4.28685e-05],[-0.0133195,6.23917e-05,4.67361e-05,2.86847e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 783,
+    label = "ketene + C=CC(C)O[O] <=> [CH2][C]=O + C=CC(C)O[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-9.67842,-0.022222,-0.0164801,-0.00995985],[19.2296,0.01878,0.0138715,0.00833065],[0.0690431,0.00190362,0.0014533,0.000917472],[-0.0488923,0.000848268,0.000634772,0.000389005],[-0.047055,0.000102674,7.87956e-05,5.01224e-05],[-0.0220725,-0.000188287,-0.000139387,-8.40041e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 784,
+    label = "ketene + C=CC(C)O[O] <=> [CH2][C]=O + C=CC(C)O[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.4075,-0.0116304,-0.00866821,-0.00527927],[19.9901,0.00921981,0.00685534,0.00415988],[0.131312,0.000563121,0.00042975,0.000271169],[0.00959205,0.000343843,0.000257054,0.000157294],[-0.0102956,0.000108038,8.10932e-05,4.99256e-05],[-0.011659,1.89751e-06,1.61782e-06,1.17661e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 785,
+    label = "ketene + C=CC(C)O[O] <=> [CH2][C]=O + C=CC(C)O[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-9.60325,-0.0237612,-0.0176168,-0.0106423],[19.275,0.0185027,0.0136517,0.00818443],[0.121947,0.00168597,0.00129215,0.000820315],[-0.0163952,0.00115947,0.0008653,0.000528078],[-0.040501,0.000603018,0.000451243,0.000276521],[-0.0333442,0.000230705,0.000173339,0.000106878]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 786,
+    label = "ketene + C=CC(C)O[O] <=> [CH2][C]=O + C=CC(C)O[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.4192,-0.0124427,-0.00927201,-0.00564548],[20.0841,0.0091868,0.00682665,0.00413857],[0.188041,0.000339162,0.000263023,0.000169804],[0.0422019,0.000306713,0.000229022,0.000139885],[0.00266274,0.000173941,0.000130155,7.97528e-05],[-0.00636981,9.02997e-05,6.76057e-05,4.14603e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 787,
+    label = "ketene + [CH2][CH]C=C <=> [CH2][C]=O + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.9575,-0.0193527,-0.0143756,-0.00871017],[21.6175,0.01522,0.0112621,0.00678261],[0.128864,0.00140483,0.001071,0.000674754],[0.0074016,0.000810337,0.000605322,0.000369956],[-0.0104139,0.000268107,0.000201307,0.000123998],[-0.0143001,-1.12362e-05,-7.57442e-06,-3.8616e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 788,
+    label = "ketene + [CH2][CH]C=C <=> [CH2][C]=O + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.2309,-0.0206477,-0.015332,-0.00928444],[21.1115,0.0154781,0.0114416,0.00687981],[0.180078,0.00104597,0.000805776,0.000515317],[0.040392,0.000706655,0.000527498,0.000322044],[0.00163065,0.000364309,0.000272719,0.000167219],[-0.0122576,0.000170223,0.000127625,7.84397e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 789,
+    label = "ketene + [CH2][CH]C=C <=> [CH2][C]=O + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-14.1012,-0.00584896,-0.00436338,-0.00266131],[21.8119,0.00675224,0.00503033,0.00306162],[0.204016,-0.00148186,-0.00109713,-0.000661332],[0.0700857,0.00014075,0.000101832,5.91383e-05],[0.0252614,3.85009e-05,2.9261e-05,1.83516e-05],[0.00546585,-1.21484e-06,-8.37994e-07,-4.46839e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 790,
+    label = "ketene + [CH2][CH]C=C <=> [CH2][C]=O + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.9878,-0.00428736,-0.00320439,-0.00196003],[20.9731,0.00423642,0.00316365,0.00193261],[0.197631,-0.000405864,-0.000300992,-0.000181904],[0.0811063,-4.17241e-05,-3.15587e-05,-1.96536e-05],[0.0380339,8.45156e-06,6.29381e-06,3.82822e-06],[0.0113341,7.65299e-06,5.73054e-06,3.51519e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 791,
+    label = "[CH2][C]=O + C[CH]CCC <=> HCCO + pentane",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H/NonDeC;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H/NonDeC;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 792,
+    label = "[CH2][C]=O + CC[CH]CC <=> HCCO + pentane",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H/NonDeC;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H/NonDeC;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 793,
+    label = "[CH2][C]=O + [CH2]CCCC <=> HCCO + pentane",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cs;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cs;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 794,
+    label = "[CH2][C]=O + C2H3 <=> HCCO + C2H4",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 795,
+    label = "H + [CH2][C]=O <=> H2 + HCCO",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(678.823,'m^3/(mol*s)'), n=1.5, Ea=(-3.72376,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [H_rad;Cds/H2_d_Rrad] for rate rule [H_rad;Cds/H2_d_Crad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [H_rad;Cds/H2_d_Rrad] for rate rule [H_rad;Cds/H2_d_Crad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 796,
+    label = "[CH2][C]=O + allyl <=> HCCO + C3H6",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(16.4093,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cd;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 4.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cd;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 4.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 797,
+    label = "O2 + [CH2][C]=O <=> HO2 + HCCO",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(1.04e+16,'cm^3/(mol*s)','*|/',5), n=-1.26, Ea=(16.8326,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K'), comment="""From training reaction 1 used for O2b;Cds/H2_d_Crad
+    Exact match found for rate rule [O2b;Cds/H2_d_Crad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 1 used for O2b;Cds/H2_d_Crad
+Exact match found for rate rule [O2b;Cds/H2_d_Crad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 798,
+    label = "[CH2][C]=O + m1_allyl <=> HCCO + butene1",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.526e+12,'cm^3/(mol*s)'), n=0, Ea=(-2.3012,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(1500,'K'), comment="""Estimated using template [C_rad/H/OneDeC;XH_Rrad] for rate rule [C_rad/H/OneDeC;Cds/H2_d_Crad]
+    Euclidian distance = 4.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [C_rad/H/OneDeC;XH_Rrad] for rate rule [C_rad/H/OneDeC;Cds/H2_d_Crad]
+Euclidian distance = 4.0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 799,
+    label = "CH3 + [CH2][C]=O <=> CH4 + HCCO",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_methyl;Cds/H2_d_Crad]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_methyl;Cds/H2_d_Crad]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 800,
+    label = "O + [CH2][C]=O <=> OH + HCCO",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(3.4e+08,'cm^3/(mol*s)'), n=1.5, Ea=(-3.72376,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [O_atom_triplet;Cds/H2_d_Rrad] for rate rule [O_atom_triplet;Cds/H2_d_Crad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [O_atom_triplet;Cds/H2_d_Rrad] for rate rule [O_atom_triplet;Cds/H2_d_Crad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 801,
+    label = "OH + [CH2][C]=O <=> H2O + HCCO",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(3.39411,'m^3/(mol*s)'), n=2, Ea=(-4.97896,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [O_pri_rad;Cds/H2_d_Rrad] for rate rule [O_pri_rad;Cds/H2_d_Crad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [O_pri_rad;Cds/H2_d_Rrad] for rate rule [O_pri_rad;Cds/H2_d_Crad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 802,
+    label = "HO2 + [CH2][C]=O <=> H2O2 + HCCO",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(28000,'cm^3/(mol*s)'), n=2.69, Ea=(-6.73624,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [O_rad/NonDeO;Cds/H2_d_Rrad] for rate rule [O_rad/NonDeO;Cds/H2_d_Crad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [O_rad/NonDeO;Cds/H2_d_Rrad] for rate rule [O_rad/NonDeO;Cds/H2_d_Crad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 803,
+    label = "[CH2][C]=O + C2H5 <=> HCCO + C2H6",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cs;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cs;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 804,
+    label = "[CH2][C]=O + m1_allyl <=> HCCO + butene2t",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cd;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/Cd;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 805,
+    label = "[CH2][C]=O + ketene(T) <=> HCCO + vinoxy",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Arrhenius(A=(3.48031e+06,'m^3/(mol*s)'), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cdpri_Rrad] for rate rule [Y_rad;Cdpri_Orad]
+    Euclidian distance = 1.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cdpri_Rrad] for rate rule [Y_rad;Cdpri_Orad]
+Euclidian distance = 1.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 806,
+    label = "[CH2][C]=O + ketene(T) <=> HCCO + vinoxy",
+    degeneracy = 2.0,
+    duplicate = True,
+    kinetics = Arrhenius(A=(1.32966e+06,'m^3/(mol*s)'), n=0.12, Ea=(5.06264,'kJ/mol'), T0=(1,'K'), comment="""Estimated using average of templates [Y_rad_birad_trirad_quadrad;Cds/H2_d_Crad] + [Y_1centerbirad;Cds/H2_d_Rrad] for rate rule [Y_1centerbirad;Cds/H2_d_Crad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using average of templates [Y_rad_birad_trirad_quadrad;Cds/H2_d_Crad] + [Y_1centerbirad;Cds/H2_d_Rrad] for rate rule [Y_1centerbirad;Cds/H2_d_Crad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 807,
+    label = "[CH2][C]=O + [CH2][C]=O <=> HCCO + vinoxy",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(413106,'m^3/(mol*s)'), n=0.308563, Ea=(4.59142,'kJ/mol'), T0=(1,'K'), comment="""Estimated using average of templates [Y_rad_birad_trirad_quadrad;Cds/H2_d_Crad] + [Y_rad;Cds/H2_d_Rrad] for rate rule [Y_rad;Cds/H2_d_Crad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 4.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using average of templates [Y_rad_birad_trirad_quadrad;Cds/H2_d_Crad] + [Y_rad;Cds/H2_d_Rrad] for rate rule [Y_rad;Cds/H2_d_Crad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 4.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 808,
+    label = "HCCO + [CH2][C]=O <=> HCCO + ketene",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 809,
+    label = "[CH2][C]=O + vinoxy <=> HCCO + CH3CHO",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/CO;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/CO;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 810,
+    label = "[CH2][C]=O + [CH2][CH]C=C <=> HCCO + m1_allyl",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(413106,'m^3/(mol*s)'), n=0.308563, Ea=(4.59142,'kJ/mol'), T0=(1,'K'), comment="""Estimated using average of templates [Y_rad_birad_trirad_quadrad;Cds/H2_d_Crad] + [Y_rad;Cds/H2_d_Rrad] for rate rule [Y_rad;Cds/H2_d_Crad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 4.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using average of templates [Y_rad_birad_trirad_quadrad;Cds/H2_d_Crad] + [Y_rad;Cds/H2_d_Rrad] for rate rule [Y_rad;Cds/H2_d_Crad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 4.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 811,
+    label = "[CH2][C]=O + CH2CHCHCH <=> HCCO + butadiene13",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 812,
+    label = "H + HCCO <=> [CH2][C]=O",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[12.7463,0.54238,-0.509136,-0.00825399],[-0.349965,1.05766,0.222,-0.0192997],[-0.30205,0.355464,0.105192,0.00139583],[-0.167513,0.0837179,0.0321706,0.00181184],[-0.0802774,0.0135283,0.00438576,0.00105217],[-0.0339978,0.00249177,-0.000204769,0.000617519]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 813,
+    label = "HCCO + ketene <=> HCCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-13.7764,-5.78201e-06,-4.3305e-06,-2.65727e-06],[20.1451,4.18023e-06,3.13083e-06,1.92113e-06],[0.2654,-1.41001e-08,-1.05583e-08,-6.4768e-09],[0.0996191,4.3998e-08,3.29527e-08,2.02204e-08],[0.0392704,1.79719e-08,1.34603e-08,8.25947e-09],[0.0148809,-1.73752e-11,-1.30224e-11,-7.96636e-12]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 814,
+    label = "HCCO + ketene <=> HCCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-13.8104,-6.00237e-06,-4.49554e-06,-2.75855e-06],[20.1288,4.27699e-06,3.20329e-06,1.9656e-06],[0.243946,-7.769e-09,-5.81648e-09,-3.56706e-09],[0.0695595,4.83151e-08,3.61861e-08,2.22044e-08],[0.0171594,1.51594e-08,1.13538e-08,6.96693e-09],[0.00253364,3.9003e-09,2.92116e-09,1.7925e-09]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 815,
+    label = "HCCO + ketene <=> HCCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-15.1555,-0.00249285,-0.00186182,-0.00113756],[22.8787,0.0031886,0.00238,0.0014528],[0.225936,-0.000842068,-0.000627053,-0.000381384],[0.104881,-2.35701e-05,-1.82827e-05,-1.18069e-05],[0.0318589,5.1347e-05,3.83246e-05,2.33929e-05],[0.00975477,9.59675e-06,7.22192e-06,4.46359e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 816,
+    label = "HCCO + ketene <=> HCCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-16.5301,-5.94322e-06,-4.45124e-06,-2.73136e-06],[21.3398,4.39568e-06,3.29219e-06,2.02014e-06],[0.235632,7.00811e-08,5.24902e-08,3.2211e-08],[0.0791254,3.95704e-08,2.96368e-08,1.81857e-08],[0.0175796,2.05106e-08,1.53616e-08,9.42619e-09],[0.000211194,6.63626e-09,4.9703e-09,3.04989e-09]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 817,
+    label = "HCCO + ketene <=> HCCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.2423,-0.0118911,-0.00884921,-0.00537701],[20.3513,0.0130864,0.00972173,0.00589115],[0.0859641,-0.000958314,-0.000694222,-0.00040402],[0.0602933,-0.000602891,-0.000451333,-0.000276745],[0.0308105,-0.000151187,-0.000113815,-7.03822e-05],[0.0118062,1.08248e-05,7.79351e-06,4.48869e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 818,
+    label = "HCCO + ketene <=> HCCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-16.0241,-6.50145e-06,-4.86933e-06,-2.98791e-06],[21.1814,4.67111e-06,3.49848e-06,2.14672e-06],[0.249571,9.43013e-09,7.06539e-09,4.33785e-09],[0.0864058,3.63403e-08,2.72175e-08,1.67011e-08],[0.0332505,1.82826e-08,1.3693e-08,8.40228e-09],[0.0169521,4.34199e-09,3.25197e-09,1.99549e-09]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 819,
+    label = "OCHCO + ketene <=> OCHCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-13.3041,-7.80827e-06,-5.84809e-06,-3.58849e-06],[20.5976,6.32986e-06,4.74081e-06,2.90903e-06],[0.224528,-1.62788e-07,-1.21917e-07,-7.48057e-08],[0.0743829,-2.7731e-10,-2.07944e-10,-1.27817e-10],[0.0207718,-2.13033e-09,-1.59553e-09,-9.7906e-10],[0.0099087,-1.56808e-09,-1.17445e-09,-7.20658e-10]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 820,
+    label = "OCHCO + ketene <=> OCHCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-14.2934,-3.28075e-05,-2.45712e-05,-1.50771e-05],[21.3689,2.96783e-05,2.22275e-05,1.36388e-05],[0.0517671,-3.10686e-07,-2.32587e-07,-1.42621e-07],[0.00639697,-2.09623e-07,-1.57e-07,-9.63385e-08],[-0.0100208,-1.57816e-07,-1.18198e-07,-7.2528e-08],[-0.00704131,-6.9454e-08,-5.20185e-08,-3.19197e-08]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 821,
+    label = "OCHCO + ketene <=> OCHCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-13.3432,-6.59138e-06,-4.93669e-06,-3.02924e-06],[20.6567,4.85973e-06,3.63974e-06,2.2334e-06],[0.23309,3.50965e-08,2.62886e-08,1.61337e-08],[0.0822018,2.02317e-08,1.51527e-08,9.29803e-09],[0.0251117,9.20268e-09,6.89246e-09,4.22933e-09],[0.00906329,2.07732e-09,1.55582e-09,9.54697e-10]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 822,
+    label = "OCHCO + ketene <=> OCHCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-13.6176,-0.000199444,-0.000149361,-9.16375e-05],[21.205,0.000206691,0.000154784,9.49595e-05],[-0.00577258,-1.03114e-05,-7.71712e-06,-4.73004e-06],[-0.0172618,-4.6199e-06,-3.46026e-06,-2.12341e-06],[-0.00680058,-1.5978e-06,-1.19678e-06,-7.34443e-07],[0.00429126,-7.06352e-07,-5.29024e-07,-3.24614e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 823,
+    label = "OCHCO + ketene <=> OCHCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.3367,-0.0156915,-0.0116527,-0.00705721],[20.1316,0.0171343,0.0126988,0.00766695],[-0.0486172,-0.000477203,-0.000324384,-0.00016822],[0.00220212,-0.000784437,-0.00058565,-0.000357615],[0.0228644,-0.000385628,-0.000288666,-0.000176985],[0.0246653,-0.000103007,-7.73844e-05,-4.7705e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 824,
+    label = "OCHCO + ketene <=> OCHCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-17.8417,-7.6864e-06,-5.75681e-06,-3.53248e-06],[22.2022,5.94643e-06,4.45363e-06,2.73282e-06],[0.0691109,-1.076e-07,-8.05839e-08,-4.94437e-08],[0.0225696,2.13366e-08,1.59801e-08,9.80552e-09],[0.00654581,1.45771e-08,1.09177e-08,6.69928e-09],[0.00270076,-5.24409e-09,-3.92762e-09,-2.41003e-09]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 825,
+    label = "OCHCO + ketene <=> OCHCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.9454,-0.0173481,-0.0128992,-0.0078274],[20.6702,0.013269,0.00983079,0.00593221],[0.134555,0.0010959,0.000835747,0.000526788],[0.0032306,0.000660424,0.00049342,0.000301643],[-0.0274285,0.000261497,0.000196041,0.000120472],[-0.0237568,5.72586e-05,4.32558e-05,2.68896e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 826,
+    label = "OCHCO + ketene <=> OCHCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-17.8564,-7.77362e-06,-5.82213e-06,-3.57256e-06],[22.2173,5.88592e-06,4.40831e-06,2.70501e-06],[0.0762535,-7.49261e-08,-5.61125e-08,-3.44277e-08],[0.0254705,3.21238e-08,2.40593e-08,1.47631e-08],[0.0078505,1.90687e-08,1.42817e-08,8.76349e-09],[0.0055918,-4.25742e-09,-3.18864e-09,-1.95657e-09]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 827,
+    label = "O + ketene <=> O + [CH2][C]=O",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-42.6277,-9.11291e-05,-6.82502e-05,-4.18778e-05],[37.0314,2.91184e-05,2.18075e-05,1.33805e-05],[-0.496447,1.51465e-05,1.13437e-05,6.96023e-06],[-0.167832,5.57998e-06,4.17907e-06,2.56424e-06],[-0.078743,2.62215e-06,1.96384e-06,1.205e-06],[-0.0253354,-4.28526e-06,-3.20925e-06,-1.96903e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 828,
+    label = "OH + ketene <=> OH + [CH2][C]=O",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-5.93276,-0.0629269,-0.0450754,-0.025751],[17.5165,0.0826589,0.0586641,0.0329856],[-0.00336478,-0.0184857,-0.0123194,-0.00614622],[0.0269965,-0.00305389,-0.002621,-0.0019148],[0.00560659,0.000701225,0.000502548,0.000285858],[-0.00401708,0.000294223,0.000240716,0.000166797]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 829,
+    label = "CO + CH3 <=> H + [CH2][C]=O",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-22.071,-0.00202476,-0.00151326,-0.000925565],[26.976,0.0019281,0.00143966,0.000879277],[-0.151373,-0.000378377,-0.000282083,-0.00017187],[-0.0215092,-0.000168638,-0.000126204,-7.73483e-05],[-0.00671318,-4.85221e-05,-3.64003e-05,-2.23912e-05],[-0.00421179,-9.07376e-06,-6.80824e-06,-4.18921e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 830,
+    label = "ketene + CH2CHCHCH <=> [CH2][C]=O + CH2CHCHCH",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.9411,-0.0091602,-0.00683275,-0.00416664],[19.2484,0.00810416,0.00603584,0.00367205],[0.0652156,0.00071304,0.000539318,0.000335866],[-0.0399766,0.000252616,0.000189306,0.000116262],[-0.0348462,-3.37949e-05,-2.48943e-05,-1.48859e-05],[-0.0209228,-0.000101694,-7.5938e-05,-4.63848e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 831,
+    label = "ketene + CH2CHCHCH <=> [CH2][C]=O + CH2CHCHCH",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-9.60094,-0.0129585,-0.00965011,-0.00586979],[18.7344,0.011171,0.00829874,0.00502882],[0.213614,0.000566449,0.000436261,0.000278914],[0.110024,0.000149413,0.000112214,6.9149e-05],[0.0532396,-4.72429e-05,-3.48956e-05,-2.09568e-05],[0.0212693,-7.36797e-05,-5.49495e-05,-3.34994e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 832,
+    label = "ketene + CH2CHCHCH <=> [CH2][C]=O + CH2CHCHCH",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.285,-0.00763612,-0.00569687,-0.00347487],[18.779,0.00827159,0.00616504,0.00375488],[-0.157767,-7.86904e-06,1.43378e-06,7.72725e-06],[-0.11115,-0.000327382,-0.000244712,-0.000149707],[-0.0322407,-0.00026937,-0.000201603,-0.000123571],[0.00113109,-0.000117373,-8.79252e-05,-5.39689e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 833,
+    label = "ketene + CH2CHCHCH <=> [CH2][C]=O + CH2CHCHCH",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-9.54309,-0.0140386,-0.0104528,-0.00635647],[18.8525,0.0109457,0.00812524,0.00491787],[0.287858,0.000425493,0.000330945,0.000214528],[0.152461,0.000180923,0.000135396,8.2983e-05],[0.0712557,2.28198e-05,1.75069e-05,1.1131e-05],[0.0281461,2.74576e-05,2.05206e-05,1.25507e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 834,
+    label = "[CH2][C]=O + C2H3 <=> C2H2 + vinoxy",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(206553,'m^3/(mol*s)'), n=0.308563, Ea=(4.59142,'kJ/mol'), T0=(1,'K'), comment="""Estimated using average of templates [Y_rad_birad_trirad_quadrad;Cds/H2_d_Crad] + [Y_rad;Cds/H2_d_Rrad] for rate rule [Y_rad;Cds/H2_d_Crad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using average of templates [Y_rad_birad_trirad_quadrad;Cds/H2_d_Crad] + [Y_rad;Cds/H2_d_Rrad] for rate rule [Y_rad;Cds/H2_d_Crad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 835,
+    label = "O + C2H2 <=> [CH2][C]=O",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[8.06694,2.27099,-0.154088,-0.0786212],[1.12116,0.186021,0.119863,0.0558492],[-0.17662,0.0145933,0.013042,0.00984311],[-0.0806543,0.000114633,0.000665938,0.000953357],[-0.0368151,0.00117263,0.000784409,0.000399837],[-0.0145615,0.000684494,0.00048691,0.000273985]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 836,
+    label = "C2H2 + ketene <=> C2H2 + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.7687,-0.000224677,-0.000168257,-0.000103229],[20.1094,0.000220384,0.000165036,0.000101247],[0.0349334,-3.20005e-06,-2.39092e-06,-1.46169e-06],[0.00476125,-2.55728e-06,-1.91531e-06,-1.17527e-06],[-0.0121742,-1.91498e-06,-1.4342e-06,-8.80015e-07],[-0.0146303,-7.9472e-07,-5.95232e-07,-3.65262e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 837,
+    label = "C2H2 + ketene <=> C2H2 + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.4688,-0.0177598,-0.0132058,-0.00801404],[20.2088,0.0127109,0.00941409,0.00567773],[0.129263,0.000886591,0.000678671,0.000430114],[0.0201359,0.000623324,0.000465369,0.000284182],[-0.012875,0.000333309,0.000249374,0.000152774],[-0.0161341,0.000158913,0.000119031,7.30496e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 838,
+    label = "[CH2][C]=O + allyl <=> vinoxy + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.01e+12,'cm^3/(mol*s)','*|/',3), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 46 used for Y_rad;Cdpri_Csrad
+    Exact match found for rate rule [Y_rad;Cdpri_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 46 used for Y_rad;Cdpri_Csrad
+Exact match found for rate rule [Y_rad;Cdpri_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 839,
+    label = "[CH2][C]=O + C3H3 <=> HCCO + allene",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 840,
+    label = "ketene + allene <=> [CH2][C]=O + allene",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.555,-0.0171558,-0.0127549,-0.00773867],[19.6696,0.0138159,0.0102372,0.00617864],[0.167994,0.00112276,0.000856866,0.000540685],[0.0225996,0.000483477,0.000361958,0.00022197],[-0.00479495,9.09388e-05,6.88829e-05,4.29905e-05],[-0.0134361,-3.21087e-05,-2.35779e-05,-1.40282e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 841,
+    label = "ketene + allene <=> [CH2][C]=O + allene",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-14.7733,-9.48323e-05,-7.10236e-05,-4.35794e-05],[21.4251,3.88658e-05,2.91074e-05,1.78593e-05],[0.349432,4.18351e-06,3.13329e-06,1.92266e-06],[0.12074,1.47022e-06,1.10112e-06,6.75646e-07],[0.032899,4.68652e-07,3.50999e-07,2.15377e-07],[0.00396981,1.87988e-07,1.40795e-07,8.63933e-08]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 842,
+    label = "ketene + allene <=> [CH2][C]=O + allene",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.5462,-0.0185605,-0.0137945,-0.00836492],[19.745,0.0138711,0.010269,0.00618926],[0.162328,0.00119656,0.000912579,0.000575277],[0.00838242,0.000839239,0.00062666,0.00038276],[-0.0193286,0.000445316,0.000333213,0.000204174],[-0.0358622,0.000193413,0.000144993,8.90954e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 843,
+    label = "ketene + allene <=> [CH2][C]=O + allene",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.4375,-0.0173497,-0.0129004,-0.00782826],[20.9761,0.0132062,0.00978508,0.00590541],[0.173282,0.00129728,0.000985291,0.000617356],[-0.00931108,0.00081461,0.000608712,0.000372211],[-0.0465502,0.000379877,0.000284526,0.000174602],[-0.0389701,0.000129148,9.70553e-05,5.98621e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 844,
+    label = "ketene + C3H3 <=> [CH2][C]=O + C3H3",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-13.8104,-6.03619e-06,-4.52087e-06,-2.77409e-06],[20.1285,4.45865e-06,3.33935e-06,2.04908e-06],[0.275697,-1.24935e-08,-9.35481e-09,-5.73807e-09],[0.104925,3.69356e-08,2.76633e-08,1.69747e-08],[0.0117498,1.62572e-08,1.2176e-08,7.47143e-09],[0.00928054,-1.23785e-09,-9.2711e-10,-5.68868e-10]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 845,
+    label = "ketene + C3H3 <=> [CH2][C]=O + C3H3",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-13.7243,-6.09117e-06,-4.56205e-06,-2.79935e-06],[20.247,4.38947e-06,3.28754e-06,2.01729e-06],[0.306368,2.09872e-09,1.57416e-09,9.6807e-10],[0.117781,4.57215e-08,3.42436e-08,2.10125e-08],[0.0362564,1.47021e-08,1.10114e-08,6.75678e-09],[0.0204884,4.31478e-09,3.2316e-09,1.98298e-09]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 846,
+    label = "ketene + C3H3 <=> [CH2][C]=O + C3H3",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.8566,-0.0159944,-0.0118906,-0.00721349],[20.2358,0.0148458,0.0110072,0.00664978],[0.0619332,0.000760879,0.00059091,0.000382234],[-0.0206297,3.31547e-05,2.63231e-05,1.75519e-05],[-0.026756,-0.000155452,-0.00011557,-7.01138e-05],[-0.0212161,-0.000116361,-8.6996e-05,-5.32386e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 847,
+    label = "ketene + C3H3 <=> [CH2][C]=O + C3H3",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-13.6273,-0.000310617,-0.000232615,-0.000142714],[21.0967,0.000141147,0.000105694,6.48373e-05],[0.354751,1.50526e-05,1.12741e-05,6.91828e-06],[0.18506,4.47013e-06,3.34784e-06,2.05419e-06],[0.0740558,1.11532e-06,8.35358e-07,5.12617e-07],[0.0239761,3.70933e-07,2.77825e-07,1.70489e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 848,
+    label = "ketene + C3H3 <=> [CH2][C]=O + C3H3",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.8733,-0.0178128,-0.0132344,-0.00802124],[20.1695,0.015635,0.0115817,0.00698686],[-0.0408458,0.00153117,0.00116573,0.000732991],[-0.112135,0.000507502,0.000380814,0.000234347],[-0.0930272,-4.90411e-05,-3.52015e-05,-2.01717e-05],[-0.0580524,-0.000177188,-0.000131942,-8.02457e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 849,
+    label = "ketene + C3H3 <=> [CH2][C]=O + C3H3",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.9165,-0.0179814,-0.0133717,-0.00811575],[20.9605,0.0121687,0.00900983,0.00543137],[0.326891,0.000507223,0.00039514,0.000256697],[0.160199,0.00038405,0.000286516,0.000174765],[0.0644952,0.000226115,0.00016906,0.000103466],[0.0238373,0.000136822,0.000102306,6.26191e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 850,
+    label = "O2 + C3H3 <=> HCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[9.75637,-0.778657,-0.206278,-0.0320102],[1.08379,0.821341,0.122003,-0.0216507],[-0.0981835,-0.0434479,0.0646768,0.0294422],[-0.0850357,-0.0436587,0.00121103,0.0127359],[-0.0391794,0.00941509,-0.00156811,0.00188268],[-0.0143511,0.0181419,0.00416431,0.000222077]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 851,
+    label = "ketene + C#CCO[O] <=> [CH2][C]=O + C#CCO[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-13.0912,-0.000414465,-0.000310353,-0.000190378],[20.3678,0.000448409,0.00033575,0.000205937],[0.0304293,-2.94681e-05,-2.20425e-05,-1.34995e-05],[-0.034936,-1.07213e-05,-8.03117e-06,-4.92935e-06],[-0.028269,-4.50174e-06,-3.37188e-06,-2.06928e-06],[-0.0136647,-1.64549e-06,-1.23248e-06,-7.56337e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 852,
+    label = "ketene + C#CCO[O] <=> [CH2][C]=O + C#CCO[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.7878,-0.000886283,-0.000663547,-0.000406937],[20.1764,0.000713013,0.000533727,0.000327231],[0.195767,2.24923e-05,1.68982e-05,1.0418e-05],[0.0366256,1.19615e-05,8.95896e-06,5.49759e-06],[-0.0225284,7.67624e-06,5.74874e-06,3.52709e-06],[-0.0252074,3.2961e-06,2.46896e-06,1.51528e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 853,
+    label = "ketene + C#CCO[O] <=> [CH2][C]=O + C#CCO[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.4281,-0.0171546,-0.0127414,-0.00771861],[20.3285,0.0170196,0.0126077,0.00760612],[-0.00446508,0.000500099,0.000404525,0.000276196],[-0.0623717,-0.000259142,-0.00019182,-0.000115576],[-0.0436979,-0.000320686,-0.000239344,-0.000146082],[-0.0216243,-0.000174115,-0.000130444,-8.00794e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 854,
+    label = "ketene + C#CCO[O] <=> [CH2][C]=O + C#CCO[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.4131,-0.00249331,-0.00186545,-0.00114285],[20.2508,0.00188264,0.00140789,0.000861902],[0.180987,0.000256238,0.000192018,0.000117924],[0.0313173,8.11795e-06,6.18768e-06,3.89755e-06],[-0.0103699,5.44388e-07,4.23689e-07,2.74916e-07],[-0.0136758,4.29998e-06,3.21912e-06,1.97401e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 855,
+    label = "ketene + C=C=CO[O] <=> [CH2][C]=O + C=C=CO[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.6373,-0.00346531,-0.00259156,-0.00158666],[19.6888,0.00286407,0.00214055,0.00130925],[0.188128,0.000242326,0.000182074,0.000112267],[0.0542265,3.81614e-05,2.85896e-05,1.75508e-05],[0.0330263,-0.000147668,-0.00011028,-6.73732e-05],[-0.0038794,5.43969e-05,4.05937e-05,2.4771e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 856,
+    label = "ketene + C=C=CO[O] <=> [CH2][C]=O + C=C=CO[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.8821,-0.00902353,-0.00673225,-0.00410669],[20.0863,0.0074676,0.00556167,0.00338351],[0.173692,0.000420388,0.00032022,0.000201505],[0.0221923,0.000246974,0.000184721,0.000113113],[-0.00921631,5.614e-05,4.21944e-05,2.60294e-05],[-0.0115035,-2.63601e-05,-1.9579e-05,-1.18609e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 857,
+    label = "ketene + C=C=CO[O] <=> [CH2][C]=O + C=C=CO[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-13.3106,-0.000212357,-0.000159033,-9.75729e-05],[20.1883,0.000173683,0.000130065,7.97947e-05],[0.194101,6.1253e-06,4.59059e-06,2.81965e-06],[0.11891,1.26244e-06,9.45616e-07,5.80342e-07],[0.0655767,-4.68552e-07,-3.50837e-07,-2.15195e-07],[0.00906379,-2.8194e-07,-2.11142e-07,-1.29543e-07]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 858,
+    label = "ketene + C=C=CO[O] <=> [CH2][C]=O + C=C=CO[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.5605,-0.0045992,-0.00343767,-0.00210291],[19.6827,0.00407603,0.00304388,0.00185945],[0.227394,-5.81627e-05,-4.14065e-05,-2.3393e-05],[0.054171,5.40155e-05,4.03061e-05,2.45931e-05],[0.00824619,2.83376e-05,2.12271e-05,1.30284e-05],[-0.000923614,1.20652e-05,9.04137e-06,5.55261e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 859,
+    label = "ketene + C=C=CO[O] <=> [CH2][C]=O + C=C=CO[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.9815,-0.00731485,-0.00546248,-0.00333686],[20.1935,0.00521181,0.00388595,0.00236813],[0.231026,0.000528654,0.000397544,0.000245437],[0.0684947,0.000138254,0.000103828,6.39731e-05],[0.00336623,7.46493e-05,5.59135e-05,3.43134e-05],[-0.0164138,4.07675e-05,3.05326e-05,1.87346e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 860,
+    label = "ketene + C=C=CO[O] <=> [CH2][C]=O + C=C=CO[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-13.4984,-0.000817537,-0.000612081,-0.000375376],[20.4175,0.000739335,0.00055346,0.000339357],[0.265018,7.00476e-05,5.24882e-05,3.22314e-05],[0.0912371,-7.30142e-05,-5.46384e-05,-3.34837e-05],[0.0292222,4.05798e-05,3.03599e-05,1.85988e-05],[0.0104806,-3.09899e-05,-2.31899e-05,-1.42107e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 861,
+    label = "ketene + C=C1OC1[O] <=> [CH2][C]=O + C=C1OC1[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.6017,-0.00265661,-0.0019874,-0.00121736],[19.9603,0.0023188,0.00173386,0.00106128],[0.119262,0.000109578,8.26027e-05,5.11849e-05],[-0.00449472,6.04867e-05,4.52915e-05,2.77817e-05],[-0.0170248,1.21033e-05,9.08016e-06,5.58603e-06],[-0.0251494,-4.07872e-06,-3.04611e-06,-1.86102e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 862,
+    label = "ketene + C=C1OC1[O] <=> [CH2][C]=O + C=C1OC1[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.17,-0.00528905,-0.00395252,-0.00241713],[19.5916,0.00414019,0.00309121,0.00188781],[0.214438,0.000747022,0.000559599,0.000343481],[0.103607,3.68914e-06,3.37141e-06,2.63762e-06],[0.0652606,-9.50646e-05,-7.09068e-05,-4.32357e-05],[0.0342862,-1.66486e-05,-1.25153e-05,-7.7227e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 863,
+    label = "ketene + C=C1OC1[O] <=> [CH2][C]=O + C=C1OC1[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-12.1755,-0.00836138,-0.00623922,-0.00380687],[19.5229,0.00716534,0.00534035,0.00325243],[-0.21984,0.00113988,0.000855873,0.000527187],[-0.220382,0.00033015,0.000247563,0.000152184],[-0.120437,-3.58554e-05,-2.65284e-05,-1.59735e-05],[-0.0400044,-0.000146187,-0.000109247,-6.68102e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 864,
+    label = "ketene + C=C1OC1[O] <=> [CH2][C]=O + C=C1OC1[O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.1809,-0.00507298,-0.00379163,-0.00231929],[19.6541,0.00375414,0.0028033,0.0017123],[0.251728,0.000662778,0.000496501,0.000304761],[0.117316,5.32557e-05,4.03235e-05,2.51518e-05],[0.0645401,-1.12246e-05,-8.29635e-06,-4.98746e-06],[0.037319,-1.27886e-05,-9.56202e-06,-5.85236e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 865,
+    label = "ketene + C=C([O])[CH][O] <=> [CH2][C]=O + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-29.4021,-0.0144169,-0.0107151,-0.00649778],[34.1741,0.0152885,0.0113363,0.00684947],[0.00967731,-0.000707786,-0.000497293,-0.000274514],[-0.0289145,-0.000394029,-0.000295613,-0.000181851],[-0.0214762,-0.000155175,-0.000116631,-7.19519e-05],[-0.0228223,-5.08451e-05,-3.8257e-05,-2.36399e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 866,
+    label = "ketene + C=C([O])[CH][O] <=> [CH2][C]=O + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-26.6392,-0.0197171,-0.0146301,-0.00884904],[32.2894,0.0185687,0.0137272,0.0082551],[0.117543,-0.000141654,-6.26165e-05,2.14684e-06],[-0.00146547,-0.00016725,-0.000124931,-7.63333e-05],[-0.015348,-6.16109e-05,-4.62284e-05,-2.84455e-05],[-0.0181134,1.31154e-05,9.33227e-06,5.26835e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 867,
+    label = "ketene + C=C([O])[CH][O] <=> [CH2][C]=O + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-31.5617,-0.00836228,-0.00623165,-0.00379453],[36.5399,0.00953131,0.00709191,0.00430811],[0.109684,-0.00143915,-0.00105941,-0.000632826],[0.00565114,-9.8053e-05,-7.65062e-05,-4.98093e-05],[-0.0146454,1.87028e-05,1.38391e-05,8.33341e-06],[-0.0181482,-5.97275e-06,-4.37653e-06,-2.59502e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 868,
+    label = "ketene + C=C([O])[CH][O] <=> [CH2][C]=O + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-20.8715,-0.0024269,-0.00181262,-0.00110755],[27.2043,0.00315166,0.00235222,0.00143565],[0.0307825,-0.000895598,-0.000666254,-0.000404606],[-0.0612082,0.000142316,0.000105036,6.30006e-05],[-0.0607995,2.19903e-05,1.67063e-05,1.04719e-05],[-0.0365589,-1.45542e-05,-1.0857e-05,-6.6213e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 869,
+    label = "ketene + C=C([O])[CH][O] <=> [CH2][C]=O + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-30.9039,-0.0134315,-0.00999236,-0.00606862],[36.4631,0.0134209,0.00996161,0.0060284],[0.0259426,-0.000191337,-0.00012005,-5.19514e-05],[-0.0420114,-0.000146336,-0.000109892,-6.76977e-05],[-0.0310529,-0.000126595,-9.47652e-05,-5.81033e-05],[-0.0268081,-8.73074e-05,-6.53549e-05,-4.00703e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 870,
+    label = "ketene + C=C([O])[CH][O] <=> [CH2][C]=O + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-23.1739,-1.35403e-05,-1.01411e-05,-6.22274e-06],[27.9119,1.34831e-05,1.00983e-05,6.19641e-06],[0.222729,-2.12774e-06,-1.59356e-06,-9.77802e-07],[0.0690655,9.75551e-08,7.30568e-08,4.48214e-08],[0.0122451,5.23427e-08,3.92032e-08,2.40563e-08],[-0.00407598,3.91756e-09,2.93425e-09,1.80068e-09]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 871,
+    label = "ketene + C=C([O])[CH][O] <=> [CH2][C]=O + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-33.0281,-0.0107392,-0.00797228,-0.00482564],[34.1805,0.0149657,0.0111095,0.00672423],[0.300471,-0.00308628,-0.00228945,-0.00138424],[0.0596502,-0.0024493,-0.00182133,-0.00110535],[-0.0748047,0.000874708,0.000651895,0.000396997],[-0.0346551,0.000992316,0.000736353,0.000445434]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 872,
+    label = "ketene + C=C([O])[CH][O] <=> [CH2][C]=O + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-34.0305,-0.00897205,-0.00663049,-0.00398524],[35.1859,0.0140069,0.0103522,0.00622302],[0.236262,-0.00592885,-0.004384,-0.00263735],[-0.0260248,0.000250785,0.000187774,0.000115175],[-0.0190836,0.000882892,0.000651946,0.000391351],[-0.0103433,-0.000146933,-0.000109767,-6.7093e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 873,
+    label = "ketene + C=C([O])[CH][O] <=> [CH2][C]=O + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-30.4936,-1.85405e-05,-1.38859e-05,-8.52052e-06],[32.495,2.05466e-05,1.53884e-05,9.44233e-06],[0.0764103,-5.05737e-06,-3.78763e-06,-2.32402e-06],[0.0258954,7.95197e-07,5.95522e-07,3.65377e-07],[0.00464691,4.62249e-08,3.46294e-08,2.12574e-08],[-0.00779102,-4.00703e-08,-3.00104e-08,-1.84142e-08]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 874,
+    label = "ketene + C=C([O])[CH][O] <=> [CH2][C]=O + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-31.7364,-1.65341e-05,-1.23833e-05,-7.59853e-06],[33.499,1.73216e-05,1.29731e-05,7.96037e-06],[0.0602384,-3.44418e-06,-2.57949e-06,-1.58275e-06],[0.00926869,3.52696e-07,2.64135e-07,1.6206e-07],[-0.00852341,7.044e-08,5.27592e-08,3.23763e-08],[-0.0122897,-1.84333e-08,-1.38054e-08,-8.4707e-09]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 875,
+    label = "C=C([O])[CH][O] <=> HCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-3.81246,2.2102,-0.178913,-0.0759929],[12.3482,0.292653,0.16778,0.0577775],[-0.721074,-0.0137489,0.00262736,0.0124401],[-0.309317,-0.0239629,-0.0149282,-0.00617536],[-0.136451,0.00100248,-0.0010804,-0.00227118],[-0.0696379,0.00609534,0.00388419,0.00172116]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 876,
+    label = "C=C=CO[O] <=> HCO + [CH2][C]=O",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[3.86577,1.80715,-0.348645,-0.084955],[4.46394,0.396412,0.164234,0.00771074],[-0.89847,0.0664933,0.0513182,0.0258584],[-0.37654,0.0432667,0.0245449,0.00936732],[-0.210487,0.0477666,0.0209491,0.00228209],[-0.14189,0.0264221,0.0126517,0.00231623]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 877,
+    label = "[CH2][C]=O + ketene(T) <=> HCCO + vinoxy",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Arrhenius(A=(3.48031e+06,'m^3/(mol*s)'), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cdpri_Rrad] for rate rule [Y_rad;Cdpri_Orad]
+    Euclidian distance = 1.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cdpri_Rrad] for rate rule [Y_rad;Cdpri_Orad]
+Euclidian distance = 1.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 878,
+    label = "[CH2][C]=O + ketene(T) <=> HCCO + vinoxy",
+    degeneracy = 2.0,
+    duplicate = True,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [Cd_pri_rad;Cds/H2_d_Crad]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 879,
+    label = "CH3 + C2H2 <=> allyl",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[5.13796,-0.187446,-0.360485,0.0050849],[4.17801,1.77957,0.130669,-0.0458346],[-0.512887,0.486457,0.0855434,0.0203241],[-0.31401,0.0817198,0.016293,0.000363459],[-0.129607,-0.0076051,0.00530236,-0.00621765],[-0.0325002,-0.0160781,0.00512786,-0.000171533]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 880,
+    label = "CH3 + C2H2 <=> H + allene",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[4.11132,-2.05881,-0.353716,-0.0139872],[6.80595,1.95912,0.213364,-0.025092],[0.232502,0.276047,0.122123,0.0189801],[-0.0423607,-0.0797507,0.0296541,0.00364709],[-0.0228605,-0.080402,-0.00232571,0.00676954],[-0.00303794,-0.0393515,-0.013212,0.00523245]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 881,
+    label = "oxirene <=> ketene",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[9.05198,2.58342,0.00494628,-0.00718466],[-0.609602,0.0970453,0.00616731,0.008377],[-0.293443,0.0661373,-0.00301572,0.0050663],[-0.16309,0.0438806,-0.002812,0.00397553],[-0.0850424,0.0265423,-0.00154313,0.00222161],[-0.0434012,0.0149239,-4.54798e-05,0.000867776]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 882,
+    label = "oxirene <=> ketene(T)",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[7.84838,2.82447,0.137496,0.0577755],[0.250072,-0.0582017,-0.131123,-0.0473621],[0.166265,0.0932043,-0.0214655,-0.00642582],[-0.0458744,0.0834363,0.00497445,0.00835022],[-0.110278,0.0495687,0.00689769,0.0063636],[-0.096214,0.0210344,0.00325791,0.00144786]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 883,
+    label = "H + HCCO <=> oxirene",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[10.724,1.21065,-0.220172,0.0342487],[-0.267656,0.666817,0.0297508,-0.0432147],[-0.293778,0.254271,0.0461209,-0.0170512],[-0.14651,0.0761825,0.0290363,-0.00109922],[-0.057719,0.0240569,0.0120657,0.00268123],[-0.0213962,0.00895929,0.00538504,0.00268129]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 884,
+    label = "HCCO + ketene <=> HCCO + oxirene",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-40.5169,-0.000633853,-0.000474601,-0.000291101],[41.2539,-0.000245575,-0.0001838,-0.000112665],[0.611721,-0.000272964,-0.000204326,-0.000125271],[0.182715,-0.000106178,-7.94679e-05,-4.8711e-05],[0.0389933,-4.17873e-05,-3.12715e-05,-1.91649e-05],[0.00348029,-8.87058e-06,-6.63738e-06,-4.06688e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 885,
+    label = "HCCO + CH3CHO <=> oxirene + vinoxy",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-31.644,-0.000392164,-0.000293667,-0.000180154],[33.2992,-0.00019731,-0.000147723,-9.05945e-05],[0.745956,-0.000132121,-9.89146e-05,-6.06595e-05],[0.177409,-5.92214e-05,-4.43327e-05,-2.71829e-05],[0.0427337,-2.77893e-05,-2.08014e-05,-1.27532e-05],[0.0140733,-1.20524e-05,-9.02117e-06,-5.53033e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 886,
+    label = "O + C2H2 <=> oxirene",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[6.36369,2.41008,-0.058521,-0.0278987],[1.38725,0.0634904,0.0379154,0.0145839],[-0.10872,0.00796436,0.00668871,0.00469048],[-0.060011,0.00207207,0.00193961,0.00155215],[-0.0276373,0.00215039,0.00154841,0.000897413],[-0.0109838,0.000935379,0.000694468,0.000419716]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 887,
+    label = "oxirene <=> [CH2][C]=O",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[8.06354,1.83116,-0.375648,-0.0741163],[0.0142448,0.419841,0.0976988,0.00178294],[-0.00675603,0.205668,0.0462985,0.0207314],[-0.040342,0.127307,0.0300533,0.0169352],[-0.0431756,0.0748593,0.0212089,0.010579],[-0.0359894,0.039953,0.0146743,0.0054288]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 888,
+    label = "CH3 + HCCO <=> CO + C2H4",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[11.0723,-1.15388,-0.512891,-0.0940345],[0.770245,1.07298,0.411909,0.0275231],[-0.0403847,0.149579,0.116418,0.0494817],[-0.139205,-0.0450356,-0.00554833,0.0133716],[-0.0898467,-0.0391617,-0.0201787,-0.00241445],[-0.0476051,-0.0181586,-0.0112759,-0.0040389]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 889,
+    label = "CH3 + HCCO <=> HCO + C2H3",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[9.55626,-0.855519,-0.42596,-0.107689],[2.43849,0.858807,0.387188,0.0635817],[0.0252633,0.0706656,0.0714842,0.0441847],[-0.105929,-0.0535309,-0.0190507,0.00496627],[-0.07351,-0.0292676,-0.018257,-0.00615454],[-0.0378835,-0.0101621,-0.00770024,-0.00457787]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 890,
+    label = "OH + CH3 <=> CH3OH",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[12.8911,0.911215,-0.19879,0.0232769],[-1.20345,0.991356,-0.0419174,-0.0459941],[-0.617843,0.312153,0.0878044,-0.0185697],[-0.302116,0.0660406,0.051294,0.00995134],[-0.14847,0.00457503,0.0137467,0.00929423],[-0.0717413,-0.00560115,0.000333405,0.00292949]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 891,
+    label = "OH + allyl <=> CH2OH + C2H3",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[6.17015,-0.994958,-0.284987,0.0174719],[6.6449,0.942918,0.19316,-0.0627976],[-0.0253662,0.187275,0.121496,0.0262546],[-0.0901116,-0.054708,0.0138487,0.0265858],[-0.0576446,-0.0662558,-0.0252442,0.00364263],[-0.0202968,-0.0277014,-0.020286,-0.00729017]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 892,
+    label = "H + CH2OH <=> OH + CH3",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[13.1939,-0.754164,-0.276977,-0.0162116],[0.685731,0.811838,0.235988,-0.0322904],[-0.0133783,0.0253806,0.081655,0.0480127],[-0.0412083,-0.0574907,-0.017523,0.0135848],[-0.0166742,-0.0258963,-0.0198919,-0.00721795],[-0.00488923,-0.00658504,-0.00683307,-0.00611639]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 893,
+    label = "O2 + CH3OH <=> HO2 + CH2OH",
+    degeneracy = 6.0,
+    kinetics = Arrhenius(A=(360000,'cm^3/(mol*s)'), n=2.27, Ea=(47174.1,'cal/mol'), T0=(1,'K'), comment="""Matched reaction 199 CH4O + O2 <=> CH2OH_p + HO2 in H_Abstraction/training
+    This reaction matched rate rule [C/H3/O;O2b]
+    family: H_Abstraction
+    Ea raised from 178.9 to 197.4 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Matched reaction 199 CH4O + O2 <=> CH2OH_p + HO2 in H_Abstraction/training
+This reaction matched rate rule [C/H3/O;O2b]
+family: H_Abstraction
+Ea raised from 178.9 to 197.4 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 894,
+    label = "CH3OH + C2H5 <=> CH2OH + C2H6",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(1.29101e-09,'m^3/(mol*s)'), n=4.34, Ea=(29.3926,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C_pri;C_rad/H2/Cs\H3] for rate rule [C/H3/O;C_rad/H2/Cs\H3]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 3.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C_pri;C_rad/H2/Cs\H3] for rate rule [C/H3/O;C_rad/H2/Cs\H3]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 3.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 895,
+    label = "CH3 + CH3OH <=> CH2OH + CH4",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(2.19e-07,'cm^3/(mol*s)'), n=5.58, Ea=(3896.3,'cal/mol'), T0=(1,'K'), comment="""Matched reaction 201 CH4O + CH3_r3 <=> CH2OH_p + CH4 in H_Abstraction/training
+    This reaction matched rate rule [C/H3/O;C_methyl]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 201 CH4O + CH3_r3 <=> CH2OH_p + CH4 in H_Abstraction/training
+This reaction matched rate rule [C/H3/O;C_methyl]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 896,
+    label = "CH2OH + C2H5 <=> CH3OH + C2H4",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(8.67e+12,'cm^3/(mol*s)','*|/',5), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 8 CH3O-2 + C2H5 <=> CH4O + C2H4 in Disproportionation/training
+    This reaction matched rate rule [C_rad/H2/O;Cmethyl_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 8 CH3O-2 + C2H5 <=> CH4O + C2H4 in Disproportionation/training
+This reaction matched rate rule [C_rad/H2/O;Cmethyl_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 897,
+    label = "H + CH3OH <=> H2 + CH2OH",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(66000,'cm^3/(mol*s)'), n=2.728, Ea=(4449,'cal/mol'), T0=(1,'K'), comment="""Matched reaction 191 CH4O + H <=> CH2OH_p + H2_p in H_Abstraction/training
+    This reaction matched rate rule [C/H3/O;H_rad]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 191 CH4O + H <=> CH2OH_p + H2_p in H_Abstraction/training
+This reaction matched rate rule [C/H3/O;H_rad]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 898,
+    label = "CH3OH + C[CH]CCC <=> CH2OH + pentane",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(1.20577e-09,'m^3/(mol*s)'), n=4.28333, Ea=(30.6559,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C_pri;C_rad/H/NonDeC] for rate rule [C/H3/O;C_rad/H/NonDeC]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 3.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C_pri;C_rad/H/NonDeC] for rate rule [C/H3/O;C_rad/H/NonDeC]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 3.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 899,
+    label = "CH2OH + npropyl <=> CH3OH + C3H6",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(9.64e+11,'cm^3/(mol*s)','*|/',3), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 25 CH3O-2 + C3H7-2 <=> CH4O + C3H6-2 in Disproportionation/training
+    This reaction matched rate rule [C_rad/H2/O;C/H2/Nd_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 25 CH3O-2 + C3H7-2 <=> CH4O + C3H6-2 in Disproportionation/training
+This reaction matched rate rule [C_rad/H2/O;C/H2/Nd_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 900,
+    label = "HO2 + CH3OH <=> H2O2 + CH2OH",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(0.00035,'cm^3/(mol*s)'), n=4.85, Ea=(10346,'cal/mol'), T0=(1,'K'), Tmin=(100,'K'), Tmax=(3000,'K'), comment="""Matched reaction 197 CH4O + HO2_r3 <=> CH2OH_p + H2O2_p13 in H_Abstraction/training
+    This reaction matched rate rule [C/H3/O;O_rad/NonDeO]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 197 CH4O + HO2_r3 <=> CH2OH_p + H2O2_p13 in H_Abstraction/training
+This reaction matched rate rule [C/H3/O;O_rad/NonDeO]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 901,
+    label = "CH3OH + CC[CH]CC <=> CH2OH + pentane",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(1.20577e-09,'m^3/(mol*s)'), n=4.28333, Ea=(30.6559,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C_pri;C_rad/H/NonDeC] for rate rule [C/H3/O;C_rad/H/NonDeC]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 3.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C_pri;C_rad/H/NonDeC] for rate rule [C/H3/O;C_rad/H/NonDeC]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 3.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 902,
+    label = "CH2OH + butyl_1 <=> CH3OH + butene1",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(9.64e+11,'cm^3/(mol*s)','*|/',3), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 25 used for C_rad/H2/O;C/H2/Nd_Csrad
+    Exact match found for rate rule [C_rad/H2/O;C/H2/Nd_Csrad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 25 used for C_rad/H2/O;C/H2/Nd_Csrad
+Exact match found for rate rule [C_rad/H2/O;C/H2/Nd_Csrad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 903,
+    label = "OH + CH3OH <=> H2O + CH2OH",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(1.5e+08,'cm^3/(mol*s)'), n=1.4434, Ea=(113,'cal/mol'), T0=(1,'K'), comment="""Matched reaction 195 CH4O + OH <=> CH2OH_p + H2O_p in H_Abstraction/training
+    This reaction matched rate rule [C/H3/O;O_pri_rad]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 195 CH4O + OH <=> CH2OH_p + H2O_p in H_Abstraction/training
+This reaction matched rate rule [C/H3/O;O_pri_rad]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 904,
+    label = "CH3OH + [CH2]CCCC <=> CH2OH + pentane",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(2.74636e-10,'m^3/(mol*s)'), n=4.60229, Ea=(27.7026,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C_pri;C_rad/H2/Cs] for rate rule [C/H3/O;C_rad/H2/Cs]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 3.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C_pri;C_rad/H2/Cs] for rate rule [C/H3/O;C_rad/H2/Cs]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 3.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 905,
+    label = "CH2OH + C3H6 <=> CH3OH + allyl",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(2.0304e-09,'m^3/(mol*s)'), n=4.37417, Ea=(42.6524,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C/H3/Cd\H_Cd\H2;C_pri_rad] for rate rule [C/H3/Cd\H_Cd\H2;C_rad/H2/O]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 3.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C/H3/Cd\H_Cd\H2;C_pri_rad] for rate rule [C/H3/Cd\H_Cd\H2;C_rad/H2/O]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 3.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 906,
+    label = "CH3OH + C2H3 <=> CH2OH + C2H4",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(2.801e-09,'m^3/(mol*s)'), n=4.41, Ea=(6.83387,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C_pri;Cd_Cd\H2_pri_rad] for rate rule [C/H3/O;Cd_Cd\H2_pri_rad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 3.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C_pri;Cd_Cd\H2_pri_rad] for rate rule [C/H3/O;Cd_Cd\H2_pri_rad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 3.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 907,
+    label = "O + CH3OH <=> OH + CH2OH",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(2.1e+13,'cm^3/(mol*s)'), n=0, Ea=(5305,'cal/mol'), T0=(1,'K'), comment="""Matched reaction 193 CH4O + O_rad <=> CH2OH_p + OH_p23 in H_Abstraction/training
+    This reaction matched rate rule [C/H3/O;O_atom_triplet]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 193 CH4O + O_rad <=> CH2OH_p + OH_p23 in H_Abstraction/training
+This reaction matched rate rule [C/H3/O;O_atom_triplet]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 908,
+    label = "CH3OH + vinoxy <=> CH2OH + CH3CHO",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(4.19423e-09,'m^3/(mol*s)'), n=4.38055, Ea=(55.7194,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C_pri;C_pri_rad] for rate rule [C/H3/O;C_rad/H2/CO]
+    Euclidian distance = 1.4142135623730951
+    Multiplied by reaction path degeneracy 3.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C_pri;C_pri_rad] for rate rule [C/H3/O;C_rad/H2/CO]
+Euclidian distance = 1.4142135623730951
+Multiplied by reaction path degeneracy 3.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 909,
+    label = "CH2OH + vinoxy <=> CH3OH + ketene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(285071,'m^3/(mol*s)'), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C_pri_rad;Cdpri_Rrad] for rate rule [C_rad/H2/O;Cdpri_Orad]
+    Euclidian distance = 1.4142135623730951
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [C_pri_rad;Cdpri_Rrad] for rate rule [C_rad/H2/O;Cdpri_Orad]
+Euclidian distance = 1.4142135623730951
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 910,
+    label = "HCO + CH2OH <=> CO + CH3OH",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1e+13,'cm^3/(mol*s)'), n=0, Ea=(0,'cal/mol'), T0=(1,'K'), comment="""Matched reaction 11 CH2OH + HCO <=> CH3OH + CO in CO_Disproportionation/training
+    This reaction matched rate rule [C_rad/H2/O;HCO]
+    family: CO_Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 11 CH2OH + HCO <=> CH3OH + CO in CO_Disproportionation/training
+This reaction matched rate rule [C_rad/H2/O;HCO]
+family: CO_Disproportionation
+""",
+)
+
+entry(
+    index = 911,
+    label = "CH2OH + butene1 <=> CH3OH + m1_allyl",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(5.03926e-09,'m^3/(mol*s)'), n=4.34, Ea=(33.4023,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C/H2/Cd\H_Cd\H2/Cs\H3;C_pri_rad] for rate rule [C/H2/Cd\H_Cd\H2/Cs\H3;C_rad/H2/O]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C/H2/Cd\H_Cd\H2/Cs\H3;C_pri_rad] for rate rule [C/H2/Cd\H_Cd\H2/Cs\H3;C_rad/H2/O]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 912,
+    label = "CH2OH + butene2t <=> CH3OH + m1_allyl",
+    degeneracy = 6.0,
+    kinetics = Arrhenius(A=(2.12522e-09,'m^3/(mol*s)'), n=4.45161, Ea=(39.5606,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C/H3/Cd;C_pri_rad] for rate rule [C/H3/Cd\H_Cd\H\Cs;C_rad/H2/O]
+    Euclidian distance = 1.4142135623730951
+    Multiplied by reaction path degeneracy 6.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C/H3/Cd;C_pri_rad] for rate rule [C/H3/Cd\H_Cd\H\Cs;C_rad/H2/O]
+Euclidian distance = 1.4142135623730951
+Multiplied by reaction path degeneracy 6.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 913,
+    label = "CH2OH + m1_allyl <=> CH3OH + butadiene13",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(8.67e+12,'cm^3/(mol*s)','*|/',5), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [C_rad/H2/O;Cmethyl_Csrad] for rate rule [C_rad/H2/O;Cmethyl_Csrad/H/Cd]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 3.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [C_rad/H2/O;Cmethyl_Csrad] for rate rule [C_rad/H2/O;Cmethyl_Csrad/H/Cd]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 3.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 914,
+    label = "CH2OH + vinoxy <=> CH3OH + ketene(T)",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.33716e-07,'m^3/(mol*s)'), n=4.13833, Ea=(106.414,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Cd/H2/NonDeC;C_pri_rad] for rate rule [Cd/H2/NonDeC;C_rad/H2/O]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [Cd/H2/NonDeC;C_pri_rad] for rate rule [Cd/H2/NonDeC;C_rad/H2/O]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 915,
+    label = "CH2OH + ketene(T) <=> CH3OH + HCCO",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(285071,'m^3/(mol*s)'), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C_pri_rad;Cdpri_Rrad] for rate rule [C_rad/H2/O;Cdpri_Orad]
+    Euclidian distance = 1.4142135623730951
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [C_pri_rad;Cdpri_Rrad] for rate rule [C_rad/H2/O;Cdpri_Orad]
+Euclidian distance = 1.4142135623730951
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 916,
+    label = "CH3OH + HCCO <=> CH2OH + ketene",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(1.43139e-08,'m^3/(mol*s)'), n=4.34, Ea=(58.7155,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C_pri;Cd_Cdd_rad/H] for rate rule [C/H3/O;Cd_Cdd_rad/H]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 3.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C_pri;Cd_Cdd_rad/H] for rate rule [C/H3/O;Cd_Cdd_rad/H]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 3.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 917,
+    label = "CH2OH + [CH2][C]=O <=> CH3OH + HCCO",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/O;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/O;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 918,
+    label = "CH3OH + CH2CHCHCH <=> CH2OH + butadiene13",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(2.801e-09,'m^3/(mol*s)'), n=4.41, Ea=(6.83387,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C_pri;Cd_pri_rad] for rate rule [C/H3/O;Cd_pri_rad]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 3.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C_pri;Cd_pri_rad] for rate rule [C/H3/O;Cd_pri_rad]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 3.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 919,
+    label = "CH2OH + C2H3 <=> CH3OH + C2H2",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/O;Cds/H2_d_Crad]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [C_rad/H2/O;Cds/H2_d_Crad]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 920,
+    label = "CH2OH + allyl <=> CH3OH + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(285071,'m^3/(mol*s)'), n=0, Ea=(25.104,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C_pri_rad;Cdpri_Csrad] for rate rule [C_rad/H2/O;Cdpri_Csrad]
+    Euclidian distance = 1.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [C_pri_rad;Cdpri_Csrad] for rate rule [C_rad/H2/O;Cdpri_Csrad]
+Euclidian distance = 1.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 921,
+    label = "CH2OH + allene <=> CH3OH + C3H3",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(6.08167e-08,'m^3/(mol*s)'), n=4.34, Ea=(46.7911,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Cd_Cdd/H2;C_pri_rad] for rate rule [Cd_Cdd/H2;C_rad/H2/O]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [Cd_Cdd/H2;C_pri_rad] for rate rule [Cd_Cdd/H2;C_rad/H2/O]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 922,
+    label = "H + CH2OH <=> CH3OH",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[12.1112,1.64546,-0.300435,-0.0110549],[-1.41521,0.825159,0.208821,-0.0501956],[-0.627666,0.0833237,0.103919,0.0420717],[-0.281171,-0.0285727,0.0040576,0.0217626],[-0.124131,-0.0230772,-0.013456,0.000230028],[-0.0495922,-0.0120881,-0.00823657,-0.00403997]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 923,
+    label = "CH2O + CC[CH]CC <=> HCO + pentane",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.08e+11,'cm^3/(mol*s)','*|/',2.5), n=0, Ea=(29.1206,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using an average for rate rule [CO_pri;C_rad/H/NonDeC]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [CO_pri;C_rad/H/NonDeC]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 924,
+    label = "CH2O + C[CH]CCC <=> HCO + pentane",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.08e+11,'cm^3/(mol*s)','*|/',2.5), n=0, Ea=(29.1206,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using an average for rate rule [CO_pri;C_rad/H/NonDeC]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [CO_pri;C_rad/H/NonDeC]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 925,
+    label = "CH2O + [CH2]CCCC <=> HCO + pentane",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(5500,'cm^3/(mol*s)','*|/',5), n=2.81, Ea=(24.5182,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using an average for rate rule [CO_pri;C_rad/H2/Cs]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [CO_pri;C_rad/H2/Cs]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 926,
+    label = "HCO + C2H5 <=> CH2O + C2H4",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(5.97286e+08,'m^3/(mol*s)'), n=-0.34, Ea=(0,'kJ/mol'), T0=(1,'K'), comment="""Estimated using average of templates [Y_rad;Cmethyl_Csrad] + [CO_pri_rad;XH_s_Rrad] for rate rule [CO_pri_rad;Cmethyl_Csrad]
+    Euclidian distance = 2.0
+    Multiplied by reaction path degeneracy 3.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using average of templates [Y_rad;Cmethyl_Csrad] + [CO_pri_rad;XH_s_Rrad] for rate rule [CO_pri_rad;Cmethyl_Csrad]
+Euclidian distance = 2.0
+Multiplied by reaction path degeneracy 3.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 927,
+    label = "HCO + npropyl <=> CH2O + C3H6",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(2.3e+13,'cm^3/(mol*s)','*|/',1.7), n=-0.32, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [Y_rad;C/H2/Nd_Csrad] for rate rule [CO_pri_rad;C/H2/Nd_Csrad]
+    Euclidian distance = 2.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;C/H2/Nd_Csrad] for rate rule [CO_pri_rad;C/H2/Nd_Csrad]
+Euclidian distance = 2.0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 928,
+    label = "HCO + butyl_1 <=> CH2O + butene1",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(2.3e+13,'cm^3/(mol*s)','*|/',1.7), n=-0.32, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [Y_rad;C/H2/Nd_Csrad] for rate rule [CO_pri_rad;C/H2/Nd_Csrad]
+    Euclidian distance = 2.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;C/H2/Nd_Csrad] for rate rule [CO_pri_rad;C/H2/Nd_Csrad]
+Euclidian distance = 2.0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 929,
+    label = "CH2O + C2H3 <=> HCO + C2H4",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(5420,'cm^3/(mol*s)','*|/',5), n=2.81, Ea=(24.5182,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 365 C2H3 + CH2O <=> C2H4 + HCO_r3 in H_Abstraction/training
+    This reaction matched rate rule [Cd/H2/NonDeC;CO_pri_rad]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 365 C2H3 + CH2O <=> C2H4 + HCO_r3 in H_Abstraction/training
+This reaction matched rate rule [Cd/H2/NonDeC;CO_pri_rad]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 930,
+    label = "H2 + HCO <=> H + CH2O",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.8e+06,'cm^3/(mol*s)','*|/',5), n=2, Ea=(204.765,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 309 H2 + HCO_r3 <=> CH2O + H in H_Abstraction/training
+    This reaction matched rate rule [H2;CO_pri_rad]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 309 H2 + HCO_r3 <=> CH2O + H in H_Abstraction/training
+This reaction matched rate rule [H2;CO_pri_rad]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 931,
+    label = "CH2O + allyl <=> HCO + C3H6",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(0.305247,'m^3/(mol*s)'), n=1.975, Ea=(40.6475,'kJ/mol'), T0=(1,'K'), comment="""Estimated using average of templates [CO_H;C_rad/H2/Cd\H_Cd\H2] + [CO_pri;C_rad/H2/Cd] for rate rule [CO_pri;C_rad/H2/Cd\H_Cd\H2]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 4.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using average of templates [CO_H;C_rad/H2/Cd\H_Cd\H2] + [CO_pri;C_rad/H2/Cd] for rate rule [CO_pri;C_rad/H2/Cd\H_Cd\H2]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 4.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 932,
+    label = "O2 + CH2O <=> HO2 + HCO",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(9.36e+07,'cm^3/(mol*s)'), n=2.05, Ea=(163.172,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2200,'K'), comment="""Matched reaction 358 CH2O + O2 <=> HO2_r12 + HCO_r3 in H_Abstraction/training
+    This reaction matched rate rule [Orad_O_H;CO_pri_rad]
+    family: H_Abstraction
+    Ea raised from 158.7 to 163.2 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Matched reaction 358 CH2O + O2 <=> HO2_r12 + HCO_r3 in H_Abstraction/training
+This reaction matched rate rule [Orad_O_H;CO_pri_rad]
+family: H_Abstraction
+Ea raised from 158.7 to 163.2 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 933,
+    label = "HCO + butene1 <=> CH2O + m1_allyl",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(5.12248e-07,'m^3/(mol*s)'), n=3.91071, Ea=(13.7023,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C/H2/Cd\H_Cd\H2/Cs\H3;Y_rad] for rate rule [C/H2/Cd\H_Cd\H2/Cs\H3;CO_pri_rad]
+    Euclidian distance = 2.0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C/H2/Cd\H_Cd\H2/Cs\H3;Y_rad] for rate rule [C/H2/Cd\H_Cd\H2/Cs\H3;CO_pri_rad]
+Euclidian distance = 2.0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 934,
+    label = "HCO + CH4 <=> CH2O + CH3",
+    degeneracy = 4.0,
+    kinetics = Arrhenius(A=(7280,'cm^3/(mol*s)','*|/',5), n=2.85, Ea=(143.302,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 318 HCO_r3 + CH4b <=> CH2O + CH3_p1 in H_Abstraction/training
+    This reaction matched rate rule [C_methane;CO_pri_rad]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 318 HCO_r3 + CH4b <=> CH2O + CH3_p1 in H_Abstraction/training
+This reaction matched rate rule [C_methane;CO_pri_rad]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 935,
+    label = "O + CH2O <=> OH + HCO",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(4.16e+11,'cm^3/(mol*s)','*|/',2), n=0.57, Ea=(11.5478,'kJ/mol'), T0=(1,'K'), Tmin=(250,'K'), Tmax=(2200,'K'), comment="""Matched reaction 359 CH2O + O_rad <=> HO + HCO_r3 in H_Abstraction/training
+    This reaction matched rate rule [OH_rad_H;CO_pri_rad]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 359 CH2O + O_rad <=> HO + HCO_r3 in H_Abstraction/training
+This reaction matched rate rule [OH_rad_H;CO_pri_rad]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 936,
+    label = "OH + CH2O <=> H2O + HCO",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(3.44e+09,'cm^3/(mol*s)','*|/',5), n=1.18, Ea=(-1.8828,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(3000,'K'), comment="""Matched reaction 367 OH_p23 + CH2O <=> H2O + HCO_r3 in H_Abstraction/training
+    This reaction matched rate rule [O_pri;CO_pri_rad]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 367 OH_p23 + CH2O <=> H2O + HCO_r3 in H_Abstraction/training
+This reaction matched rate rule [O_pri;CO_pri_rad]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 937,
+    label = "HO2 + CH2O <=> H2O2 + HCO",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(41200,'cm^3/(mol*s)'), n=2.5, Ea=(42.7186,'kJ/mol'), T0=(1,'K'), Tmin=(641,'K'), Tmax=(1600,'K'), comment="""Matched reaction 369 HO2_r3 + CH2O <=> H2O2 + HCO_r3 in H_Abstraction/training
+    This reaction matched rate rule [H2O2;CO_pri_rad]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 369 HO2_r3 + CH2O <=> H2O2 + HCO_r3 in H_Abstraction/training
+This reaction matched rate rule [H2O2;CO_pri_rad]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 938,
+    label = "HCO + C2H6 <=> CH2O + C2H5",
+    degeneracy = 6.0,
+    kinetics = Arrhenius(A=(46920,'cm^3/(mol*s)','*|/',5), n=2.72, Ea=(159.996,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 325 HCO_r3 + C2H6 <=> CH2O + C2H5 in H_Abstraction/training
+    This reaction matched rate rule [C/H3/Cs\H3;CO_pri_rad]
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Matched reaction 325 HCO_r3 + C2H6 <=> CH2O + C2H5 in H_Abstraction/training
+This reaction matched rate rule [C/H3/Cs\H3;CO_pri_rad]
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 939,
+    label = "HCO + allyl <=> CH2O + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.33412e+07,'m^3/(mol*s)'), n=0, Ea=(12.552,'kJ/mol'), T0=(1,'K'), comment="""Estimated using average of templates [Y_rad;Cdpri_Csrad] + [CO_pri_rad;XH_s_Rrad] for rate rule [CO_pri_rad;Cdpri_Csrad]
+    Euclidian distance = 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using average of templates [Y_rad;Cdpri_Csrad] + [CO_pri_rad;XH_s_Rrad] for rate rule [CO_pri_rad;Cdpri_Csrad]
+Euclidian distance = 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 940,
+    label = "HCO + butene2t <=> CH2O + m1_allyl",
+    degeneracy = 6.0,
+    kinetics = Arrhenius(A=(0.00722537,'m^3/(mol*s)'), n=2.9005, Ea=(25.0779,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C/H3/Cd\H_Cd\H\Cs;Y_rad] for rate rule [C/H3/Cd\H_Cd\H\Cs;CO_pri_rad]
+    Euclidian distance = 2.0
+    Multiplied by reaction path degeneracy 6.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C/H3/Cd\H_Cd\H\Cs;Y_rad] for rate rule [C/H3/Cd\H_Cd\H\Cs;CO_pri_rad]
+Euclidian distance = 2.0
+Multiplied by reaction path degeneracy 6.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 941,
+    label = "HCO + C2H3 <=> CH2O + C2H2",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [CO_pri_rad;Cds/H2_d_Crad]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [CO_pri_rad;Cds/H2_d_Crad]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 942,
+    label = "HCO + vinoxy <=> CH2O + ketene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.81e+14,'cm^3/(mol*s)','*|/',3), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [CO_pri_rad;XH_s_Rrad] for rate rule [CO_pri_rad;COpri_Csrad]
+    Euclidian distance = 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [CO_pri_rad;XH_s_Rrad] for rate rule [CO_pri_rad;COpri_Csrad]
+Euclidian distance = 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 943,
+    label = "HCO + vinoxy <=> CH2O + ketene(T)",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(0.504335,'m^3/(mol*s)'), n=2.14531, Ea=(76.8954,'kJ/mol'), T0=(1,'K'), comment="""Estimated using average of templates [X_H_or_Xrad_H_Xbirad_H_Xtrirad_H;CO_pri_rad] + [C_rad_H;Y_rad] for rate rule [C_rad_H;CO_pri_rad]
+    Euclidian distance = 2.0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using average of templates [X_H_or_Xrad_H_Xbirad_H_Xtrirad_H;CO_pri_rad] + [C_rad_H;Y_rad] for rate rule [C_rad_H;CO_pri_rad]
+Euclidian distance = 2.0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 944,
+    label = "CH2O + HCCO <=> HCO + ketene",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.49132e-05,'m^3/(mol*s)'), n=3.5354, Ea=(53.6049,'kJ/mol'), T0=(1,'K'), comment="""Estimated using average of templates [X_H;Cd_Cdd_rad/H] + [CO_pri;Cd_rad] for rate rule [CO_pri;Cd_Cdd_rad/H]
+    Euclidian distance = 2.0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using average of templates [X_H;Cd_Cdd_rad/H] + [CO_pri;Cd_rad] for rate rule [CO_pri;Cd_Cdd_rad/H]
+Euclidian distance = 2.0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 945,
+    label = "CH2O + vinoxy <=> HCO + CH3CHO",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.29836e-05,'m^3/(mol*s)'), n=3.38, Ea=(37.8233,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [CO_pri;C_pri_rad] for rate rule [CO_pri;C_rad/H2/CO]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [CO_pri;C_pri_rad] for rate rule [CO_pri;C_rad/H2/CO]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 946,
+    label = "HCO + HCO <=> CO + CH2O",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.8e+13,'cm^3/(mol*s)','+|-',9e+12), n=0, Ea=(0,'cal/mol'), T0=(1,'K'), comment="""Matched reaction 5 HCO + HCO_Y <=> CO + CH2O in CO_Disproportionation/training
+    This reaction matched rate rule [CO_pri_rad;HCO]
+    family: CO_Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 5 HCO + HCO_Y <=> CO + CH2O in CO_Disproportionation/training
+This reaction matched rate rule [CO_pri_rad;HCO]
+family: CO_Disproportionation
+""",
+)
+
+entry(
+    index = 947,
+    label = "HCO + m1_allyl <=> CH2O + butadiene13",
+    degeneracy = 3.0,
+    kinetics = Arrhenius(A=(1.5e+11,'cm^3/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [Y_rad;Cmethyl_Csrad/H/Cd] for rate rule [CO_pri_rad;Cmethyl_Csrad/H/Cd]
+    Euclidian distance = 2.0
+    Multiplied by reaction path degeneracy 3.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cmethyl_Csrad/H/Cd] for rate rule [CO_pri_rad;Cmethyl_Csrad/H/Cd]
+Euclidian distance = 2.0
+Multiplied by reaction path degeneracy 3.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 948,
+    label = "CH2O + CH2CHCHCH <=> HCO + butadiene13",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(5420,'cm^3/(mol*s)','*|/',5), n=2.81, Ea=(24.5182,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using an average for rate rule [CO_pri;Cd_pri_rad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [CO_pri;Cd_pri_rad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 949,
+    label = "HCO + ketene(T) <=> CH2O + HCCO",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.81e+14,'cm^3/(mol*s)','*|/',3), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Estimated using template [CO_pri_rad;XH_s_Rrad] for rate rule [CO_pri_rad;Cdpri_Orad]
+    Euclidian distance = 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [CO_pri_rad;XH_s_Rrad] for rate rule [CO_pri_rad;Cdpri_Orad]
+Euclidian distance = 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 950,
+    label = "CH2O + C3H3 <=> HCO + allene",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.49132e-05,'m^3/(mol*s)'), n=3.5354, Ea=(53.6049,'kJ/mol'), T0=(1,'K'), comment="""Estimated using average of templates [X_H;Cd_Cdd_rad/H] + [CO_pri;Cd_rad] for rate rule [CO_pri;Cd_Cdd_rad/H]
+    Euclidian distance = 2.0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using average of templates [X_H;Cd_Cdd_rad/H] + [CO_pri;Cd_rad] for rate rule [CO_pri;Cd_Cdd_rad/H]
+Euclidian distance = 2.0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 951,
+    label = "O2 + C3H3 <=> CH2O + HCCO",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[5.54677,-0.672534,-0.188339,-0.0313745],[2.43682,0.762117,0.13605,-0.0115496],[0.367445,-0.0763967,0.0556581,0.032625],[0.0853566,-0.04214,-0.00988449,0.00785612],[-0.0151635,0.0109641,-0.00437863,-0.00161757],[-0.0207668,0.0140187,0.00417275,-0.000378373]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 952,
+    label = "HCO + [CH2][C]=O <=> CH2O + HCCO",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(8.20464,'m^3/(mol*s)'), n=1.87713, Ea=(-4.66621,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [CO_pri_rad;Cds/H2_d_Crad]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [Y_rad;Cds/H2_d_Rrad] for rate rule [CO_pri_rad;Cds/H2_d_Crad]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 953,
+    label = "CH2O + CH2OH <=> HCO + CH3OH",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.29836e-05,'m^3/(mol*s)'), n=3.38, Ea=(37.8233,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [CO_pri;C_pri_rad] for rate rule [CO_pri;C_rad/H2/O]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 2.0
+    family: H_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [CO_pri;C_pri_rad] for rate rule [CO_pri;C_rad/H2/O]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 2.0
+family: H_Abstraction
+""",
+)
+
+entry(
+    index = 954,
+    label = "O2 + CH2OH <=> HO2 + CH2O",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(1.14418e+13,'cm^3/(mol*s)','*|/',2), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), comment="""Matched reaction 53 CH3O + O2 <=> HO2 + CH2O in Disproportionation/training
+    This reaction matched rate rule [O2b;O_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 53 CH3O + O2 <=> HO2 + CH2O in Disproportionation/training
+This reaction matched rate rule [O2b;O_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 955,
+    label = "CH2OH + C2H5 <=> CH2O + C2H6",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.41e+12,'cm^3/(mol*s)','*|/',5), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 58 CH3O + C2H5-2 <=> C2H6 + CH2O in Disproportionation/training
+    This reaction matched rate rule [C_rad/H2/Cs;O_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 58 CH3O + C2H5-2 <=> C2H6 + CH2O in Disproportionation/training
+This reaction matched rate rule [C_rad/H2/Cs;O_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 956,
+    label = "CH3 + CH2OH <=> CH2O + CH4",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(8.49e+13,'cm^3/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), comment="""Matched reaction 57 CH3O + CH3 <=> CH4 + CH2O in Disproportionation/training
+    This reaction matched rate rule [C_methyl;O_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 57 CH3O + CH3 <=> CH4 + CH2O in Disproportionation/training
+This reaction matched rate rule [C_methyl;O_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 957,
+    label = "H + CH2OH <=> H2 + CH2O",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2e+13,'cm^3/(mol*s)','+|-',1e+13), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(295,'K'), comment="""Matched reaction 56 H + CH3O <=> H2 + CH2O in Disproportionation/training
+    This reaction matched rate rule [H_rad;O_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 56 H + CH3O <=> H2 + CH2O in Disproportionation/training
+This reaction matched rate rule [H_rad;O_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 958,
+    label = "CH2OH + C[CH]CCC <=> CH2O + pentane",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.35e+12,'cm^3/(mol*s)','*|/',5), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 61 used for C_rad/H/NonDeC;O_Csrad
+    Exact match found for rate rule [C_rad/H/NonDeC;O_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 61 used for C_rad/H/NonDeC;O_Csrad
+Exact match found for rate rule [C_rad/H/NonDeC;O_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 959,
+    label = "HO2 + CH2OH <=> H2O2 + CH2O",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.21e+13,'cm^3/(mol*s)','*|/',2), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 67 HO2-2 + CH3O <=> H2O2 + CH2O in Disproportionation/training
+    This reaction matched rate rule [O_rad/NonDeO;O_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 67 HO2-2 + CH3O <=> H2O2 + CH2O in Disproportionation/training
+This reaction matched rate rule [O_rad/NonDeO;O_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 960,
+    label = "CH2OH + CC[CH]CC <=> CH2O + pentane",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.35e+12,'cm^3/(mol*s)','*|/',5), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 61 used for C_rad/H/NonDeC;O_Csrad
+    Exact match found for rate rule [C_rad/H/NonDeC;O_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 61 used for C_rad/H/NonDeC;O_Csrad
+Exact match found for rate rule [C_rad/H/NonDeC;O_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 961,
+    label = "OH + CH2OH <=> H2O + CH2O",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.41e+13,'cm^3/(mol*s)','*|/',2), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 65 HO + CH3O <=> H2O + CH2O in Disproportionation/training
+    This reaction matched rate rule [O_pri_rad;O_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 65 HO + CH3O <=> H2O + CH2O in Disproportionation/training
+This reaction matched rate rule [O_pri_rad;O_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 962,
+    label = "CH2OH + [CH2]CCCC <=> CH2O + pentane",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(2.41e+12,'cm^3/(mol*s)','*|/',5), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 58 used for C_rad/H2/Cs;O_Csrad
+    Exact match found for rate rule [C_rad/H2/Cs;O_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 58 used for C_rad/H2/Cs;O_Csrad
+Exact match found for rate rule [C_rad/H2/Cs;O_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 963,
+    label = "CH2OH + allyl <=> CH2O + C3H6",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(3.62e+13,'cm^3/(mol*s)','*|/',2.5), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 59 CH3O + C3H5 <=> C3H6 + CH2O in Disproportionation/training
+    This reaction matched rate rule [C_rad/H2/Cd;O_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 59 CH3O + C3H5 <=> C3H6 + CH2O in Disproportionation/training
+This reaction matched rate rule [C_rad/H2/Cd;O_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 964,
+    label = "CH2OH + C2H3 <=> CH2O + C2H4",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.01e+13,'cm^3/(mol*s)','*|/',2.5), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 63 CH3O + C2H3-2 <=> C2H4-2 + CH2O in Disproportionation/training
+    This reaction matched rate rule [Cd_pri_rad;O_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 63 CH3O + C2H3-2 <=> C2H4-2 + CH2O in Disproportionation/training
+This reaction matched rate rule [Cd_pri_rad;O_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 965,
+    label = "O + CH2OH <=> OH + CH2O",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(9.04e+13,'cm^3/(mol*s)','+|-',3.01e+13), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), comment="""Matched reaction 54 CH3O + O <=> HO-2 + CH2O in Disproportionation/training
+    This reaction matched rate rule [O_atom_triplet;O_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 54 CH3O + O <=> HO-2 + CH2O in Disproportionation/training
+This reaction matched rate rule [O_atom_triplet;O_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 966,
+    label = "CH2OH + vinoxy <=> CH2O + CH3CHO",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(5.94631e+06,'m^3/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [C_pri_rad;O_Csrad] for rate rule [C_rad/H2/CO;O_Csrad]
+    Euclidian distance = 1.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using template [C_pri_rad;O_Csrad] for rate rule [C_rad/H2/CO;O_Csrad]
+Euclidian distance = 1.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 967,
+    label = "HCO + CH2OH <=> CH2O + CH2O",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.81e+14,'cm^3/(mol*s)','*|/',3), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 64 CHO + CH3O <=> CH2O-3 + CH2O in Disproportionation/training
+    This reaction matched rate rule [CO_pri_rad;O_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 64 CHO + CH3O <=> CH2O-3 + CH2O in Disproportionation/training
+This reaction matched rate rule [CO_pri_rad;O_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 968,
+    label = "CH2OH + m1_allyl <=> CH2O + butene1",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.33905e+06,'m^3/(mol*s)'), n=0, Ea=(-1.1506,'kJ/mol'), T0=(1,'K'), comment="""Estimated using average of templates [C_sec_rad;O_Csrad] + [C_rad/H/OneDeC;XH_s_Rrad] for rate rule [C_rad/H/OneDeC;O_Csrad]
+    Euclidian distance = 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Estimated using average of templates [C_sec_rad;O_Csrad] + [C_rad/H/OneDeC;XH_s_Rrad] for rate rule [C_rad/H/OneDeC;O_Csrad]
+Euclidian distance = 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 969,
+    label = "CH2OH + m1_allyl <=> CH2O + butene2t",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(1.81e+13,'cm^3/(mol*s)','*|/',2.5), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 59 used for C_rad/H2/Cd;O_Csrad
+    Exact match found for rate rule [C_rad/H2/Cd;O_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 59 used for C_rad/H2/Cd;O_Csrad
+Exact match found for rate rule [C_rad/H2/Cd;O_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 970,
+    label = "CH2OH + ketene(T) <=> CH2O + vinoxy",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.01e+13,'cm^3/(mol*s)','*|/',2.5), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 63 used for Cd_pri_rad;O_Csrad
+    Exact match found for rate rule [Cd_pri_rad;O_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 63 used for Cd_pri_rad;O_Csrad
+Exact match found for rate rule [Cd_pri_rad;O_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 971,
+    label = "CH2OH + [CH2][CH]C=C <=> CH2O + m1_allyl",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(3.62e+13,'cm^3/(mol*s)','*|/',2.5), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 59 used for C_rad/H2/Cd;O_Csrad
+    Exact match found for rate rule [C_rad/H2/Cd;O_Csrad]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 59 used for C_rad/H2/Cd;O_Csrad
+Exact match found for rate rule [C_rad/H2/Cd;O_Csrad]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 972,
+    label = "CH2OH + HCCO <=> CH2O + ketene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.01e+13,'cm^3/(mol*s)','*|/',2.5), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 63 used for Cd_pri_rad;O_Csrad
+    Exact match found for rate rule [Cd_pri_rad;O_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 63 used for Cd_pri_rad;O_Csrad
+Exact match found for rate rule [Cd_pri_rad;O_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 973,
+    label = "CH2OH + CH2CHCHCH <=> CH2O + butadiene13",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.01e+13,'cm^3/(mol*s)','*|/',2.5), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 63 used for Cd_pri_rad;O_Csrad
+    Exact match found for rate rule [Cd_pri_rad;O_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 63 used for Cd_pri_rad;O_Csrad
+Exact match found for rate rule [Cd_pri_rad;O_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 974,
+    label = "CH2OH + C3H3 <=> CH2O + allene",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(3.01e+13,'cm^3/(mol*s)','*|/',2.5), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""From training reaction 63 used for Cd_pri_rad;O_Csrad
+    Exact match found for rate rule [Cd_pri_rad;O_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 63 used for Cd_pri_rad;O_Csrad
+Exact match found for rate rule [Cd_pri_rad;O_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 975,
+    label = "CH2OH + [CH2][C]=O <=> CH2O + vinoxy",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(8.49e+13,'cm^3/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), comment="""From training reaction 57 used for Y_rad;O_Csrad
+    Exact match found for rate rule [Y_rad;O_Csrad]
+    Euclidian distance = 0
+    family: Disproportionation"""),
+    longDesc = 
+"""
+From training reaction 57 used for Y_rad;O_Csrad
+Exact match found for rate rule [Y_rad;O_Csrad]
+Euclidian distance = 0
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 976,
+    label = "CH2OH + CH2OH <=> CH2O + CH3OH",
+    degeneracy = 1.0,
+    kinetics = Arrhenius(A=(4.82e+12,'cm^3/(mol*s)','*|/',2), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2500,'K'), comment="""Matched reaction 60 CH3O-2 + CH3O <=> CH4O + CH2O in Disproportionation/training
+    This reaction matched rate rule [C_rad/H2/O;O_Csrad]
+    family: Disproportionation"""),
+    longDesc = 
+"""
+Matched reaction 60 CH3O-2 + CH3O <=> CH4O + CH2O in Disproportionation/training
+This reaction matched rate rule [C_rad/H2/O;O_Csrad]
+family: Disproportionation
+""",
+)
+
+entry(
+    index = 977,
+    label = "H + CH2O <=> CH2OH",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[8.40292,1.20661,-0.238715,0.0225437],[2.138,0.956947,0.0553067,-0.0524418],[-0.30783,0.212652,0.0927707,-0.00177765],[-0.15091,0.0156941,0.028089,0.0100906],[-0.0479511,-0.0165226,0.00123801,0.00396057],[-0.00356357,-0.0127173,-0.00323217,0.000499525]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 978,
+    label = "H + HCO <=> CH2O",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[8.69048,2.05184,-0.246106,-0.0766442],[-0.94684,0.366938,0.177295,0.0302278],[-0.392657,0.0490679,0.0423177,0.0274918],[-0.194996,0.0150325,0.00983511,0.00584473],[-0.0639512,-0.0191659,-0.00622557,0.0021703],[-0.0505968,0.00984593,0.0020197,-0.00231116]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 979,
+    label = "H + HCO <=> H2 + CO",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[10.4331,-0.392108,-0.217959,-0.0704507],[0.231595,0.376153,0.190564,0.0424101],[0.0121059,0.028756,0.0330291,0.0272312],[0.000648045,0.000766875,0.000612507,0.00157071],[-0.0159656,-0.02505,-0.0112086,-0.00115063],[0.00615303,0.00826518,0.000864583,-0.00319729]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 980,
+    label = "CH2O <=> H2 + CO",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-19.8707,1.16683,-0.24483,0.00807968],[26.1644,0.843845,0.0388718,-0.0468452],[-0.351756,0.19172,0.078496,0.00195406],[-0.221446,0.053375,0.0229072,0.0097192],[-0.0933674,-0.0112322,0.0106883,0.00463693],[-0.055884,0.0101944,-0.00321898,0.000552637]], kunits='s^-1', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 981,
+    label = "CH2O + ketene <=> CH2O + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.8278,-0.0127814,-0.00950326,-0.00576639],[19.9442,0.0149275,0.011084,0.00671151],[-0.157923,-0.00089256,-0.000642471,-0.000369929],[-0.051574,-0.000990129,-0.000740048,-0.000452681],[0.0108915,-0.000343606,-0.000257774,-0.000158574],[0.0195915,-2.87346e-05,-2.18803e-05,-1.37621e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 982,
+    label = "CH2O + ketene <=> CH2O + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-14.2775,-0.019264,-0.0143136,-0.00867621],[22.4093,0.0142872,0.0105709,0.00636544],[0.0607588,0.000963802,0.00074048,0.000471752],[-0.00666643,0.000574688,0.000429191,0.000262216],[-0.0176823,0.000236232,0.000177094,0.000108822],[-0.0144247,7.58869e-05,5.70971e-05,3.52796e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 983,
+    label = "CH2O + ketene <=> CH2O + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.369,-0.015109,-0.011239,-0.00682441],[20.5573,0.0133988,0.00994352,0.0060159],[0.000142567,0.001589,0.00120211,0.000748838],[-0.117033,0.000503969,0.000377888,0.000232288],[-0.0852539,-0.000127773,-9.42666e-05,-5.65062e-05],[-0.0406969,-0.0002666,-0.000198866,-0.000121273]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 984,
+    label = "CH2O + ketene <=> CH2O + [CH2][C]=O",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-14.2656,-0.0207725,-0.0154267,-0.00934363],[22.432,0.014836,0.0109654,0.00659205],[0.0722588,0.000846489,0.00065554,0.000422354],[-0.00517032,0.000611421,0.000456145,0.000278236],[-0.0224507,0.000333991,0.000249856,0.000153044],[-0.0213537,0.000170815,0.000127922,7.84838e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 985,
+    label = "CH2O + ketene <=> H + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-27.1882,-0.018424,-0.0136877,-0.00829517],[33.2235,0.0154431,0.0114338,0.00689222],[0.217303,0.00126513,0.000968114,0.000613253],[-0.0145625,0.000574467,0.000430045,0.000263694],[-0.0442232,0.000120989,9.14424e-05,5.68826e-05],[-0.026873,-5.50001e-05,-4.05666e-05,-2.43067e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 986,
+    label = "CH2O + butadiene13 <=> CH2O + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.2781,-0.00493432,-0.00368038,-0.0022441],[20.4524,0.00634181,0.00472564,0.00287719],[0.221968,-0.00158969,-0.00117899,-0.00071259],[0.0579816,6.06818e-05,4.25153e-05,2.33485e-05],[0.0121117,5.25345e-05,3.94345e-05,2.42794e-05],[-0.000886438,-3.38731e-07,-1.44755e-07,1.30639e-08]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 987,
+    label = "CH2O + butadiene13 <=> CH2O + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-11.3165,-0.0185076,-0.0137555,-0.00834156],[19.7937,0.0138907,0.0102797,0.00619204],[0.0930895,0.000217175,0.00018569,0.000135439],[0.0176126,0.000274269,0.000204274,0.000124284],[-0.000221454,0.000192264,0.000143743,8.79643e-05],[-0.00699321,0.000139968,0.000104598,6.39661e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 988,
+    label = "CH2O + butadiene13 <=> CH2O + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-10.184,-0.01733,-0.0128893,-0.00782487],[18.9106,0.0122136,0.00904719,0.00545775],[0.302407,0.000586628,0.000454171,0.000292508],[0.0881468,0.00040004,0.000298564,0.000182227],[0.0287377,0.000200435,0.000149997,9.19273e-05],[0.00748406,0.000100278,7.50734e-05,4.60373e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 989,
+    label = "CH2O + butadiene13 <=> CH2O + [CH2][CH]C=C",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = Chebyshev(coeffs=[[-8.4727,-0.0177837,-0.0132181,-0.00801634],[17.5157,0.0143446,0.0106226,0.00640524],[0.268295,0.000685106,0.000534219,0.000347498],[0.0604175,0.000415753,0.000310698,0.000190016],[0.00978836,0.000180295,0.000135246,8.31869e-05],[-0.00463203,7.38966e-05,5.55099e-05,3.42154e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 990,
+    label = "CH2O + HCCO <=> C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-35.013,2.49836,-0.00122554,-0.000751209],[31.755,0.00141596,0.00105944,0.000649093],[0.286457,3.52986e-05,2.66586e-05,1.65652e-05],[0.0718489,3.93548e-05,2.94575e-05,1.80591e-05],[0.0150892,3.2226e-06,2.42184e-06,1.4938e-06],[0.000476519,-5.34169e-06,-3.99587e-06,-2.44741e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 991,
+    label = "CH2O + HCCO <=> C=C1OC1[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-38.2442,2.49836,-0.00122473,-0.000750715],[32.0022,0.00141737,0.00106049,0.000649738],[0.259605,3.5874e-05,2.70896e-05,1.68297e-05],[0.0520619,3.93856e-05,2.94806e-05,1.80733e-05],[0.00603646,3.02475e-06,2.27374e-06,1.403e-06],[-0.00725926,-5.56027e-06,-4.15954e-06,-2.5478e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 992,
+    label = "CH2O + HCCO <=> C=[C]C([O])[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-39.5841,2.4984,-0.00119612,-0.00073317],[33.1323,0.00146143,0.00109348,0.000669978],[0.760202,4.20775e-05,3.17436e-05,1.96928e-05],[0.222113,2.91599e-05,2.18275e-05,1.33824e-05],[0.0470727,-9.42595e-06,-7.04867e-06,-4.3149e-06],[-0.00769465,-1.39829e-05,-1.04672e-05,-6.41776e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 993,
+    label = "CH2O + HCCO <=> C=[C]C1OO1",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-40.937,2.49839,-0.00120569,-0.000739033],[33.2809,0.00145148,0.00108602,0.000665391],[0.810004,4.25317e-05,3.20851e-05,1.99036e-05],[0.129076,3.35155e-05,2.50874e-05,1.53807e-05],[0.0101633,-5.59571e-06,-4.1809e-06,-2.55607e-06],[0.0301542,-1.20175e-05,-8.99496e-06,-5.51415e-06]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 994,
+    label = "CH2O + HCCO <=> C=C=CO[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-40.843,2.43306,-0.0480758,-0.0275885],[32.7781,0.0741262,0.0524452,0.029332],[0.684664,-0.0160922,-0.0106521,-0.00524107],[0.152642,0.00279611,0.00168315,0.000654589],[-0.0493719,0.00253564,0.00192519,0.00120397],[-0.0833144,0.00154408,0.00115968,0.000714859]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 995,
+    label = "CH2O + HCCO <=> [C]1=COOC1",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-42.2922,2.34243,-0.111128,-0.061848],[32.5973,0.157054,0.107853,0.0572029],[0.539116,-0.0243617,-0.0146218,-0.00567221],[0.174256,-0.005206,-0.00428619,-0.00296022],[-0.0237686,0.00558427,0.00404635,0.00234779],[-0.0934042,0.00996395,0.00711848,0.00405054]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 996,
+    label = "CH2O + HCCO <=> C#CCO[O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-42.4444,2.2406,-0.181839,-0.100118],[32.2065,0.273314,0.186649,0.0979338],[0.471861,-0.0519764,-0.0316066,-0.0127083],[0.113169,-0.00503065,-0.00505891,-0.0042507],[-0.040189,0.00913568,0.00667513,0.00392462],[-0.0734448,0.0123001,0.00888509,0.00515083]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 997,
+    label = "HO2 + CH2O <=> O2 + CH2OH",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[3.34782,-0.907722,-0.256558,0.00412654],[6.97098,0.920737,0.185633,-0.050364],[0.0330149,0.0722015,0.0893173,0.0305753],[-0.0161545,-0.0644551,-0.0075221,0.014774],[-0.00223796,-0.0423316,-0.0199767,-0.00215541],[0.00708228,-0.0104832,-0.00835816,-0.00415317]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 998,
+    label = "CH2O + CH3CHO <=> CH3OO + C2H3",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-45.7197,-0.000340343,-0.000254802,-0.000156256],[46.4298,-0.000454978,-0.000340582,-0.00020882],[0.0862892,-0.000271238,-0.000203025,-0.000124467],[-0.0272561,-6.75942e-05,-5.05775e-05,-3.09905e-05],[-0.0440912,8.87469e-05,6.64497e-05,4.07577e-05],[-0.0336519,0.000159779,0.00011961,7.33398e-05]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 999,
+    label = "CH2O + OCHCO <=> O + C=C([O])[CH][O]",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-69.2121,-6.6584e-06,-4.98688e-06,-3.06004e-06],[56.1718,4.67769e-06,3.5034e-06,2.14975e-06],[-0.24968,-2.19111e-09,-1.63844e-09,-1.00297e-09],[-0.100872,4.21146e-08,3.15422e-08,1.93548e-08],[-0.0425777,2.51208e-08,1.88145e-08,1.15449e-08],[-0.011276,7.19235e-09,5.38674e-09,3.30544e-09]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
+)
+
+entry(
+    index = 1000,
+    label = "CH2O + ketene <=> CH2OH + HCCO",
+    degeneracy = 1.0,
+    kinetics = Chebyshev(coeffs=[[-18.2286,-1.06217,-0.343702,0.00997313],[25.1347,0.700765,0.160534,-0.0555935],[-0.272134,0.274467,0.103052,-0.000758617],[-0.236044,0.0433607,0.0363012,0.014394],[-0.118002,-0.0290701,-0.000762679,0.0087079],[-0.0322836,-0.0241095,-0.00954934,0.000411488]], kunits='cm^3/(mol*s)', Tmin=(300,'K'), Tmax=(3000,'K'), Pmin=(0.001,'bar'), Pmax=(100,'bar')),
 )
 

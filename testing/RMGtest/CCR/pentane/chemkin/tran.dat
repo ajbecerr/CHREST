@@ -43,3 +43,20 @@ S(3748)             2     440.057     6.163     0.000     0.000     0.000    ! E
 C4H6(3743)          2     359.053     5.289     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=466.30 K, Pc=45.78 bar (from Joback method)
 HCCO(2227)          2     150.001     2.500     0.000     0.000     1.000    ! GRI-Mech
 S(3676)             2     440.200     4.010     0.000     0.000     2.000    ! NOx2018
+C4H5(4849)          2     357.002     5.180     0.000     0.000     1.000    ! GRI-Mech
+C2H2(1342)          1     209.001     4.100     0.000     0.000     2.500    ! GRI-Mech
+C3H4(458)           2     330.322     4.785     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=428.99 K, Pc=56.87 bar (from Joback method)
+C3H3(5450)          2     252.000     4.760     0.000     0.000     1.000    ! GRI-Mech
+S(18646)            2     419.540     5.778     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=544.86 K, Pc=41.04 bar (from Joback method)
+S(16808)            2     421.443     5.767     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=547.33 K, Pc=41.46 bar (from Joback method)
+S(16806)            2     431.068     5.775     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=559.83 K, Pc=42.22 bar (from Joback method)
+S(18658)            2     394.809     5.474     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=512.74 K, Pc=45.41 bar (from Joback method)
+S(19053)            2     473.059     6.345     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=614.36 K, Pc=34.93 bar (from Joback method)
+S(19061)            2     440.998     5.877     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=572.73 K, Pc=40.99 bar (from Joback method)
+S(2850)             2     482.019     6.403     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=626.00 K, Pc=34.64 bar (from Joback method)
+S(15028)            2     209.000     4.100     0.000     0.000     2.500    ! NOx2018
+S(1376)             2     358.493     5.031     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=465.58 K, Pc=53.12 bar (from Joback method)
+S(6860)             2     357.876     4.998     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=464.77 K, Pc=54.07 bar (from Joback method)
+CH3OH(428)          2     481.802     3.626     0.000     0.000     1.000    ! GRI-Mech
+CH3O(3737)          2     417.002     3.690     1.700     0.000     2.000    ! GRI-Mech
+CH2O(3111)          2     498.002     3.590     0.000     0.000     2.000    ! GRI-Mech
