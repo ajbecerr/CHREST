@@ -19,4 +19,4 @@ export DAK_INSTALL=/util/academic/dakota/dakota-6.15.0-release-public-rhel7.x86_
 export PATH=$DAK_INSTALL/bin:$DAK_INSTALL/share/dakota/test:$PATH
 export PYTHONPATH=$DAK_INSTALL/share/dakota/Python:$PYTHONPATH
 export DAKOTA_RUN_PARALLEL=True
-mpirun --overlap -np16 dakota -i sensitivity_parallel.in
+mpirun -np 16 dakota -i sensitivity_parallel.in
