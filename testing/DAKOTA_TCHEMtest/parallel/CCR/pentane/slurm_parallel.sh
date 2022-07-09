@@ -11,9 +11,12 @@
 #SBATCH --mail-user=ajbecerr@buffalo.edu
 #SBATCH --mail-type=ALL
 module purge
+module load intel/19.5
+module load intel-mpi/2019.5
+export I_MPI_PMI_LIBRARY=/usr/lib64/libpmi.so
 module load dakota/6.15
 export DAK_INSTALL=/util/academic/dakota/dakota-6.15.0-release-public-rhel7.x86_64-gui_cli
 export PATH=$DAK_INSTALL/bin:$DAK_INSTALL/share/dakota/test:$PATH
 export PYTHONPATH=$DAK_INSTALL/share/dakota/Python:$PYTHONPATH
 export DAKOTA_RUN_PARALLEL=True
-srun dakota -i sensitivity_parallel.in
+mpirun --overlap -np16 dakota -i sensitivity_parallel.in
