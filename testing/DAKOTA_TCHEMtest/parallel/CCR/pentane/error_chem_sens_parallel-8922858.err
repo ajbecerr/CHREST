@@ -1,0 +1,186 @@
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-mpi-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[cpn-u25-39.compute.cbls.ccr.buffalo.edu:2747] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-mpi-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+[cpn-u25-39.compute.cbls.ccr.buffalo.edu:2746] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-mpi-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-mpi-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[cpn-u25-39.compute.cbls.ccr.buffalo.edu:2748] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+[cpn-u25-39.compute.cbls.ccr.buffalo.edu:2751] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-mpi-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[cpn-u25-39.compute.cbls.ccr.buffalo.edu:2749] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-mpi-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[cpn-u25-39.compute.cbls.ccr.buffalo.edu:2752] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-mpi-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[cpn-u25-39.compute.cbls.ccr.buffalo.edu:2753] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    opal_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-opal-runtime.txt: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orte_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-orte-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    mpi_init:startup:internal-failure
+But I couldn't open the help file:
+    /projects/sems/install/rhel7-x86_64/sems/compiler/gcc/4.8.5/openmpi/1.10.1/share/openmpi/help-mpi-runtime: No such file or directory.  Sorry!
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[cpn-u25-39.compute.cbls.ccr.buffalo.edu:2750] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+srun: error: cpn-u25-39: tasks 0-7: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=8922858.0
