@@ -8,7 +8,7 @@ import subprocess
 params, results = di.read_parameters_file()
 # x1=params['x1']*1E+00
 x2=params['x2']*1E-01
-x3=params['x3']*1E+01
+x3=params['x3']*1E-01
 x4=params['x4']*1E+01
 x5=params['x5']*1E-01
 
